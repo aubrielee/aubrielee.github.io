@@ -504,10 +504,7 @@ button.active, .expandable:hover {
 
 /*Phone in portrait orientation*/
 @media only screen and (max-width: 600px) {
-    h1 {
-        color: #B1040E;
-    }
-    h5, h6 {
+    h2, h3, h4, p, li, button {
         font-size: 1rem;
     }
 
