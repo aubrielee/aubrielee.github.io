@@ -505,7 +505,7 @@ button.active, .expandable:hover {
 /*Phone in portrait orientation*/
 @media only screen and (max-width: 600px) {
     h2, h3, h4, p, li, button {
-        font-size: 1rem;
+        font-size: 80%;
     }
 
     .break {
@@ -653,8 +653,8 @@ button.active, .expandable:hover {
 
 /*Phone in landscape orientation*/
 @media only screen and (max-width: 800px) {
-    h5, h6 {
-        font-size: 1rem;
+    h2, h3, h4, p, li, button {
+        font-size: 80%;
     }
 
     #logo {
