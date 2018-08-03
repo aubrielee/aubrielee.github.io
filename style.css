@@ -340,7 +340,6 @@ a:hover {
     background: #fff;
     width: 100%;
     min-height: 100%;
-    padding-top: 4vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
@@ -376,6 +375,7 @@ a:hover {
 #narrower {
     max-width: 800px;
     margin: auto;
+    padding-top: 6vh;
     padding-left: 4vh;
     padding-right: 4vh;
     opacity: 0;
