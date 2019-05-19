@@ -150,7 +150,7 @@ li {
 
 /*For lists that show on the main About page and aren't hidden within sections*/
 ul.mainUl {
-    padding-left: 0;
+    padding-left: 1rem;
 }
 
 a {
