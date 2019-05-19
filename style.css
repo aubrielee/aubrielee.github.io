@@ -137,13 +137,20 @@ p.noIndent {
 
 ul {
     list-style-type: none;
-    padding-left: 4rem;
+    padding-left: 3rem;
+/*    background: #aaafff;*/
 }
 
 li {
     font-family: Garamond, serif;
     font-size: 1.25rem;
     text-indent: -1rem;
+/*    background: #fffaaa;*/
+}
+
+/*For lists that show on the main About page and aren't hidden within sections*/
+ul.mainUl {
+    padding-left: 0;
 }
 
 a {
@@ -374,7 +381,7 @@ a:hover {
 
 /*Contains the content of the about page*/
 #narrower {
-    max-width: 800px;
+    max-width: 680px;
     margin: auto;
     padding-top: 6vh;
     padding-left: 4vh;
