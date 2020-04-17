@@ -10,8 +10,8 @@
 }
 
 :root {
-    --linkColor: #d80000;
-    --linkColorHover: #ff4040;
+    --linkColor: #007061;
+    --linkColorHover: #004544;
 }
 
 html {
@@ -155,6 +155,7 @@ ul.mainUl {
 
 a {
     text-decoration: none;
+    font-weight: bold;
     color: var(--linkColor);
     -webkit-transition: .25s;
     -moz-transition: .25s;
