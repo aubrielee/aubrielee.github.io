@@ -1,0 +1,732 @@
+/*Notes: .className, #idName, tagName*/
+
+/*Reset*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-weight: normal;
+}
+
+:root {
+    --linkColor: #d80000;
+    --linkColorHover: #ff4040;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Vollkorn SC', Garamond, serif;
+    font-size: 100%;
+    line-height: 1.75rem;
+    
+    /*This is necessary for having carousel inherit this height*/
+    height: 100%;
+    
+    width: 100%;    
+    overflow: hidden;
+}
+
+body.showOverflow {
+    overflow: visible;
+}
+
+/*Main name*/
+h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/*About page section headings*/
+h2 {
+    font-family: 'Vollkorn SC', Garamond, serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/*Carousel captions*/
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    color: white;
+    z-index: 20;
+}
+
+figcaption:hover {
+    cursor: text;
+}
+
+/*Line break to display only on mobile*/
+.break {
+    display: none;
+}
+
+/*socialDiamonds separate social media links on about page*/
+.diamond, .socialDiamond {
+    font-family: monospace;
+    font-variant: small-caps;
+}
+
+/*Diamond indicators on buttons*/
+.indicator {
+    font-family: monospace;
+    font-size: 1.25rem;
+    opacity: 0;
+    -webkit-transition: opacity .25s;
+    -moz-transition: opacity .25s;
+    transition: opacity .25s;
+}
+
+/*Titles of expandables*/
+button {
+    display: block;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Vollkorn SC', Garamond, serif;
+    text-align: center;
+    background-color: #fff;
+    color: var(--linkColor);
+    cursor: pointer;
+}
+
+/*For external pieces in the about page*/
+.pieceTitle {
+    font-family: 'Vollkorn SC', Garamond, serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: Garamond, serif;
+    font-size: 1.25rem;
+    text-indent: 3rem;
+}
+
+p.noIndent {
+    text-indent: 0;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 3rem;
+    position: relative;
+}
+
+ul li:before {
+	content: "\29eb";
+	position: absolute;
+    
+    /*Halfway between margin and list item, with approximate sizing for half of lozenge*/
+    padding-left: 1.4rem;
+	left: 0;
+}
+
+ol {
+    padding-left: 2.4rem;
+}
+
+ol li {
+    text-indent: 0.6rem; /*This needs to result in 3rem to line up with indentations*/
+}
+
+li {
+    font-family: Garamond, serif;
+    font-size: 1.25rem;
+}
+
+/*For lists that show on the main About page and aren't hidden within sections*/
+ul.mainUl {
+    padding-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--linkColor);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
+}
+
+a:hover {
+    color: var(--linkColorHover);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
+}
+
+/*In case I want links in the carousel to be different*/
+.carousellink {
+}
+
+#carousel {
+    /*This position is necessary to make z-index have effect*/
+    position: fixed;
+    
+    z-index: 1;
+    background: black;
+    width: 100%;
+    height: 100%;
+
+    /*animation: name, duration, timing function, delay (if any), iteration count, fill mode (to stick to the last frame)*/
+    -webkit-animation: fadeIn 2s ease-out 1 forwards;
+            animation: fadeIn 2s ease-out 1 forwards;
+}
+
+.slideFrame {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    /*This one is necessary to prevent image from spilling to next slideFrame*/
+    overflow: hidden;
+    
+    opacity: 0;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    transition: 1s ease;
+    
+    cursor: grab;
+}
+
+.slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+.show {
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.gradient {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, .3)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, .1) 90%, rgba(0, 0, 0, .3));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, .1) 90%, rgba(0, 0, 0, .3));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, .1) 90%, rgba(0, 0, 0, .3));
+    z-index: 5;
+}
+
+#splitringprocess {
+    background: #dbdae2;
+}
+
+#rockingspiderprocess {
+    background: #c0c0c0;
+}
+
+#infinityringimg {
+    width: 100%;
+    height: auto;
+}
+
+#infinityringprocess {
+    background: #bcbcb9;
+}
+
+#butterflylockprocess {
+    background: #dbdbdb;
+}
+
+#butterflylockprocessimg {
+    height: 110%;
+}
+
+#auryxheadphones {
+    background: #fff;
+}
+
+#stilllifewithstringsimg {
+    width: 100%;
+    height: auto;
+    top: 0px;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+}
+
+#sembleimg {
+    width: 100%;
+    height: auto;
+}
+
+#cdcoverimg {
+    width: 100%;
+    height: auto;
+}
+
+#bioengineeringimg {
+    width: 100%;
+    height: auto;
+    top: 0;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+}
+
+#nimbus {
+    background: #d3d3d3;
+}
+
+#nimbusimg {
+    width: 30%;
+    max-width: 50%;
+    height: auto;
+    top: 40%;
+}
+
+#loveloseimg {
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: auto;
+    margin: auto;
+    z-index: 10;
+
+    -webkit-filter: invert(0%);
+
+            filter: invert(0%);
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+
+#logo.inverted {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+#about {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    background: #fff;
+    width: 100%;
+    min-height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    opacity: 0;
+}
+
+#about.hidden {
+    opacity: 0;
+    
+    /*z-index has to transition more slowly than opacity,
+    otherwise visual jumps*/
+    -webkit-transition: opacity 1s, z-index 2s;
+    -moz-transition: opacity 1s, z-index 2s;
+    transition: opacity 1s, z-index 2s;
+    
+    z-index: 0;
+}
+
+#about.visible {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: 2;
+}
+
+#about.visibleOnLoad {
+    z-index: 2;
+    opacity: 1;
+}
+
+/*Contains the content of the about page*/
+#narrower {
+    max-width: 680px;
+    margin: auto;
+    padding-top: 6vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    opacity: 0;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+#narrower.visible {
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.expandable {
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    transition: color .25s;
+}
+
+button.active, .expandable:hover {
+    color: var(--linkColorHover);
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    transition: color .25s;
+}
+
+.expandable:hover .indicator {
+    -webkit-transition: opacity .25s;
+    -moz-transition: opacity .25s;
+    transition: opacity .25s;
+    opacity: 1;
+}
+
+.indicator.stay {
+    opacity: 1;
+}
+
+.writing {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+}
+
+.writing.active {
+    opacity: 1;
+    padding-bottom: 2rem;
+}
+
+/*For lone articles not linked from about page*/
+
+.loneArticle {
+    max-width: 680px;
+    margin: auto;
+    padding-top: 4vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.loneTitle {
+    display: block;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Vollkorn SC', Garamond, serif;
+    text-align: center;
+    color: var(--linkColor);
+}
+
+.loneWriting p, li, h2 {
+    margin-bottom: 1em;
+}
+
+#journeyJournal {
+    overflow: visible;
+}
+
+/*Gives room for the logo when page is scrolled all the way down*/
+.spaceBlock {
+    height: calc(18vh + 100px);
+}
+
+@-webkit-keyframes logoLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@keyframes logoLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes backgroundChange {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+/*Phone in portrait orientation*/
+@media only screen and (max-width: 600px) {
+    h2, h3, h4, p, li, button {
+        font-size: 100%;
+        line-height: 144%;
+    }
+
+    .break {
+        display: inline;
+    }
+    
+    /*socialDiamonds separate social media links on about page*/
+    .socialDiamond {
+        display: none;
+    }
+    
+    #logo {
+        max-height: 12.5%;
+        bottom: 12.5%;
+    }
+    
+    /*In case caption text stacks too high*/
+    .longergradient {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, .3)));
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .3));
+        background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .3));
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .3));
+        z-index: 5;
+    }
+
+    #splitringprocessimg {
+        top: 45%;
+    }
+
+    /*Fit entirety of certain landscape photos*/
+    #rockingspiderimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #rockingspiderprocessimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #skeletonkeyprocessimg {
+        -webkit-transform: translate(-60%, -50%);
+            -ms-transform: translate(-60%, -50%);
+                transform: translate(-60%, -50%);
+    }
+
+    #butterflylockimg {
+        max-width: 120%;
+        height: auto;
+    }
+
+    #butterflylockprocessimg {
+        height: 90%;
+    }
+
+    #originhairclipimg {
+        height: 150%;
+        -webkit-transform: translate(-63%, -45%);
+            -ms-transform: translate(-63%, -45%);
+                transform: translate(-63%, -45%);
+    }
+    
+    #auryxheadphones {
+        background: black;
+    }
+
+    #auryxheadphonesimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #stilllifewithstringsimg {
+        -webkit-transform: translate(-65%);
+            -ms-transform: translate(-65%);
+                transform: translate(-65%);
+    }
+
+    #midmoonimg {
+        width: 150%;
+        height: auto;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
+    #figuredrawingimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #dogfiguredrawingimg {
+        -webkit-transform: translate(-65%, -50%);
+            -ms-transform: translate(-65%, -50%);
+                transform: translate(-65%, -50%);
+    }
+
+    #birdglersimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #tricingpendantimg {
+        -webkit-transform: translate(-58%, -50%);
+            -ms-transform: translate(-58%, -50%);
+                transform: translate(-58%, -50%);
+    }
+
+    #tainimg {
+        width: 150%;
+        height: auto;
+    }
+
+    #sembleimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #bioengineeringimg {
+        height: 100%;
+        width: auto;
+    }
+
+    #solardecathlonimg {
+        -webkit-transform: translate(-59%, -50%);
+            -ms-transform: translate(-59%, -50%);
+                transform: translate(-59%, -50%);
+    }
+
+    #nimbusimg {
+        width: 75%;
+        max-width: 75%;
+        height: auto;
+        top: 40%;
+    }
+
+    #facioimg {
+        -webkit-transform: translate(-45%, -50%);
+            -ms-transform: translate(-45%, -50%);
+                transform: translate(-45%, -50%);
+    }
+}
+
+/*Phone in landscape orientation*/
+@media only screen and (max-width: 800px) {
+    h2, h3, h4, p, li, button {
+        font-size: 100%;
+        line-height: 144%;
+    }
+
+    #logo {
+        max-height: 10%;
+        bottom: 12.5%;
+    }
+}
+
+/*Part of getting this particular image to behave.
+133 is from the aspect ratio of the artwork,
+so whenever the browser window is too narrow,
+the artwork goes by height instead of width*/
+@media only screen and (max-width: 133vh) {
+    #stilllifewithstringsimg {
+        height: 100%;
+        width: auto;
+    }
+}
+
+/*For 16:9 image*/
+@media only screen and (max-width: 178vh) {
+    #infinityringimg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #bioengineeringimg {
+        height: 100%;
+        width: auto;
+    }
+}
