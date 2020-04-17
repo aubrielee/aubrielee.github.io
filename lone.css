@@ -10,8 +10,8 @@
 }
 
 :root {
-    --linkColor: #d80000;
-    --linkColorHover: #ff4040;
+    --linkColor: #007061;
+    --linkColorHover: #004544;
 }
 
 html {
@@ -170,6 +170,7 @@ ul.mainUl {
 
 a {
     text-decoration: none;
+    font-weight: bold;
     color: var(--linkColor);
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -467,8 +468,15 @@ button.active, .expandable:hover {
     margin-bottom: 1em;
 }
 
-#journeyJournal {
-    overflow: visible;
+#loneLogo {
+    display: block;
+    padding-bottom: 120px;
+    padding-top: 30px;
+    height: 80px;
+    width: auto;
+    margin: auto;
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
 }
 
 /*Gives room for the logo when page is scrolled all the way down*/
