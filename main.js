@@ -97,10 +97,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 page.classList.add('showOverflow');
                 logo.classList.add('inverted');
                 
-                setTimeout(function () {
+                // setTimeout(function () {
                     // siema.goTo(0);
                     // navManager.pushTo(siema.innerElements[0].id);
-                }, 1000);
+                // }, 1000);
             }
         }
     };
