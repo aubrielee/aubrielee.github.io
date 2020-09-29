@@ -91,13 +91,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 navManager.expandSection(anchor.substr(1));
             } //No anchor or unknown anchor.Push to first element in slideshow
             else if (firstIndex <= 0) {
+
+                aboutPage.classList.add('visibleOnLoad');
+                aboutContent.classList.add('visible');
+                page.classList.add('showOverflow');
+                logo.classList.add('inverted');
+                
                 setTimeout(function () {
-
-                    aboutPage.classList.add('visibleOnLoad');
-                    aboutContent.classList.add('visible');
-                    page.classList.add('showOverflow');
-                    logo.classList.add('inverted');
-
                     // siema.goTo(0);
                     // navManager.pushTo(siema.innerElements[0].id);
                 }, 1000);
