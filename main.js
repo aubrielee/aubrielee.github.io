@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 aboutContent.classList.add('visible');
                 page.classList.add('showOverflow');
                 logo.classList.add('inverted');
-
+                
                 setTimeout(function () {
                     // siema.goTo(0);
                     // navManager.pushTo(siema.innerElements[0].id);
@@ -144,9 +144,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         startIndex: getStartIndex(),
         onInit: function () {
             //First slide loaded shows up
-            setTimeout(function () {
-                this.innerElements[this.currentSlide].classList.add('show');
-            }, 1000);
+            this.innerElements[this.currentSlide].classList.add('show');
         },
         onChange: (function () {
             /* Defined an Immediately Invoked Function Expression (IIFE) to create a closure
