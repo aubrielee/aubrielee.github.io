@@ -14,8 +14,8 @@
     --linkColorHover: #27d6d6;
     --linkColorCarousel: #c0ffee;
     --linkColorCarouselHover: #007061;
-    --underlineThickness: .05em;
-    --underlineThicknessMobile: .5em;
+    --underlineThickness: 1px;
+    --underlineThicknessMobile: 1px;
 }
 
 .ViewProfileButton {
