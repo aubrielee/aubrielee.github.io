@@ -33,7 +33,7 @@ html {
 body {
     font-family: 'Vollkorn SC', Garamond, serif;
     font-size: 100%;
-    line-height: 1.75rem;
+    line-height: 2em;
     
     /*This is necessary for having carousel inherit this height*/
     height: 100%;
@@ -181,6 +181,10 @@ li {
     font-size: 1.25rem;
 }
 
+p, li {
+    /*margin-bottom: .6em;*/
+}
+
 /*ul {
     list-style-type: none;
     padding-left: 3rem;
@@ -212,6 +216,10 @@ a {
 
 .social a, .social a:hover {
     border-bottom: 0;
+}
+
+.fab {
+    margin: 1em .2em 0 .2em;
 }
 
 #carousel a {
@@ -634,7 +642,7 @@ button.active, .expandable:hover {
 
 /*Phone in portrait orientation*/
 @media only screen and (max-width: 600px) {
-    h2, h3, h4, p, li, button {
+    h3, h4, p, li, button {
         font-size: 100%;
         line-height: 144%;
     }
@@ -830,7 +838,7 @@ button.active, .expandable:hover {
 
 /*Phone in landscape orientation*/
 @media only screen and (max-width: 800px) {
-    h2, h3, h4, p, li, button {
+    h3, h4, p, li, button {
         font-size: 100%;
         line-height: 144%;
     }
