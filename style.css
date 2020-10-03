@@ -639,7 +639,7 @@ button.active, .expandable:hover {
         line-height: 144%;
     }
 
-    a {
+    a, #about .pieceTitle {
         text-decoration: none;
         border-bottom: var(--underlineThicknessMobile) solid var(--linkColor);
 
