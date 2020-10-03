@@ -15,6 +15,7 @@
     --linkColorCarousel: #c0ffee;
     --linkColorCarouselHover: #007061;
     --underlineThickness: .05em;
+    --underlineThicknessMobile: .05em;
 }
 
 .ViewProfileButton {
@@ -603,6 +604,17 @@ button.active, .expandable:hover {
     h2, h3, h4, p, li, button {
         font-size: 100%;
         line-height: 144%;
+    }
+
+    a {
+        text-decoration: none;
+        border-bottom: var(--underlineThicknessMobile) solid var(--linkColor);
+
+        font-weight: bold;
+        color: var(--linkColor);
+        -webkit-transition: .25s;
+        -moz-transition: .25s;
+        transition: .25s;
     }
 
     .break {
