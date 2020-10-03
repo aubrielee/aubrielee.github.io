@@ -234,4 +234,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
             navManager.expandSection(e.target.id);
         }
     })
+
+    // Find all tags using target="_blank" and inject rel="noreferrer noopener"
+    // From github, jasongfr/targetBlankVulnerabilityPatch.js
+    var aTags = document.querySelectorAll('[target]');
+    var att = document.createAttribute('rel');
+    att.value = 'noopener noreferrer';
+    aTags.forEach(function (tag) {
+        var nodeClone = att.cloneNode(true);
+        tag.setAttributeNode(nodeClone);
+    });
 });
