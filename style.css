@@ -10,8 +10,15 @@
 }
 
 :root {
-    --linkColor: #007061;
-    --linkColorHover: #004544;
+    --linkColor: #004544;
+    --linkColorHover: #27d6d6;
+    --linkColorCarousel: #c0ffee;
+    --linkColorCarouselHover: #007061;
+}
+
+.ViewProfileButton {
+    display: none !important;
+
 }
 
 html {
@@ -49,6 +56,13 @@ h2 {
     font-weight: 700;
     font-size: 1.25rem;
     text-align: center;
+    padding-top: 2rem;
+}
+
+#about h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    white-space: nowrap;
     padding-top: 2rem;
 }
 
@@ -116,10 +130,10 @@ button {
 }
 
 /*For external pieces in the about page*/
-.pieceTitle {
+/*.pieceTitle {
     font-family: 'Vollkorn SC', Garamond, serif;
     font-weight: 700;
-}
+}*/
 
 p {
     font-family: Garamond, serif;
@@ -138,25 +152,73 @@ p.noIndent {
 ul {
     list-style-type: none;
     padding-left: 3rem;
-/*    background: #aaafff;*/
+    position: relative;
+}
+
+ul li:before {
+    content: "\29eb";
+    position: absolute;
+    
+    /*Halfway between margin and list item, with approximate sizing for half of lozenge*/
+    padding-left: 1.4rem;
+    left: 0;
+}
+
+ol {
+    padding-left: 2.4rem;
+}
+
+ol li {
+    text-indent: 0.6rem; /*This needs to result in 3rem to line up with indentations*/
+}
+
+li {
+    font-family: Garamond, serif;
+    font-size: 1.25rem;
+}
+
+/*ul {
+    list-style-type: none;
+    padding-left: 3rem;
+    background: #aaafff;
 }
 
 li {
     font-family: Garamond, serif;
     font-size: 1.25rem;
     text-indent: -1rem;
-/*    background: #fffaaa;*/
+    background: #fffaaa;
 }
-
+*/
 /*For lists that show on the main About page and aren't hidden within sections*/
 ul.mainUl {
-    padding-left: 1rem;
+    /*padding-left: 1rem;*/
 }
 
 a {
     text-decoration: none;
-    font-weight: bold;
+    border-bottom: .01em solid var(--linkColor);
+
+    /*font-weight: bold;*/
     color: var(--linkColor);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
+}
+
+.social a, .social a:hover {
+    border-bottom: 0;
+}
+
+#carousel a {
+    color: var(--linkColorCarousel);
+    border-bottom: .01em solid var(--linkColorCarousel);
+}
+
+
+#carousel a:hover {
+    color: var(--linkColorCarouselHover);
+    border-bottom: .01em solid var(--linkColorCarouselHover);
     -webkit-transition: .25s;
     -moz-transition: .25s;
     transition: .25s;
@@ -164,6 +226,7 @@ a {
 
 a:hover {
     color: var(--linkColorHover);
+    border-bottom: .01em solid var(--linkColorHover);
     -webkit-transition: .25s;
     -moz-transition: .25s;
     transition: .25s;
@@ -399,6 +462,29 @@ a:hover {
     -moz-transition: 2s ease;
     transition: 2s ease;
 }
+
+.centerIg {
+    /*background: Red;*/
+    /*width: 2000px;*/
+    /*max-width: 1000px;*/
+    /*margin: auto;*/
+    margin: 1em 0 2em 0;
+}
+
+.instagram-media {
+    /*width: 10px !important;*/
+    /*height: 100px !important;*/
+    margin: auto !important;
+}
+
+.HoverCard {
+    display: none;
+}
+
+/* Remove clutter */
+div[class="HoverCard"], div[class="SocialProof"], div[class="Feedback"],
+span[class="FollowerCountText"], a[class="ViewProfileButton"],
+a[class="CaptionCommentsExpand"] { display: none !important; }
 
 .expandable {
     -webkit-transition: color .25s;
