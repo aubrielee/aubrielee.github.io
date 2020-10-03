@@ -16,6 +16,8 @@
     --linkColorCarouselHover: #007061;
     --underlineThickness: 1px;
     --underlineThicknessMobile: 1px;
+    --spaceBlockHeight: calc(18vh + 100px);
+    --spaceBlockHeightMobile: calc(24vh + 100px);
 }
 
 .ViewProfileButton {
@@ -238,40 +240,34 @@ a:hover {
 .carousellink {
 }
 
-/*#about:after {
-      position: absolute;
-      bottom: 0;  
-      height: 100%;
-      width: 100%;
-      content: "";
-      background: linear-gradient(to top,
-         rgba(255,255,255, 1) 20%, 
-         rgba(255,255,255, 0) 80%
-      );
-      pointer-events: none;
-}*/
-
 .aboutGradient {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: calc(18vh + 100px);
+    height: var(--spaceBlockHeight);
     width: auto;
     margin: auto;
-
-    /*bottom: 0;*/
-    /*content: "";*/
     background: linear-gradient(to top,
        rgba(255,255,255, 1) 20%, 
        rgba(255,255,255, 0) 100%
     );
+        
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(rgba(255, 255, 255, 0)),
+        color-stop(80%, rgba(255, 255, 255, 1)),
+        to(rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0),  
+        rgba(255, 255, 255, 1) 80%, 
+        rgba(255, 255, 255, 1));
+    background: -moz-linear-gradient(
+        rgba(255, 255, 255, 0),  
+        rgba(255, 255, 255, 1) 80%, 
+        rgba(255, 255, 255, 1));
+
     pointer-events: none;
-    /*
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0)), color-stop(90%, rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .3)));
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, .1) 90%, rgba(255, 255, 255, .3));
-    background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, .1) 90%, rgba(255, 255, 255, .3));*/
-    /*background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, .4) 80%, rgba(255, 255, 255, .8));*/
     z-index: 5;
 }
 
@@ -565,7 +561,7 @@ button.active, .expandable:hover {
 
 /*Gives room for the logo when page is scrolled all the way down*/
 .spaceBlock {
-    height: calc(18vh + 100px);
+    height: var(--spaceBlockHeight);
 }
 
 @-webkit-keyframes logoLoad {
@@ -666,6 +662,41 @@ button.active, .expandable:hover {
     #logo {
         max-height: 12.5%;
         bottom: 12.5%;
+    }
+
+    .spaceBlock {
+        height: var(--spaceBlockHeightMobile);
+    }
+
+    .aboutGradient {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: var(--spaceBlockHeightMobile);
+        width: auto;
+        margin: auto;
+        background: linear-gradient(to top,
+           rgba(255,255,255, 1) 20%, 
+           rgba(255,255,255, 0) 100%
+        );
+            
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(rgba(255, 255, 255, 0)),
+            color-stop(80%, rgba(255, 255, 255, 1)),
+            to(rgba(255, 255, 255, 1)));
+        background: -webkit-linear-gradient(
+            rgba(255, 255, 255, 0),  
+            rgba(255, 255, 255, 1) 80%, 
+            rgba(255, 255, 255, 1));
+        background: -moz-linear-gradient(
+            rgba(255, 255, 255, 0),  
+            rgba(255, 255, 255, 1) 80%, 
+            rgba(255, 255, 255, 1));
+
+        pointer-events: none;
+        z-index: 5;
     }
     
     /*In case caption text stacks too high*/
