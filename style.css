@@ -14,6 +14,7 @@
     --linkColorHover: #27d6d6;
     --linkColorCarousel: #c0ffee;
     --linkColorCarouselHover: #007061;
+    --underlineThickness: .05em;
 }
 
 .ViewProfileButton {
@@ -197,7 +198,7 @@ ul.mainUl {
 
 a {
     text-decoration: none;
-    border-bottom: .01em solid var(--linkColor);
+    border-bottom: var(--underlineThickness) solid var(--linkColor);
 
     /*font-weight: bold;*/
     color: var(--linkColor);
@@ -212,13 +213,13 @@ a {
 
 #carousel a {
     color: var(--linkColorCarousel);
-    border-bottom: .01em solid var(--linkColorCarousel);
+    border-bottom: var(--underlineThickness) solid var(--linkColorCarousel);
 }
 
 
 #carousel a:hover {
     color: var(--linkColorCarouselHover);
-    border-bottom: .01em solid var(--linkColorCarouselHover);
+    border-bottom: var(--underlineThickness) solid var(--linkColorCarouselHover);
     -webkit-transition: .25s;
     -moz-transition: .25s;
     transition: .25s;
@@ -226,7 +227,7 @@ a {
 
 a:hover {
     color: var(--linkColorHover);
-    border-bottom: .01em solid var(--linkColorHover);
+    border-bottom: var(--underlineThickness) solid var(--linkColorHover);
     -webkit-transition: .25s;
     -moz-transition: .25s;
     transition: .25s;
