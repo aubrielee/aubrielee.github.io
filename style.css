@@ -218,8 +218,12 @@ a {
     border-bottom: 0;
 }
 
+.emailA {
+    margin-right: 2em;
+}
+
 .fab {
-    margin: 1em .2em 0 .2em;
+    margin: 0 .2em 0 .2em;
 }
 
 #carousel a {
@@ -642,9 +646,20 @@ button.active, .expandable:hover {
 
 /*Phone in portrait orientation*/
 @media only screen and (max-width: 600px) {
+    
+    /* Letterhead */
+    h1 {
+        padding-bottom: .2em;
+    }
+
+    .fab {
+        margin-top: 0;
+    }
+
+
     h3, h4, p, li, button {
         font-size: 100%;
-        line-height: 144%;
+        /*line-height: 144%;*/
     }
 
     a, #about .pieceTitle {
@@ -841,7 +856,7 @@ button.active, .expandable:hover {
 @media only screen and (max-width: 800px) {
     h3, h4, p, li, button {
         font-size: 100%;
-        line-height: 144%;
+        /*line-height: 144%;*/
     }
 
     #logo {
