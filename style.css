@@ -658,8 +658,9 @@ button.active, .expandable:hover {
         transition: .25s;
     }
 
+    /*Line breaks originally for social links*/
     .break {
-        display: inline;
+        /*display: inline;*/
     }
     
     /*socialDiamonds separate social media links on about page*/
