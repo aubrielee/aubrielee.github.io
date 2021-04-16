@@ -46,6 +46,11 @@ body.showOverflow {
     overflow: visible;
 }
 
+/* focus */
+a:focus {
+    color: var(--linkColorHover);
+}
+
 /*Main name*/
 h1 {
     font-size: 2.25rem;
