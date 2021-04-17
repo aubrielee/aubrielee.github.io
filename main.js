@@ -144,7 +144,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         startIndex: getStartIndex(),
         onInit: function () {
             //First slide loaded shows up
-            this.innerElements[this.currentSlide].classList.add('show');
+            // 2021.04.16 commenting this out because jarring to have it load before about e
+            // this.innerElements[this.currentSlide].classList.add('show');
         },
         onChange: (function () {
             /* Defined an Immediately Invoked Function Expression (IIFE) to create a closure
@@ -219,6 +220,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (aboutPage.classList.contains('visibleOnLoad') || aboutPage.classList.contains('visible')) {
             leaveAbout();
+
+            //show the first slide
+            siema.innerElements[siema.currentSlide].classList.add('show');
         } else {
             //No classes in list
             aboutPage.classList.add('visible');
