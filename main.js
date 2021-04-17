@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const page = document.getElementById('page');
 
     //aboutGradient has to be a class
-    // const aboutGradient document.getElementsByClassName('aboutGradient');
+    let aboutGradient = document.getElementsByClassName('aboutGradient');
 
     //Returns an array-like list
     let expandables = document.getElementsByClassName('expandable');
@@ -75,12 +75,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 navManager.collapseSection(item);
             })
         },
+
+        //loading carousel is handled in siema onInit
         loadCorrectPlace: function () {
-            if (anchor === '#about') {
-                aboutPage.classList.add('visibleOnLoad');
-                aboutContent.classList.add('visible');
-                page.classList.add('showOverflow');
-                logo.classList.add('inverted');
+            if (anchor === '') {
+                console.log('no anchor');
+                loadAbout();
+            }
+            else if (anchor === '#about') {
+                loadAbout();
             } //Load one of the expandables
             else if (anchor !== '' && !!document.querySelector('button' + anchor)) {
                 console.log('double bang');
@@ -95,11 +98,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
             } //No anchor or unknown anchor.Push to first element in slideshow
             else if (firstIndex <= 0) {
 
-                aboutPage.classList.add('visibleOnLoad');
-                aboutContent.classList.add('visible');
-                page.classList.add('showOverflow');
-                logo.classList.add('inverted');
+                // aboutPage.classList.add('visibleOnLoad');
+                // aboutContent.classList.add('visible');
+                // page.classList.add('showOverflow');
+                // logo.classList.add('inverted');
+
                 // aboutGradient.classList.add('hidden');
+
+                loadAbout();
+
+                console.log('loadCorrectPlace' + aboutPage.classList.contains('visibleOnLoad'));
                 
                 // setTimeout(function () {
                     // siema.goTo(0);
@@ -124,6 +132,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     };
 
+    function loadAbout() {
+        aboutPage.classList.add('visibleOnLoad');
+        aboutContent.classList.add('visible');
+        page.classList.add('showOverflow');
+        logo.classList.add('inverted');
+
+        console.log('loadAbout ' + aboutPage.classList.contains('visibleOnLoad'));
+    }
+
+    function showAbout() {
+        aboutPage.classList.add('visible');
+        aboutContent.classList.add('visible');
+        page.classList.add('showOverflow');
+        logo.classList.add('inverted');
+        navManager.pushTo('about');
+
+        console.log('showAbout logo class list ' + logo.classList);
+    }
+
     // Close the about page
     function leaveAbout() {
         aboutPage.classList.remove('visible');
@@ -132,6 +159,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         aboutContent.classList.remove('visible');
         page.classList.remove('showOverflow');
         logo.classList.remove('inverted');
+
+        console.log('leaveAbout logo class list ' + logo.classList);
 
         setTimeout(function () {
             navManager.collapseAll()
@@ -148,11 +177,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
         startIndex: getStartIndex(),
         onInit: function () {
             //First slide loaded shows up
-            // 2021.04.16 commenting this out because jarring to have it load before about e
-            if (aboutPage.classList.contains('visibleOnLoad') === false) {
+            if (document.location.hash !== '') {
                 this.innerElements[this.currentSlide].classList.add('show');
-                console.log('no vis on load');
+                console.log('siema init');
+                console.log(document.location.hash);
+                console.log(aboutPage.classList);
+                console.log(aboutPage.classList.length);
+                console.log(aboutPage.classList.contains('visibleOnLoad'));
 
+                [].forEach.call(aboutGradient, function (item) {
+                    item.classList.add('hidden');
+                })
             }
             
         },
@@ -234,10 +269,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             siema.innerElements[siema.currentSlide].classList.add('show');
         } else {
             //No classes in list
-            aboutPage.classList.add('visible');
-            aboutContent.classList.add('visible');
-            page.classList.add('showOverflow');
-            navManager.pushTo('about');
+            showAbout();
         }
     });
 
