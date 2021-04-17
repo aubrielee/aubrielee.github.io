@@ -729,7 +729,7 @@ button.active, .expandable:hover {
     }
 
     /*make instagram post fit the page on iphone*/
-    iframe.instagram-media {
+    .instagram-media {
       min-width: auto !important;
     }
     
