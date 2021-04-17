@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const logo = document.getElementById('logo');
     const page = document.getElementById('page');
 
+    //aboutGradient has to be a class
+    // const aboutGradient document.getElementsByClassName('aboutGradient');
+
     //Returns an array-like list
     let expandables = document.getElementsByClassName('expandable');
 
@@ -96,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 aboutContent.classList.add('visible');
                 page.classList.add('showOverflow');
                 logo.classList.add('inverted');
+                // aboutGradient.classList.add('hidden');
                 
                 // setTimeout(function () {
                     // siema.goTo(0);
@@ -145,7 +149,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         onInit: function () {
             //First slide loaded shows up
             // 2021.04.16 commenting this out because jarring to have it load before about e
-            // this.innerElements[this.currentSlide].classList.add('show');
+            if (aboutPage.classList.contains('visibleOnLoad') === false) {
+                this.innerElements[this.currentSlide].classList.add('show');
+                console.log('no vis on load');
+
+            }
+            
         },
         onChange: (function () {
             /* Defined an Immediately Invoked Function Expression (IIFE) to create a closure
