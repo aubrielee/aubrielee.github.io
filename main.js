@@ -184,9 +184,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 console.log(aboutPage.classList);
                 console.log(aboutPage.classList.length);
                 console.log(aboutPage.classList.contains('visibleOnLoad'));
-
+console.log('java');
                 [].forEach.call(aboutGradient, function (item) {
                     item.classList.add('hidden');
+                    console.log('hid');
                 })
             }
             
