@@ -20,11 +20,6 @@
     --spaceBlockHeightMobile: calc(24vh + 100px);
 }
 
-.ViewProfileButton {
-    display: none !important;
-
-}
-
 html {
     height: 100%;
     width: 100%;
@@ -257,6 +252,7 @@ a:hover {
 .carousellink {
 }
 
+/*only works as a class, not an id*/
 .aboutGradient {
     position: fixed;
     bottom: 0;
@@ -265,6 +261,9 @@ a:hover {
     height: var(--spaceBlockHeight);
     width: auto;
     margin: auto;
+
+    opacity: 1;
+
     background: linear-gradient(to top,
        rgba(255,255,255, 1) 20%, 
        rgba(255,255,255, 0) 100%
@@ -286,6 +285,14 @@ a:hover {
 
     pointer-events: none;
     z-index: 5;
+}
+
+.aboutGradient.visible {
+    opacity: 1;
+}
+
+.aboutGradient.hidden {
+    opacity: 0;
 }
 
 #carousel {
@@ -542,6 +549,11 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     display: none !important;
 }
 
+.ViewProfileButton {
+    display: none !important;
+
+}
+
 .expandable {
     -webkit-transition: color .25s;
     -moz-transition: color .25s;
@@ -709,6 +721,7 @@ button.active, .expandable:hover {
         height: var(--spaceBlockHeightMobile);
         width: auto;
         margin: auto;
+
         background: linear-gradient(to top,
            rgba(255,255,255, 1) 20%, 
            rgba(255,255,255, 0) 100%
