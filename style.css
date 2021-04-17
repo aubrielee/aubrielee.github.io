@@ -538,6 +538,10 @@ div[class="HoverCard"], div[class="SocialProof"], div[class="Feedback"],
 span[class="FollowerCountText"], a[class="ViewProfileButton"],
 a[class="CaptionCommentsExpand"] { display: none !important; }
 
+.instagram-media .HeaderCta {
+    display: none !important;
+}
+
 .expandable {
     -webkit-transition: color .25s;
     -moz-transition: color .25s;
