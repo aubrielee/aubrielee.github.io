@@ -1,78 +1,756 @@
-<!DOCTYPE html>
-<html lang="en">
+/*Notes: .className, #idName, tagName*/
 
-<head>
-    <title>NCFIT, Women Make Waves - Transcript</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="lone.css">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:400,600,700,900" rel="stylesheet">
+/*Reset*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-weight: normal;
+}
+
+:root {
+    --linkColor: #004544;
+    --linkColorHover: #27d6d6;
+    --linkColorCarousel: #c0ffee;
+    --linkColorCarouselHover: #007061;
+    --underlineThickness: 1px;
+    --underlineThicknessMobile: 1px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Vollkorn SC', Garamond, serif;
+    font-size: 100%;
+    line-height: 1.75rem;
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    /*This is necessary for having carousel inherit this height*/
+    height: 100%;
     
-    <!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    width: 100%;    
+    overflow: hidden;
+}
+
+body.showOverflow {
+    overflow: visible;
+}
+
+.speaker {
+    font-weight: bold;
+}
+
+.speakerAubrie {
+    /*font-family: 'Vollkorn SC', Garamond, serif;*/
+    font-weight: bold;
+    color: var(--linkColor);
+}
+
+/*Main name*/
+h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/*About page section headings*/
+h2 {
+    font-family: 'Vollkorn SC', Garamond, serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/*Carousel captions*/
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+    color: white;
+    z-index: 20;
+}
+
+figcaption:hover {
+    cursor: text;
+}
+
+/*Line break to display only on mobile*/
+.break {
+    display: none;
+}
+
+/*socialDiamonds separate social media links on about page*/
+.diamond, .socialDiamond {
+    font-family: monospace;
+    font-variant: small-caps;
+}
+
+/*Diamond indicators on buttons*/
+.indicator {
+    font-family: monospace;
+    font-size: 1.25rem;
+    opacity: 0;
+    -webkit-transition: opacity .25s;
+    -moz-transition: opacity .25s;
+    transition: opacity .25s;
+}
+
+/*Titles of expandables*/
+button {
+    display: block;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Vollkorn SC', Garamond, serif;
+    text-align: center;
+    background-color: #fff;
+    color: var(--linkColor);
+    cursor: pointer;
+}
+
+/*For external pieces in the about page*/
+.pieceTitle {
+    font-family: 'Vollkorn SC', Garamond, serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: Garamond, serif;
+    font-size: 1.25rem;
+    text-indent: 3rem;
+}
+
+p.noIndent {
+    text-indent: 0;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 3rem;
+    position: relative;
+}
+
+ul li:before {
+	content: "\29eb";
+	position: absolute;
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50880665-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    /*Halfway between margin and list item, with approximate sizing for half of lozenge*/
+    padding-left: 1.4rem;
+	left: 0;
+}
 
-        gtag('config', 'UA-50880665-3');
-    </script>
+ol {
+    padding-left: 2.4rem;
+}
 
-</head>
+ol li {
+    text-indent: 0.6rem; /*This needs to result in 3rem to line up with indentations*/
+}
 
-<body class="showOverflow">
+li {
+    font-family: Garamond, serif;
+    font-size: 1.25rem;
+}
 
-    <div id="journeyJournal">
-        
-        <div class="loneArticle">
-            
-            <div class="loneTitle" id="">
-                My podcast interview with NCFIT
-            </div>
-            <div class="loneWriting">
+/*For lists that show on the main About page and aren't hidden within sections*/
+ul.mainUl {
+    padding-left: 1rem;
+}
 
-                <p class="centeredText noIndent">For Women Make Waves' Episode 12: Thriving Not Surviving</p>
+a {
+    text-decoration: none;
+    border-bottom: var(--underlineThickness) solid var(--linkColor);
 
-                <h2>listen on apple podcasts</h2>
+    /*font-weight: bold;*/
+    color: var(--linkColor);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
+}
 
-                <!-- <p class="centeredText noIndent"><a href="https://podcasts.apple.com/us/podcast/episode-12-aubrie-lee-thriving-not-surviving/id1558879186?i=1000524479733" target="_blank" tabindex="0">Listen on Apple Podcasts</a></p> -->
+a:hover {
+    color: var(--linkColorHover);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
+}
 
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/episode-12-aubrie-lee-thriving-not-surviving/id1558879186?i=1000524479733"></iframe>
+/*In case I want links in the carousel to be different*/
+.carousellink {
+}
 
-                <!-- <p class="centeredText noIndent">Listen on Spotify</p> -->
+#carousel {
+    /*This position is necessary to make z-index have effect*/
+    position: fixed;
+    
+    z-index: 1;
+    background: black;
+    width: 100%;
+    height: 100%;
 
-                <h2>listen on spotify</h2>
+    /*animation: name, duration, timing function, delay (if any), iteration count, fill mode (to stick to the last frame)*/
+    -webkit-animation: fadeIn 2s ease-out 1 forwards;
+            animation: fadeIn 2s ease-out 1 forwards;
+}
 
-                <iframe src="https://open.spotify.com/embed/episode/0pxBw90gsW9HTVyEcsSaVG?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+.slideFrame {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    /*This one is necessary to prevent image from spilling to next slideFrame*/
+    overflow: hidden;
+    
+    opacity: 0;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    transition: 1s ease;
+    
+    cursor: grab;
+}
 
-                <h2>transcript</h2>
+.slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 100%;
+}
 
-<p class="noIndent"><em>(Intro music)</em></p>
-<p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> All right, everybody. Welcome back to the Women Make Waves podcast. We are so excited today to be sitting down with Aubrie Lee. She was actually our first guest that was nominated by a listener, so I&rsquo;m super excited to dive into that. And just so, so stoked to hear your story. You wrote a letter, a letter to your younger self that I shared with Laura and Arielle, and all of us were in tears. So outside of being an incredible speaker, she is an incredible writer and just touches the hearts of so many. I&rsquo;m super excited to welcome you to the show, Aubrie. And, as always, we like to start by asking, &ldquo;How are you making waves?&rdquo;</span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you so much, Lindsay. &nbsp;I am thrilled to be here. First I must give a shout out to Lizzie, my good friend, who nominated me for this, so thank you Lizzie. I will also say that over the past few years I&#39;ve been doing more speaking, but this is the first time I&#39;ve done a podcast and I think it&#39;s so fun that it is this podcast because&mdash;I&#39;ll tell you a bit more about myself. So I have a form of muscular dystrophy and usually this is the first thing that people notice about me, is that I use a power wheelchair to get around. And some other parts of my muscular dystrophy are that I&#39;m hard of hearing, so I always need captions on movies, and I also have a bit of a speech impairment, but I hope that all of you out there are doing all right with understanding my speech so far. And so, the reason I think it&#39;s so fun that this is my first podcast is that this is a fitness podcast and people don&#39;t always think about Disability and fitness going together. And I will admit I don&#39;t know much about sports, I don&#39;t know much about exercising. My version of exercising is getting out of bed every morning, &nbsp;just getting myself up and into my wheelchair. But I&#39;ll share with you that I feel that I&#39;ve always had such good relationships with and experiences with athletes. I feel that athletes have always been so kind to me and curious about me, and so it is an honor to be on this podcast today.</span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So, to answer your question, Lindsay, about how do I make waves, I thought a lot about this question before we had this conversation today and I think the way that I want to answer it is that I, throughout my life, have always been different from those around me, and every space I enter, usually I&#39;m the only one like me who is there. From the moment I was born, even in my family, there is no one like me. My muscular dystrophy was a spontaneous mutation, so I didn&#39;t inherit it. No one else in my family has it. And so, I am a woman, I&#39;m a Chinese American woman, and I&#39;m a Disabled Chinese American woman, and as a woman, it&#39;s not hard for me to find other women, a community of women. As a Chinese American, I live in a family of Chinese Americans and I can find in the larger community of Chinese Americans. But being Disabled, it took me a long time to find the Disability community. And, I&#39;ll share a bit about that story. So I mentioned in every space I enter, I&#39;m usually the only one like me, so in my family, when I went to school. Growing up I knew about special education but I was not put in special education classes. For some reason, they thought I was very smart so they put me in the mainstream and the advanced classes. And as a child I knew that I was different somehow. Sometimes this came up with other children asking me, &ldquo;Why are your lips like that? Why can&#39;t you close your lips? Just go like this,&rdquo; they would say, and they would close their lips, and I would say, &ldquo;I just can&#39;t do it,&rdquo; or &ldquo;I was just born this way.&rdquo; And yet I saw that the same classmates who would question why I looked a certain way would also be amazed at how well I could draw or at how good my test scores were, so I said, &ldquo;If you will see me as different, I want you to see me as exceptional.&rdquo; So I worked very hard on getting good grades, I loved making art and I also loved how being an artist made people see me as more than just someone who looked different. And this is how I thought that I was making waves as I was growing up.</span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So now I&#39;ll tell you the story of a program that I did when I was in high school. I applied for a forum called the California Youth Leadership Forum for Students with Disabilities, where they selected 50 disabled students from the state and brought us to Sacramento to learn about Disability history, culture, and activism. And the reason I signed up for this was because I was an overachiever and I said, &ldquo;All right. Let me just sign up for anything that might look good on my college application.&rdquo; And I show up there, and I enter the lobby and all the counselors start cheering, and I feel so uncomfortable because I had never had that kind of celebration of my identity, and then I go into the next room and there are 10 other people in wheelchairs there and my first reaction, I confess, was &ldquo;I don&#39;t belong here.&rdquo; Because up to that point in my life, I had worked so hard to prove myself beyond my disabilities. I had worked so hard to have other people see me as capable, and somehow I felt that by associating with these other people who were like me, that I would lose the place that I had fought so hard to carve out for myself in the mainstream. And it took many years for me to realize this, but what I was experiencing in that room for the first time was knowing how it felt to be the majority in the room. I had never known that power, and up to that point I had only known the stigma of disability. So you may have heard of racism and sexism, but you may not have heard of ableism, and ableism is an attitude that disability is a bad thing. And I had internalized that ableism, and that ableism made me feel ashamed of the disabled side of myself. I felt that I had to suppress that side, hide that side, compensate for that side in order to be respected or loved or valued. But what that forum taught me, and what finding the Disability community taught me, was that after being respected and loved and valued no matter what I can or can&#39;t do, it doesn&#39;t matter what I can do, it doesn&#39;t matter what I can&#39;t do. I am a complete person, and as a human being I have the same rights as any other.</span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So how am I making waves now? That experience that I had of being the majority in the room, I now seek to create for other disabled people. I feel very fortunate that I knew about that forum, that I could go to that forum, but unfortunately I feel that many disabled people never had that opportunity. So I&mdash;at Stanford, where I attended college, and now in my workplace, I try to create this space, this community for disabled people to find each other and find themselves. I have another answer to your question, but I wanted to start with that one.</span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So I mentioned that&mdash;Oh sorry, sorry Arielle, would you like to say anything?</span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0">Arielle: I was just going to say I love that you shared all of, like, the background of where you came from and where you are now because that is such a powerful thing, right? Like we look at somebody where they are right now, and we think we can never get there. So if someone looks at you and how successful you are, and they may, they may have a disability, it can be really challenging to say, &ldquo;Well, how am I ever going to get there?&rdquo; but for you to share all of these experiences is so incredibly powerful. So I just wanted to say thank you, but please, I would love to hear your other answer. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you, Arielle. What you&rsquo;re saying reminds me of something else, which is, the Disability community has a complicated relationship with the concept of being inspiring. So the word &ldquo;inspiring&rdquo; comes up a lot when people talk about disabled people, and what I love is when I can inspire other disabled people. So Arielle what more what you&#39;re saying about someone who might be maybe a younger version of me somewhere out there, hello, feel free to reach out. But yes, I want, I want those who may not have gotten as far on their journey to know that they can be proud of all parts of themselves. </span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So I mentioned I&#39;ve been doing more speaking and I&#39;ve done a lot of writing and often times the topic centers around Disability and I love this image that you have of a wave, because a wave is ongoing and it has many manifestations and many impacts, and one way I think about how I&#39;m making waves is by celebrating the fact that I am disabled, by being Disabled and proud, and also being an artist and being an engineer and being many more things, being all of these things at once. In my&mdash;in my life as I have entered these spaces that I need to change to fit me because they&#39;ve never had anyone like me before, so much of my time and energy is consumed by just, just fighting to have that place. Up to this point, I think I cannot name a single physical location in the world that is fully accessible to me. So the world signals to Disabled people that we don&#39;t belong here and that, that they would be just as happy as&mdash;that the world would be just as happy if we did not exist. So carving out these spaces for myself and for other members of the Disabled community is a way that I make waves and it takes a lot of my time, but I don&#39;t want it to be the only thing. I...I think it would be a sad thing if someone who doesn&#39;t fit into the world has to spend their entire life just maintaining their existence. So, a good friend of mine talks about not just surviving but thriving. So I can get by everyday, but that&#39;s not enough. I don&#39;t want to settle for just surviving. I want to do things that make me happy. I want to do things that I even wonder if I can do, like I have been learning 3D modeling, so digital modeling. So I&#39;ve done drawing, I&#39;ve done two dimensional digital art, and now 3D. And 3D is exponentially harder than either of the first two, but it is so much fun. Another thing is not just 3D modeling, but fashion modeling. So when I was little, there were no Disabled fashion models that I saw. Now I&#39;m seeing more, and that inspires me. Something I have felt for a long time is, &ldquo;Why is disability considered ugly?&rdquo; When I was younger I had to do some research paper, and in my research I found a study that was using disability as a standard for ugliness. So in their metrics they were, they were using disability as being on par with being ugly. And I think that is very wrong and&mdash;so, I, I feel a bit shy about saying this, but I&#39;ve been very grateful that people have called me beautiful and I, even without that, even before that, I decided for myself, if no one else will call me beautiful, I&#39;m going to call myself beautiful. And the saying, &ldquo;Beauty lies in the eye of the beholder&rdquo;&mdash;well, here I am, I am a beholder and I will behold myself and call myself beautiful. And so that is another way that I&#39;m trying to defy what the world tells people about disability, that&mdash;that we don&#39;t belong here, that we aren&#39;t beautiful, that we don&#39;t deserve respect, and that we&hellip;that as long&mdash;if we are just surviving, then that is enough. Because none of that is true. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> I know that this forum, the group that you went to and it was the first time you were able to recognize your kind of internalized ableism, and that sounds like such an inspirational moment, but what, and maybe that was it, but was there something else or what kind of created this shift in mindset from, you know, surviving to thriving because it doesn&rsquo;t seem like something that happens overnight? &nbsp;</span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you for that question. So the moment that I entered that room and I felt &ldquo;I don&#39;t belong here&rdquo; and I felt that internalized ableism, I did not recognize it in that moment. For the entire course in that forum, I was not a very engaged participant. I had such a bad attitude about it, and still everyone there was so welcoming of me, so they just continued to prove how much they accepted me for who I was. And it was a slow process of fighting that ableism, overcoming that ableism, much more than overcoming disability. I don&#39;t say that I overcame my disability, I say I am trying to overcome ableism. So. From&mdash;on going from surviving to thriving, that was I&#39;d say a realization I&rsquo;ve had over the past year or so. And&hellip;to be completely honest, this realization has come to me after a long sequence of soul-crushing, heartbreaking events. So, coronavirus. About a year, a little more than a year ago, when coronavirus started taking over the U.S., the news articles that I would see would not mention disabled people or people with chronic health conditions whom the CDC recognized as being high-risk for complications or death from coronavirus. And if news articles did mention us at all, it would be by saying most people don&#39;t have to worry. Only people with health problems have to worry, and this word &ldquo;only&rdquo; said so much to me. It said, &ldquo;Wow, you don&#39;t really care about us, we are just an expected, accepted casualty.&rdquo; It&rsquo;s so&mdash;it was so backwards to me, why were those news articles not saying that we should be doing everything we can to protect those who are high risk. But instead, we are reassuring those who are not high-risk that they don&#39;t have to worry. I&mdash;that was just such a symbol to me of how little society valued our lives. And then vaccine development happened, and many states started creating tiers; so, who deserves the vaccine first. In California, high risk Disabled people were the last tier and then towards the end of January, the&mdash;the governor said, &ldquo;Actually, we&rsquo;re just going to take you off the priority list altogether.&rdquo; So we went from being last on the list to not on the list at all. And this was after many months of seeing how fatal coronavirus was to my community. So not only because of the nature of our bodies but because of how society is designed to keep us on the margins. So for example, nursing homes. I saw an article that said about 38% of coronavirus deaths in the U.S. happened in nursing homes. And I require personal care, so being very open with all of you in the audience, I can&#39;t move myself to and from the toilet safely. And I consider this a medical necessity, but health insurance companies don&#39;t, so I have no insurance help paying for personal care. So what does someone like me have to do if they can&#39;t afford personal care? They have to go to a nursing home. So coronavirus has been fatal in that way. In the UK, I think the numbers&mdash;something like 50% of deaths, maybe more, were disabled people. So it is, it was after knowing all of these things, all of these facts were known, and then we get taken off the priority list for the vaccine. So it just, it&hellip;at that moment, and after many of these moments, I said, &ldquo;All right. If the world is either going to try to kill us or not care if we die, then I need to make my life something spectacular. I need to put so much more value into my life and my time than society is telling me I deserve.&rdquo; So now, I do more than just be angry or be heartbroken or be crushed at how little society respects and values us. I say, &ldquo;All right. I&#39;m going to&mdash;I&#39;m going to do the things that other people might call frivolous. So, I&#39;m going to keep my hair long, I&#39;m going to paint my nails, I&#39;m going to dress up and be fashionable, because I decide what matters to me.&rdquo; </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> What incredible, incredible strength it takes, just, you know, to overcome everything you&rsquo;ve overcome, from&mdash;from outside in society, from within yourself, emotionally, with external factors. I&rsquo;m&mdash;I&rsquo;m just absolutely blown away by your strength, and thinking about the things in my life that I let get to me or, or make me feel down or like I can&rsquo;t do something, and then seeing you is such, such an inspiration. And I spent quite a deal of time, yesterday and today, looking at your art, and just being absolutely blown away by that as well. The&mdash;I saw the cow skull sketch you did and it&mdash;it&rsquo;s incredible. Absolutely incredible. And, for all of our listeners, I would very much encourage you to look at Aubrie&rsquo;s life plan that she&rsquo;s laid out and we&rsquo;ll for sure link that in the notes because I&rsquo;ve been reading through it and frantically creating my own, so I just want to thank you for that. You know, you&rsquo;re inspiring, you&rsquo;re inspiring everyone, including myself, so thank you. &nbsp;</span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you, Laura. I love that you have checked out my life plan and that you are writing your own life plan. A comment on that. I think that the Disability community tends to experience very acutely phenomena that affects everyone more generally. So the isolation of a pandemic has affected everyone, but the Disability community experiences that isolation in very acute ways. I mean, a small example, when lockdown started, my personal care attendant wasn&rsquo;t allowed to come to my house, so&mdash;according to the state guidelines. So there&rsquo;s this trend of when&mdash;another example is natural disasters or fires, so in these kinds of disasters, it negatively affects everyone, but sometimes it fatally affects disabled people, who can&#39;t get out of their house or can&#39;t get transportation or can&#39;t have electricity that keeps their breathing machine on. So I mention this because you were saying that you want to create your own life plan, and I love that, and I think that I have realized&mdash;and this makes me a bit sad: So many people in their lives, so many people in the world are not living the lives that they want to live. And Disabled people experience this acutely when their&mdash;the path to their dream is blocked by stairs or other barriers. But&mdash;I don&#39;t really call this a disability, but one of my most fundamental struggles has been with how I manage my time. I&#39;m not sure how many of you out there are procrastinators, but I have been quite a procrastinator for most of my life and that is one of my&mdash;one of the things that I&#39;ve tried to overcome. So it isn&#39;t&hellip; I&mdash;that&#39;s another&hellip;that&#39;s another thing, Lindsey, you had asked, what drove me to go from just surviving to thriving? Part of it also was, society does not make it easy for me to live my life, but there are also things that I do to myself that&mdash;that aren&#39;t how I would choose to act. So I asked myself, &ldquo;How can I make sure that everything, every choice I make, every thing that I do is in service of achieving the life that I want to live?&rdquo; </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> Yeah, I, you know it&rsquo;s so easy for, for people in circumstances that are traumatic, that are unchosen, to adopt kind of this victim mentality which is totally, totally like a natural response to that, right? We don&#39;t get to choose the traumas that happen to us, we don&#39;t get to choose, you know, our physical attributes or what our childhoods were like or all of these different things. And from a therapy standpoint there&rsquo;s so much that you can understand and, maybe not even understand, but recognize and validate that the trauma or the traumatic experience or whatever the experience may be was brutal and unfair and not chosen. And then there&#39;s the &ldquo;and&rdquo;. And the &ldquo;and&rdquo; is so hard. It&rsquo;s like yes, this was terrible and now, even though it&#39;s unfair, it&#39;s our job to heal it, or it&rsquo;s our job to fix it. And taking that radical responsibility of &ldquo;I am an autonomous being, I am the one that makes decisions for my life&rdquo; is such an incredibly healing tool if we can step out of, kind of that victim mentality. And it sounds like you&#39;ve done that so, so beautifully. Unfortunately I think that it takes, you know, a willingness to have conversations like this, or like you pointed out, these acute happenings, right, these really&hellip;I think of like the, you know, George Floyd for example, right? And these huge, shocking, earth-shattering things that need to happen to start these conversations. So are there any organizations, are there any ways that people who want to get involved, who want to start stopping ableism, who want to elevate these conversations and these voices, how can people get involved?</span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you so much for that question. I wish I had an easy answer to this. I will start with a book recommendation. It is an anthology of essays, it&#39;s called &ldquo;Disability Visibility&rdquo; collected by an amazing Disabled Chinese American activist named Alice Wong, and I recommend that book to everyone. I spend a lot of time thinking about Disability and so when I started reading the book I thought, &ldquo;All right, well I&#39;m not really expecting to be surprised here but I am just interested,&rdquo; and I was completely wrong. It taught me so much, it opened my mind so much, so I highly recommend it to all of you listening. Alice also had a podcast by the same name, &ldquo;Disability Visibility.&rdquo; They concluded their hundredth episode and are&mdash;have concluded the podcast itself, but all the episodes are still available. So these are some examples of how people can educate themselves. And in terms of going from education to action, a few things I&#39;ll say. One is to use your voice to amplify ours. So if you read &ldquo;Disability Visibility&rdquo; and it resonates with you, or it teaches you something, share it with your network. Don&#39;t just keep it to yourself. If you like any of my essays, feel free to share them. If you like any writing or any work from other Disabled activists, share them. And, so that&rsquo;s another thing. I will also say you can become aware of, and if this is, if this is your style, if it&rsquo;s not, you can try it out, like calling your representatives and influencing your&mdash;those who represent you in government about some of the most difficult issues that the Disability community is facing. I mentioned nursing homes earlier, so institutionalization is a big problem. So the Disability community has a campaign called &ldquo;Our homes, not nursing homes.&rdquo; So we need support for being able to survive and thrive in our communities. And I think those are some&mdash;some tips for now. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> Can you also share with listeners - First and foremost we will link all of those different things in the show notes because I think that&#39;s so important for people to to get involved with - but can you share with listeners, I know I mentioned at the onset of the show that Laura, Arielle, and I all cried reading your letter to your younger self. So can&mdash;and I might cry again, it would not be my first time on the show crying, here we go. (Laughter) I&#39;ve been holding &lsquo;em back all episode. Could you kind of share with listeners what the evolution was of your muscular dystrophy and looking back, you know, with the woman that you are now and giving that advice to that younger self, can you kind of pair those two and tell the story of how that, how that unfolded for you? </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> I, I like that you used the word &ldquo;evolution&rdquo; because muscular dystrophy is known as progressive, and some people find this ironic because progression is thought of as positive, and for me, for muscular dystrophy, progressive means I lose my muscles over time. Yet, I don&#39;t find that ironic, because&hellip;my body changes, so the definition of&mdash;the definition of progressive is something that changes and makes progress. </span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">Sharing more of this evolution, when I was born my parents didn&#39;t know whether I had a diagnosis. When I was a child, my mother would try to have me say &ldquo;Mama&rdquo; but I could only say &ldquo;Nana&rdquo; because I couldn&#39;t close my lips, and when my parents would bathe me I would get soap in my eyes and I couldn&#39;t close my eyes tightly enough to keep the soap out, and so I would cry and cry and they didn&#39;t understand why. When I entered elementary school, I had that same facial weakness and I also&mdash;my parents also found out, that I was hard of hearing, so they got me hearing aids and I used to have what was called an FM system for the teacher to wear. I don&#39;t wear hearing aids anymore. I could tell you a bit more about why not. Basically they&rsquo;re very uncomfortable and I&hellip;I prefer to go about life not wearing them. They also made sounds too loud. I just felt they didn&#39;t really help me. Going back to your question, going back to another of your questions, Lindsey, you asked how can people stop ableism. Part of it is a mindset change. Disabled people are people, Disabled people have a right to live, Disabled people have a right to live how they want to live. So I&#39;ve had people in my life saying, &ldquo;You should be wearing your hearing aids. Why aren&#39;t you wearing your hearing aids?&rdquo; Well, Disabled people deserve to live how they want to live. I want to live without my hearing aids. And people I rely on to brush my hair, they tell me, &ldquo;Your hair is too long. It&#39;s too difficult to take care of.&rdquo; Well, what that says to me is that my body is not mine, my body doesn&#39;t belong to me, that I don&#39;t deserve the same level of care or autonomy over myself as someone who was born with muscles. So I question that, I challenge that, and I want others to question and challenge how they think about the rights of Disabled people. </span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So, elementary school, hearing aids. Then around the age of eight I noticed I couldn&#39;t lift my arms above my head. I had never been able to run as fast or for as long as my classmates, but the age of eight is when I couldn&#39;t do the runner&rsquo;s stretch in PE. And (laughter) earlier I mentioned that I&#39;ve always been fond of athletes and have good&mdash;have had good relationships with them, and at the same time I have never liked PE. PE was always such a struggle for me, and running the mile there were&mdash;it was, it was so tragic. At the end of running the mile, there were always two students left. One was me and the other was a boy who had had leukemia. So cancer is sometimes considered part of the Disability world. So the two of us were shamed not being able to run the mile very fast. But when I couldn&#39;t do the runner&#39;s stretch anymore in PE, my parents took me around to many different doctors, got my diagnosis. It&#39;s called infantile onset facioscapulohumeral muscular dystrophy. And then around the age of 14 I hit my growth spurt, my bones started growing a lot faster than my muscles could catch up, I had a harder time walking, for going long distances I would need a mobility device. I&#39;ll tell you the story&mdash;I know we&#39;re coming up on time, but if you&rsquo;re interested, I&#39;ll tell you the story of my first powered mobility device. There&#39;s an event that happens, I think every year, called the Abilities Expo where many companies and organizations go to show off what they&#39;re working on, and there for the first time I tried out a scooter, a powered scooter. Some people call it a grandma scooter, but that&#39;s okay. If I can live to be a grandma age, I&#39;ll be happy. (laughter) So when I was trying out this scooter, it felt so liberating. People often think of a wheelchair as a symbol of deficit, but in my experience wheelchairs enable mobility. Here&mdash;I would go nowhere without my wheelchair, quite literally. So I started using this scooter at the age of 14, mostly out of the house. By the age of 16, I think, I was using a power wheelchair at home also. In college I was still able to stand, but not quite. When I was standing I didn&#39;t have any abdominal muscles, so I would be facing up at the sky and maybe I could take a few steps, but couldn&#39;t see where I was going, and it was not very safe. I made it through college without much personal care help, and now I&#39;m 29 years old. I lost the ability to stand many years ago, and over the past year I&#39;ve lost more muscles in my hand and in my legs. </span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">So Lindsey, you asked what would I tell myself? What I still tell myself is that change is good. Progress is good. Progressive is good. When I lost this most recent muscle in my stronger hand, I was&mdash;I was sad, I was a bit discouraged, but I also said, &ldquo;Let me use this as an opportunity to engineer something better than I had before.&rdquo; So I&#39;m working on technological innovations for expressing my thoughts, and that loss of ability has given me motivation to pursue those innovations. </span></p><p class="c1"><span class="c0"></span></p><p class="c2"><span class="c0">Sorry, I&#39;ll say one more thing, and this is, this is where as a side note, I have realized I&#39;m a very strange person. It&#39;s okay, I enjoy it, I like it, I own it, and I have a feeling I would be a strange person even if I weren&#39;t Disabled. So one of the things that is strange&mdash;that some people might find strange, is I tend to think very philosophically and I also think a lot about death. Not in the sense of that I want to die. I don&#39;t want to die. When the world is telling me that I should be dead, I even&mdash;I have all the more reason to want to live. But I bring it up because on this topic of change, death is the ultimate stasis. So people fear change, people also fear death, and I find that incongruous. If you fear death, you should love change. And so I had&mdash;growing up I didn&#39;t love change. (laughter) I think it was just a personality trait. But I have learned and chosen to love change, including how my body changes. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> Thank you for sharing that. I feel like for so many people, we get so caught up in the idea that change has to be bad and that it means something bad is coming or that there&#39;s something wrong with us, because we&#39;re changing or growing or evolving, and for you to just be able to embrace the fact that change means an opportunity that&#39;s so huge. I mean for literally anybody to be able to use that line of thinking instead of fearing change, like leaning into it like you&#39;re saying, I love that so much. So, Aubrie, if people want to keep up with you, if they want to know more about what you&#39;re doing, if they want, we&#39;ll link some things for you, but where can people find you outside of that? </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you. I&mdash;it&rsquo;s so funny, I just made a Link Tree this morning so I have a Link Tree <a href="https://linktr.ee/aubrielee" target="_blank" tabindex="0">linktr.ee/aubrielee</a>, no spaces, no dashes. And I love hearing from people, so feel free to send me an email. I&rsquo;m at <a href="mailto:_@aubrielee.com" target="_blank">_@aubrielee.com</a>. Feel free to reach out on <a href="https://www.instagram.com/aubrieality/" target="_blank" tabindex="0">Instagram</a>, on <a href="https://twitter.com/Aubrie_Lee" target="_blank" tabindex="0">Twitter</a>, check out my website, and I look forward to hearing from you, and let&#39;s be friends. And thank you, Lindsey and Arielle and Laura. I have had so much fun today. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Lindsey:</span> Same. Thank you so much, Aubrie. I, I don&#39;t think I speak for myself when I say this is by far probably like the most inspirational and incredible conversation we&#39;ve had, so thank you so, so much from the bottom of our hearts. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you. I&mdash;people who know me well know I love to talk, so this, (laughter) I&rsquo;m just honored that you&mdash;that you enjoyed listening. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speaker">Interviewers:</span> Aubrie, we&rsquo;re so honored to be here with you. </span></p><p class="c1"><span class="c0"></span></p><p class="noIndent c2"><span class="c0"><span class="speakerAubrie">Aubrie:</span> Thank you so much. Till next time.</span></p>
+.show {
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    transition: 2s ease;
+}
 
-            <div class="">
-        <img id="loneLogo" src="Aubrie-Lee_AL-Ambigram-Logo_White.png" alt="An ambigram formed from an A and an L. It can never be upside down." />
-    </div>
-            
-            <!-- <div class="spaceBlock"></div> -->
+.gradient {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, .3)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, .1) 90%, rgba(0, 0, 0, .3));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, .1) 90%, rgba(0, 0, 0, .3));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, .1) 90%, rgba(0, 0, 0, .3));
+    z-index: 5;
+}
 
+#splitringprocess {
+    background: #dbdae2;
+}
 
-        </div>
-        
-    </div>
+#rockingspiderprocess {
+    background: #c0c0c0;
+}
 
-</body>
+#infinityringimg {
+    width: 100%;
+    height: auto;
+}
 
-</html>
+#infinityringprocess {
+    background: #bcbcb9;
+}
+
+#butterflylockprocess {
+    background: #dbdbdb;
+}
+
+#butterflylockprocessimg {
+    height: 110%;
+}
+
+#auryxheadphones {
+    background: #fff;
+}
+
+#stilllifewithstringsimg {
+    width: 100%;
+    height: auto;
+    top: 0px;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+}
+
+#sembleimg {
+    width: 100%;
+    height: auto;
+}
+
+#cdcoverimg {
+    width: 100%;
+    height: auto;
+}
+
+#bioengineeringimg {
+    width: 100%;
+    height: auto;
+    top: 0;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+}
+
+#nimbus {
+    background: #d3d3d3;
+}
+
+#nimbusimg {
+    width: 30%;
+    max-width: 50%;
+    height: auto;
+    top: 40%;
+}
+
+#loveloseimg {
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: auto;
+    margin: auto;
+    z-index: 10;
+
+    -webkit-filter: invert(0%);
+
+            filter: invert(0%);
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+
+#logo.inverted {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+#about {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    background: #fff;
+    width: 100%;
+    min-height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    opacity: 0;
+}
+
+#about.hidden {
+    opacity: 0;
+    
+    /*z-index has to transition more slowly than opacity,
+    otherwise visual jumps*/
+    -webkit-transition: opacity 1s, z-index 2s;
+    -moz-transition: opacity 1s, z-index 2s;
+    transition: opacity 1s, z-index 2s;
+    
+    z-index: 0;
+}
+
+#about.visible {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: 2;
+}
+
+#about.visibleOnLoad {
+    z-index: 2;
+    opacity: 1;
+}
+
+/*Contains the content of the about page*/
+#narrower {
+    max-width: 680px;
+    margin: auto;
+    padding-top: 6vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    opacity: 0;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+#narrower.visible {
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.expandable {
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    transition: color .25s;
+}
+
+button.active, .expandable:hover {
+    color: var(--linkColorHover);
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    transition: color .25s;
+}
+
+.expandable:hover .indicator {
+    -webkit-transition: opacity .25s;
+    -moz-transition: opacity .25s;
+    transition: opacity .25s;
+    opacity: 1;
+}
+
+.indicator.stay {
+    opacity: 1;
+}
+
+.writing {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+}
+
+.writing.active {
+    opacity: 1;
+    padding-bottom: 2rem;
+}
+
+/*For lone articles not linked from about page*/
+
+.loneArticle {
+    max-width: 680px;
+    margin: auto;
+    padding-top: 4vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.loneTitle {
+    display: block;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Vollkorn SC', Garamond, serif;
+    text-align: center;
+    color: var(--linkColor);
+}
+
+.loneWriting p, li, h2 {
+    margin-bottom: 1em;
+}
+
+#loneLogo {
+    display: block;
+    padding-bottom: 120px;
+    padding-top: 30px;
+    height: 80px;
+    width: auto;
+    margin: auto;
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+}
+
+/*Gives room for the logo when page is scrolled all the way down*/
+.spaceBlock {
+    height: calc(18vh + 100px);
+}
+
+@-webkit-keyframes logoLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@keyframes logoLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes backgroundChange {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+/*Phone in portrait orientation*/
+@media only screen and (max-width: 600px) {
+    h2, h3, h4, p, li, button {
+        font-size: 100%;
+        line-height: 144%;
+    }
+
+    .break {
+        display: inline;
+    }
+    
+    /*socialDiamonds separate social media links on about page*/
+    .socialDiamond {
+        display: none;
+    }
+    
+    #logo {
+        max-height: 12.5%;
+        bottom: 12.5%;
+    }
+    
+    /*In case caption text stacks too high*/
+    .longergradient {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, .3)));
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .3));
+        background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .3));
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .3));
+        z-index: 5;
+    }
+
+    #splitringprocessimg {
+        top: 45%;
+    }
+
+    /*Fit entirety of certain landscape photos*/
+    #rockingspiderimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #rockingspiderprocessimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #skeletonkeyprocessimg {
+        -webkit-transform: translate(-60%, -50%);
+            -ms-transform: translate(-60%, -50%);
+                transform: translate(-60%, -50%);
+    }
+
+    #butterflylockimg {
+        max-width: 120%;
+        height: auto;
+    }
+
+    #butterflylockprocessimg {
+        height: 90%;
+    }
+
+    #originhairclipimg {
+        height: 150%;
+        -webkit-transform: translate(-63%, -45%);
+            -ms-transform: translate(-63%, -45%);
+                transform: translate(-63%, -45%);
+    }
+    
+    #auryxheadphones {
+        background: black;
+    }
+
+    #auryxheadphonesimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #stilllifewithstringsimg {
+        -webkit-transform: translate(-65%);
+            -ms-transform: translate(-65%);
+                transform: translate(-65%);
+    }
+
+    #midmoonimg {
+        width: 150%;
+        height: auto;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
+    #figuredrawingimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #dogfiguredrawingimg {
+        -webkit-transform: translate(-65%, -50%);
+            -ms-transform: translate(-65%, -50%);
+                transform: translate(-65%, -50%);
+    }
+
+    #birdglersimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #tricingpendantimg {
+        -webkit-transform: translate(-58%, -50%);
+            -ms-transform: translate(-58%, -50%);
+                transform: translate(-58%, -50%);
+    }
+
+    #tainimg {
+        width: 150%;
+        height: auto;
+    }
+
+    #sembleimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #bioengineeringimg {
+        height: 100%;
+        width: auto;
+    }
+
+    #solardecathlonimg {
+        -webkit-transform: translate(-59%, -50%);
+            -ms-transform: translate(-59%, -50%);
+                transform: translate(-59%, -50%);
+    }
+
+    #nimbusimg {
+        width: 75%;
+        max-width: 75%;
+        height: auto;
+        top: 40%;
+    }
+
+    #facioimg {
+        -webkit-transform: translate(-45%, -50%);
+            -ms-transform: translate(-45%, -50%);
+                transform: translate(-45%, -50%);
+    }
+}
+
+/*Phone in landscape orientation*/
+@media only screen and (max-width: 800px) {
+    h2, h3, h4, p, li, button {
+        font-size: 100%;
+        line-height: 144%;
+    }
+
+    #logo {
+        max-height: 10%;
+        bottom: 12.5%;
+    }
+}
+
+/*Part of getting this particular image to behave.
+133 is from the aspect ratio of the artwork,
+so whenever the browser window is too narrow,
+the artwork goes by height instead of width*/
+@media only screen and (max-width: 133vh) {
+    #stilllifewithstringsimg {
+        height: 100%;
+        width: auto;
+    }
+}
+
+/*For 16:9 image*/
+@media only screen and (max-width: 178vh) {
+    #infinityringimg {
+        height: 100%;
+        width: auto;
+    }
+    
+    #bioengineeringimg {
+        height: 100%;
+        width: auto;
+    }
+}
