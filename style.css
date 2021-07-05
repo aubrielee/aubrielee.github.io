@@ -153,6 +153,10 @@ p.noIndent {
     text-align: center;
 }
 
+.altText {
+    font-style: italic;
+}
+
 ul {
     list-style-type: none;
     padding-left: 3rem;
