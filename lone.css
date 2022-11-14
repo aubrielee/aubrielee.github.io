@@ -59,6 +59,7 @@ body.showOverflow {
 
 .altText {
     font-style: italic;
+    padding-bottom: 1em;
 }
 
 /*Main name*/
@@ -81,8 +82,19 @@ h2 {
 h3 {
     font-size: 1.25rem;
     font-weight: 400;
+    text-align: center;
     white-space: nowrap;
-    padding-top: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.bioPhoto {
+    display: block;
+    margin: 1em auto 1em auto;
+
+    height: auto; 
+    width: auto; 
+    max-width: 400px;
 }
 
 /*Line break to display only on mobile*/
@@ -146,12 +158,12 @@ ul {
 }
 
 ul li:before {
-	content: "\29eb";
-	position: absolute;
+    content: "\29eb";
+    position: absolute;
     
     /*Halfway between margin and list item, with approximate sizing for half of lozenge*/
     padding-left: 1.4rem;
-	left: 0;
+    left: 0;
 }
 
 ol {
