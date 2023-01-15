@@ -1,1 +1,4 @@
 include: [".well-known"]
+
+baseurl: "/writing"
+BASE_PATH: aubrielee.com/writing
