@@ -3,26 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/lone.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:400,600,700,900" rel="stylesheet">
   </head>
 
   <body>
     <nav>
-      <a href="/">Home</a>
+      <a href="/home.md" class="topName">Aubrie Lee</a>
+      <br>
+      <a href="/art.html">art</a>
+      <a href="/writing.html">writing</a>
+      <a href="/">more</a>
+      <!-- <a href="/">contact</a> -->
     </nav>
-    <h1>{{ page.title }}</h1>
-    <section class="loneArticle">
-      {{ content }}
+    <div class="narrowed">
+      <h1>{{ page.title }}</h1>
+      <section>
+        {{ content }}
+      </section>
 
-        <div class="">
-        	<p>I appreciate support of any kind, whether that's sharing this article or treating me to something yummy:</p>
-        	</br>
-        	<p>Venmo: <strong>@aubrie</strong></p>
-        	<p>Kofi:</p>
-        	<div class='iframeDiv'>
-      			<iframe id='kofiframe' src='https://ko-fi.com/aubrielee/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;' height='712' title='aubrielee'></iframe>
-      		</div>
-    	</div>
-    </section>
+      <img id="logoSign" src="Aubrie-Lee_AL-Ambigram-Logo_White.png" alt="An ambigram formed from an A and an L. It can never be upside down." />
+
+      <section>
+        <h2>like my work?</h2>
+        <p>I appreciate support of any kind, whether that's sharing this page, telling me what you thought, or treating me to something yummy:</p>
+        </br>
+        <p>Venmo: <a href="https://account.venmo.com/u/aubrie"><b>@aubrie</b></a></p>
+        <p>PayPal: <a href="https://www.paypal.com/paypalme/aubrieality"><b>aubrieality</b></a></bold></p>
+        <p>Kofi:</p>
+        <div class='iframeDiv'>
+          <iframe id='kofiframe' src='https://ko-fi.com/aubrielee/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;' height='712' title='aubrielee'></iframe>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
