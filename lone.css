@@ -394,6 +394,22 @@ button.active, .expandable:hover {
             filter: invert(100%);
 }
 
+.iframeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: #f9f9f9;*/
+    /*max-height: 712px;*/
+}
+
+#kofiframe {
+    /*background appears to be mandated by kofi iframe*/
+    background: #f9f9f9;
+
+    padding-top: 2em;
+    /*max-width: 200px;*/
+}
+
 /*Gives room for the logo when page is scrolled all the way down*/
 .spaceBlock {
     height: calc(18vh + 100px);
