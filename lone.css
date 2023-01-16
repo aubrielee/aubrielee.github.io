@@ -31,8 +31,7 @@ body {
     /*This is necessary for having carousel inherit this height*/
     height: 100%;
     
-    width: 100%;    
-    overflow: hidden;
+    width: 100%;
 }
 
 body.showOverflow {
