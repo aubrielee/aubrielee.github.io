@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/lone.css">
+    <link rel="stylesheet" href="lone.css">
   </head>
 
   <body>
@@ -11,11 +11,14 @@
       <a href="/">Home</a>
     </nav>
     <h1>{{ page.title }}</h1>
-    <section>
+    <section class="loneArticle">
       {{ content }}
-      <div>
-      	<iframe id='kofiframe' src='https://ko-fi.com/aubrielee/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='aubrielee'></iframe>
-      </div
+
+        <div class="">
+        	<p>I appreciate support of any kind, whether that's sharing this article or treating me to something yummy:</p>
+        	</br>
+      		<iframe id='kofiframe' src='https://ko-fi.com/aubrielee/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;' height='712' title='aubrielee'></iframe>
+    	</div>
     </section>
   </body>
 </html>
