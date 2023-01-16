@@ -1,6 +1,4 @@
 include: [".well-known"]
 
-baseurl: "/writing"
-
 plugins:
   - jekyll-feed
