@@ -24,7 +24,7 @@
 body {
     font-family: 'Vollkorn SC', Garamond, serif;
     font-size: 100%;
-    /* line-height: 2em; */
+    line-height: 2em;
 }
 
 /* focus */
@@ -95,7 +95,6 @@ hr {
     /* background-color: antiquewhite; */
     max-width: var(--narrowWidth);
     margin: auto;
-    /* padding-top: 2vh; */
     padding-left: 4vh;
     padding-right: 4vh;
 }
