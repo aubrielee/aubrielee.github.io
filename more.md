@@ -3,7 +3,9 @@ layout: default
 title: More
 permalink: /more
 ---
-<p class="noIndent centeredText">
+Feel free to reach out:
+
+<p class="noIndent centeredText social">
     Email: <a href="mailto:_@aubrielee.com" target="_blank" class="emailA" >_@aubrielee.com</a>
     <a href="https://www.patreon.com/aubrielee" target="_blank"><i class="fab fa-patreon"></i></a>
     <!-- <span class="socialDiamond">&blacklozenge;</span> -->
