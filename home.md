@@ -11,6 +11,7 @@ You can reach out to me if you’re seeking:
 - A Disabled, Asian American fashion model
 - A thought-provoking conversation and a new friend
 <br>
+
 A bit of my journey:
 {: .noIndent }
 
