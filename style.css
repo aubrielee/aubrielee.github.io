@@ -105,12 +105,12 @@ hr {
     padding-right: 4vh;
 }
 
-/*Main name*/
+/*Main name. commented out while h1 is assigned to topName of Aubrie Lee*/
 h1 {
-    font-size: 2rem;
+    /* font-size: 2rem;
     font-weight: 400;
     padding-bottom: 1rem;
-    text-align: center;
+    text-align: center; */
 }
 
 /*About page section headings*/
