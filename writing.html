@@ -1,26 +1,34 @@
 ---
-layout: page
+layout: default
 title: Writing
-permalink: /writing/
+permalink: /writing
 ---
 
 {% if site.posts.size > 0 %}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "articles" }}</h2> -->
     <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+        {% for post in site.posts %}
+        <li>
+        <a class="post-link" href="{{ post.url }}">
+        {{ post.title | escape }}
+        </a>, {{ post.date | date: %Y }}
+        <!-- {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %} -->
+        <!-- <span class="post-meta">{{ post.date | date: %Y }}</span> -->
         {% if site.show_excerpts %}
-          {{ post.excerpt }}
+            {{ post.excerpt }}
         {% endif %}
-      </li>
-      {% endfor %}
+        </li>
+        {% endfor %}
     </ul>
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
-  {% endif %}
+
+    <h3>published elsewhere</h3>
+    <ul class="mainUl">
+        <li><a href="https://disabilityvisibilityproject.com/2021/10/12/20-questions-for-disability-inclusive-employers/" target="_blank" tabindex="0">20 Questions for Disability-Inclusive Employers</a>, Disability Visibility Project, 2021.</li>
+        <li><a href="https://blog.google/outreach-initiatives/accessibility/here-loud-disabled-and-proud/" target="_blank" tabindex="0">We’re here, we’re loud, we’re disabled and proud</a>, Google blog, 2021.</li>
+        <li><a href="https://rootedinrights.org/the-hardest-part-of-being-disabled-is-being-ignored/" target="_blank" tabindex="0">The Hardest Part of Being Disabled is Being Ignored</a>, Rooted in Rights, 2020.</li>
+        <li><a href="https://www.nmdunited.org/single-post/ss-aubrie-lee" target="_blank" tabindex="0">A letter to my younger self</a>, NMD United, 2020.</li>
+        <li><a href="https://theletterwriterscollective.com/2021/04/11/to-a-future-me/" target="_blank" tabindex="0">A letter to my future self</a>, The Letter Writers, 2021.</li>
+        <li><a href="https://manhassetlibrary.org/aubrie-lee/" target="_blank" tabindex="0"><span class="pieceTitle">No Bility</span></a>, exhibited at the Manhasset Public Library, 2016, and featured on <a href="https://www.fshdsociety.org/finding-beauty-in-disability/" target="_blank" tabindex="0">FSHD Society</a>, 2018.</li>
+    </ul>
+<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
+{% endif %}
