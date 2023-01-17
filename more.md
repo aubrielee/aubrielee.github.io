@@ -3,13 +3,14 @@ layout: default
 title: More
 permalink: /more
 ---
-Feel free to reach out:
+Feel free to connect:
+{: .noIndent}
 
 <p class="noIndent centeredText social">
     Email: <a href="mailto:_@aubrielee.com" target="_blank" class="emailA" >_@aubrielee.com</a>
     <a href="https://www.patreon.com/aubrielee" target="_blank"><i class="fab fa-patreon"></i></a>
     <!-- <span class="socialDiamond">&blacklozenge;</span> -->
-    <a href="https://verse.aubrielee.com/@Aubrie" target="_blank"><i class="fa-brands fa-mastodon"></i></a>
+    <a href="https://verse.aubrielee.com/@Aubrie" target="_blank"><i class="fab fa-mastodon"></i></a>
     <a href="https://twitter.com/Aubrie_Lee" target="_blank" ><i class="fab fa-twitter"></i></a>
     <!-- <span class="socialDiamond">&blacklozenge;</span> -->
     <br class="break">
