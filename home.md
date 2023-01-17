@@ -26,9 +26,16 @@ I have always loved creating art, whether with painted lines or written ones. In
 ## my interests
 - Self-improvement. Check out <a href="https://medium.com/@aubrie/how-to-make-a-life-plan-and-actually-follow-it-801e5335a63a" target="_blank" tabindex="0"><span class="pieceTitle">How to make a life plan and actually follow it</span></a>
 - Collecting the <a href="https://www.reddit.com/r/Handwriting/comments/ndcful/help_me_collect_the_handwriting_of_the_world_if/" target="_blank" tabindex="0">handwriting of the world</a>
+- 3D creation in Blender. Here are some <a href="https://cgcookie.com/u/aubrie" target="_blank" tabindex="0">experiments</a> hosted on CG Cookie.
 - Neuroscience, metacognition, consciousness, lucid dreaming, mind management
 - Systems theory, behavioral science, sociology, social change
 - Philosophy, metaphysics
 - Riddles, lateral thinking
 - Linguistics, polyglottery, wordplay
 - The study of humor
+
+## favorite works
+- [Merusa](https://www.instagram.com/p/CkZ0RtRL4HY/?utm_source=ig_web_copy_link), self-portrait, 2022.
+- <a href="https://med.stanford.edu/content/dam/sm/medicineandthemuse/documents/Fall-2018.pdf#page=13" target="_blank" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford's Anastomosis journal</a>, 2018.
+- <a href="http://hekint.org/2017/01/22/cadaver-palavers/" target="_blank" tabindex="0"><span class="pieceTitle">Cadaver Palavers</span></a>, a poem published on Hektoen International Journal of Medical Humanities, 2011.
+- <a href="https://www.youtube.com/watch?v=cNyE5ZhvGDI" target="_blank" tabindex="0"><span class="pieceTitle">Science Campus</span></a>, art film. Finalist in Stanford Art of Science Competition, 2013.
