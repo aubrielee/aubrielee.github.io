@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-Welcome to my experiment of a hand-coded website – so kind of you to stop by!<br>
+Welcome to my self-coded website – so kind of you to stop by!<br>
+{: .noIndent }
 
-You can reach out to me if you’re looking for:
+You can reach out to me if you’re seeking:
 - A speaker or panelist for Disability inclusion
 - A Disabled, Asian American fashion model
 - A thought-provoking conversation and a new friend
