@@ -78,11 +78,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         //loading carousel is handled in siema onInit
         loadCorrectPlace: function () {
-            if (anchor === '') {
-                console.log('no anchor');
-                loadAbout();
-            }
-            else if (anchor === '#about') {
+            if (anchor === '#about') {
                 loadAbout();
             } //Load one of the expandables
             else if (anchor !== '' && !!document.querySelector('button' + anchor)) {
@@ -96,23 +92,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                 navManager.expandSection(anchor.substr(1));
             } //No anchor or unknown anchor.Push to first element in slideshow
-            else if (firstIndex <= 0) {
-
-                // aboutPage.classList.add('visibleOnLoad');
-                // aboutContent.classList.add('visible');
-                // page.classList.add('showOverflow');
-                // logo.classList.add('inverted');
-
-                // aboutGradient.classList.add('hidden');
-
-                loadAbout();
-
-                console.log('loadCorrectPlace' + aboutPage.classList.contains('visibleOnLoad'));
-                
-                // setTimeout(function () {
-                    // siema.goTo(0);
-                    // navManager.pushTo(siema.innerElements[0].id);
-                // }, 1000);
+            else if (firstIndex <= 0) {                
+                setTimeout(function () {
+                    siema.goTo(0);
+                    navManager.pushTo(siema.innerElements[0].id);
+                }, 1000);
             }
         }
     };
@@ -177,19 +161,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
         startIndex: getStartIndex(),
         onInit: function () {
             //First slide loaded shows up
-            if (document.location.hash !== '') {
-                this.innerElements[this.currentSlide].classList.add('show');
-                console.log('siema init');
-                console.log(document.location.hash);
-                console.log(aboutPage.classList);
-                console.log(aboutPage.classList.length);
-                console.log(aboutPage.classList.contains('visibleOnLoad'));
+            this.innerElements[this.currentSlide].classList.add('show');
+            console.log('siema init');
+            console.log(document.location.hash);
+            console.log(aboutPage.classList);
+            console.log(aboutPage.classList.length);
+            console.log(aboutPage.classList.contains('visibleOnLoad'));
 console.log('java');
-                [].forEach.call(aboutGradient, function (item) {
-                    item.classList.add('hidden');
-                    console.log('hid');
-                })
-            }
+            [].forEach.call(aboutGradient, function (item) {
+                item.classList.add('hidden');
+                console.log('hid');
+            })
             
         },
         onChange: (function () {
