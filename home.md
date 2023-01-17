@@ -10,8 +10,9 @@ You can reach out to me if you’re seeking:
 - A speaker or panelist for Disability inclusion
 - A Disabled, Asian American fashion model
 - A thought-provoking conversation and a new friend
-
+<br>
 A bit of my journey:
+{: .noIndent }
 
 I’m a professional namer at Google, where I’ve had the honor of being part of several marketing teams since 2013 and attending an executive training at Wharton (here are my notes).
 
