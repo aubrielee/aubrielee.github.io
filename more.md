@@ -103,7 +103,6 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - <a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.
 - <a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.
 - Highlighted in the <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Mountain View Voice</a> for the 2014 Disability Pride Parade.
-</ul>
 
 ## more disability work
 - Collaborated on <a href="https://disabilityisdiversity.com/team" target="_blank" tabindex="0">Disability is Diversity</a> campaign for the entertainment industry, 2022. Featured on <a href="https://tiltingthelens.com/2022/10/01/the-campaign-calling-for-disabled-representation-in-film-tv/" target="_blank" tabindex="0">Tilting the Lens</a>.
