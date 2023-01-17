@@ -6,25 +6,7 @@ permalink: /more
 Feel free to connect:
 {: .noIndent}
 
-<p class="noIndent centeredText social">
-    Email: <a href="mailto:_@aubrielee.com" target="_blank" class="emailA" >_@aubrielee.com</a>
-    <a href="https://www.patreon.com/aubrielee" target="_blank"><i class="fab fa-patreon"></i></a>
-    <!-- <span class="socialDiamond">&blacklozenge;</span> -->
-    <a href="https://verse.aubrielee.com/@Aubrie" target="_blank"><i class="fab fa-mastodon"></i></a>
-    <a href="https://twitter.com/Aubrie_Lee" target="_blank" ><i class="fab fa-twitter"></i></a>
-    <!-- <span class="socialDiamond">&blacklozenge;</span> -->
-    <br class="break">
-    <a href="https://www.instagram.com/aubrieality/" target="_blank"><i class="fab fa-instagram"></i></a>                
-    <!-- <span class="socialDiamond">&blacklozenge;</span> -->
-    <br class="break">
-    <a href="https://www.youtube.com/AubrieLee" target="_blank" ><i class="fa fa-youtube-play"></i></a>
-    <!-- <span class="socialDiamond">&blacklozenge;</span> -->
-    <br class="break">
-    <a href="https://www.linkedin.com/in/aubrielee/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
-    <!-- <span class="socialDiamond">&blacklozenge;</span> -->
-    <br class="break">
-    <a href="https://www.facebook.com/Aubrieality" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-</p>
+{% include socials.html %}
 
 <div class="centerIg">
     <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CDJ5ZNrlCmP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
