@@ -19,21 +19,29 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - Past: [Inevitable Foundation](https://inevitable.foundation): Funding and mentoring the next generation of disabled screenwriters.
 
 ## speaking
-<li>Speaker at <a href="https://sustainabledevelopment.un.org/index.php?page=view&type=20000&nr=7770&menu=2993" target="_blank" tabindex="0">United Nations' High Level Political Forum</a>, 2021.</li>
-<li><a href="https://aubrielee.com/ncfitpodcast" target="_blank" tabindex="0">Podcast guest on NCFIT's Women Make Waves</a>, 2021.
-<li>Panelist at <a href="https://reelabilities.org/newyork/guest/aubrie-lee/" target="_blank" tabindex="0">ReelAbilities Film Festival: Fashion, Beauty And Disability</a>, 2021.
-<li>Panelist at <a href="https://stanfordwomenindesign.com/speakers" target="_blank" tabindex="0">Designing for Inclusion</a>, hosted by Stanford Womxn in Design, 2021. Featured in <a href="https://t.co/BMnb59nEfw?amp=1">the Stanford Daily</a>.</li>
-<li>Keynote speaker for the <a href="https://www.amatriangle.org/event/disabilities-matter-making-inclusive-marketing/" target="_blank" tabindex="0">American Marketing Association</a>, 2021.
-<li>Panelist at the <a href="https://www.inclusiveafrica.org/conference" target="_blank" tabindex="0">Inclusive Africa Conference 2020</a>.</li>
-<li><a href="https://dmtalliance.com/aubrie-lee/" target="_blank" tabindex="0">Mentor at the Global Accessibility Symposium</a> in Mountain View, 2019.</li>
-<li>Panelist at <a href="https://cloud.withgoogle.com/next18/sf/speakers/speaker/7D4365A4812A83EF" target="_blank" tabindex="0">Google Cloud Next 2018</a>.</li>
-<li>Interviewed for a film about <a href="https://youtu.be/tAGs7Vc1rm8?t=1m8s" target="_blank" tabindex="0">accessibility at Google I/O 2018</a>.</li>
+- Speaker at <a href="https://sustainabledevelopment.un.org/index.php?page=view&type=20000&nr=7770&menu=2993" target="_blank" tabindex="0">United Nations' High Level Political Forum</a>, 2021.
+- <a href="https://aubrielee.com/ncfitpodcast" target="_blank" tabindex="0">Podcast guest on NCFIT's Women Make Waves</a>, 2021.
+- Panelist at <a href="https://reelabilities.org/newyork/guest/aubrie-lee/" target="_blank" tabindex="0">ReelAbilities Film Festival: Fashion, Beauty And Disability</a>, 2021.
+- Panelist at <a href="https://stanfordwomenindesign.com/speakers" target="_blank" tabindex="0">Designing for Inclusion</a>, hosted by Stanford Womxn in Design, 2021. Featured in <a href="https://t.co/BMnb59nEfw?amp=1">the Stanford Daily</a>.
+- Keynote speaker for the <a href="https://www.amatriangle.org/event/disabilities-matter-making-inclusive-marketing/" target="_blank" tabindex="0">American Marketing Association</a>, 2021.
+- Panelist at the <a href="https://www.inclusiveafrica.org/conference" target="_blank" tabindex="0">Inclusive Africa Conference 2020</a>.
+- <a href="https://dmtalliance.com/aubrie-lee/" target="_blank" tabindex="0">Mentor at the Global Accessibility Symposium</a> in Mountain View, 2019.
+- Panelist at <a href="https://cloud.withgoogle.com/next18/sf/speakers/speaker/7D4365A4812A83EF" target="_blank" tabindex="0">Google Cloud Next 2018</a>.
+- Interviewed for a film about <a href="https://youtu.be/tAGs7Vc1rm8?t=1m8s" target="_blank" tabindex="0">accessibility at Google I/O 2018</a>.
 
 ## features
-<li><a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>, Yahoo News, and <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, In The Know, 2021.
-<li><a href="https://www.instagram.com/p/CDJ5ZNrlCmP/" target="_blank" tabindex="0">Featured on Google's Instagram</a> for the 30th anniversary of the Americans with Disabilities Act, 2020.</li>
-<li>Cameo in the <a href="https://www.youtube.com/watch?v=TQSaPsKHPqs&feature=youtu.be&t=2710" target="_blank" tabindex="0">CEO keynote at Google I/O 2019</a>.</li>
-<li><a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.</li>
-<li><a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.</li>
-<li>Highlighted in the <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Mountain View Voice</a> for the 2014 Disability Pride Parade.</li>
+- <a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>, Yahoo News, and <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, In The Know, 2021.
+- <a href="https://www.instagram.com/p/CDJ5ZNrlCmP/" target="_blank" tabindex="0">Featured on Google's Instagram</a> for the 30th anniversary of the Americans with Disabilities Act, 2020.
+- Cameo in the <a href="https://www.youtube.com/watch?v=TQSaPsKHPqs&feature=youtu.be&t=2710" target="_blank" tabindex="0">CEO keynote at Google I/O 2019</a>.
+- <a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.
+- <a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.
+- Highlighted in the <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Mountain View Voice</a> for the 2014 Disability Pride Parade.
 </ul>
+
+## more disability work
+- Collaborated on <a href="https://disabilityisdiversity.com/team" target="_blank" tabindex="0">Disability is Diversity</a> campaign for the entertainment industry, 2022. Featured on <a href="https://tiltingthelens.com/2022/10/01/the-campaign-calling-for-disabled-representation-in-film-tv/" target="_blank" tabindex="0">Tilting the Lens</a>.
+- Created <a href="https://www.cripcorps.com/" target="_blank" tabindex="0">cripcorps.com</a>, a collective disability justice blog, 2019.
+- Started the <a href="https://en.wikipedia.org/wiki/Crip_(disability_term)" target="_blank" tabindex="0">Wikipedia page for "Crip (disability term)"</a> and fought with the admins for a week before they approved it, 2019.
+- <a href="https://www.curbfreewithcorylee.com/2018/05/23/san-francisco-citypass/" target="_blank" tabindex="0">Guest writing</a> for a wheelchair travel blog, 2018.
+- <a href="https://web.archive.org/web/20151029174749/http://static.stanford.edu/2014/09/29/lack-sessibility-at-stanford/" target="_blank" tabindex="0"><span class="pieceTitle">Lack-sessibility</span></a>, a comic strip featured in <a href="https://web.archive.org/web/20170311212720/http://www.stanforddaily.com/an-overlooked-minority-disabled-students-discuss-shortfall-in-support/" target="_blank" tabindex="0">Stanford Daily</a>, 2014.
+- Co-founded Power2ACT, Stanford's disability student group (renamed to Stanford Disability Alliance in 2021), 2011.
