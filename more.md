@@ -1,6 +1,7 @@
 ---
 layout: default
 title: More
+permalink: /more
 ---
 <p class="noIndent centeredText">
     Email: <a href="mailto:_@aubrielee.com" target="_blank" class="emailA" >_@aubrielee.com</a>
