@@ -314,9 +314,13 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
 /*Phone in portrait orientation*/
 @media only screen and (max-width: 600px) {
     
-    /* Letterhead */
-    h1 {
-        padding-bottom: .2em;
+    nav a {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+
+    .topName {
+        font-size: 1.5rem;
     }
 
     .fab {
