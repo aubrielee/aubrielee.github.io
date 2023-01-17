@@ -76,8 +76,10 @@ I have a rare form of muscular dystrophy. The more I use my muscles, the weaker 
 - I have an accent of sorts. Ironically, even though I read lips, my lips don’t move when I talk. It may take you some time to understand my speech.
 - I’ve been using a power wheelchair full-time since I was a teenager. People tend to stand to my side when they talk to me, but it’s tough for me to turn my body to face them. You can face me directly, don’t worry. If you’re worried about being run over, I’m actually less likely to run you over if you’re where I can see you.
 <br>
+<br>
 
 Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.com.
+{: .noIndent}
 
 ## board membership
 - [NMD United](https://www.nmdunited.org/our-board): Connecting adults living with neuromuscular disabilities.
