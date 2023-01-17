@@ -52,7 +52,9 @@ nav a {
 }
 
 .active {
-    background-color: rgb(198, 241, 188);
+    /* background-color: rgb(198, 241, 188); */
+    font-weight: 700;
+    border-bottom: var(--underlineThickness) solid var(--linkColor);
 }
 
 a {
@@ -120,24 +122,11 @@ h2 {
     padding-top: 2rem;
 }
 
-#about h3 {
-    font-size: 1.25rem;
-    font-weight: 400;
-    white-space: nowrap;
-    padding-top: 2rem;
-}
-
-/*Carousel captions*/
 h3 {
     font-size: 1.25rem;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-h4 {
-    font-size: 1.25rem;
     font-weight: 400;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    padding-top: 2rem;
 }
 
 /*Line break to display only on mobile*/
