@@ -10,6 +10,7 @@
 }
 
 :root {
+    --narrowWidth: 720px;
     --linkColor: #004544;
     --linkColorHover: #27d6d6;
     --linkColorCarousel: #c0ffee;
@@ -33,14 +34,16 @@ a:focus {
 
 nav {
     text-align: center;
-    padding-top: 4vh;
-    padding-bottom: 2em;
+    margin-top: 4vh;
+    line-height: 2.5em;
+    margin-bottom: -1rem;
+    /* background-color: azure; */
 }
 
 nav a {
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1.5em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
     border-bottom: none;
 }
 
@@ -48,24 +51,57 @@ nav a {
     font-size: 2rem;
 }
 
-.narrowed {
-    background-color: antiquewhite;
-    max-width: 720px;
-    margin: auto;
+a {
+    text-decoration: none;
+    border-bottom: var(--underlineThickness) solid var(--linkColor);
+
+    /*font-weight: bold;*/
+    color: var(--linkColor);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
 }
 
-@media (max-width: 760px) {
-    body {
-        background-color: rgb(211, 176, 176);
-        padding-top: 2vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
-    }
+a:hover {
+    color: var(--linkColorHover);
+    border-bottom: var(--underlineThickness) solid var(--linkColorHover);
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s;
+}
+
+.diamond {
+    display: block;
+    font-family: monospace;
+    font-size: 1.5rem;
+    /* font-variant: small-caps; */
+    text-align: center;
+    margin: auto;
+    /* background-color: lavender; */
+}
+
+hr {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 1.25px;
+    width: calc(var(--narrowWidth)*1.06);
+    background: #000;
+    background-image: linear-gradient(to right, #fff, #000, #fff);
+}
+
+.narrow {
+    /* background-color: antiquewhite; */
+    max-width: var(--narrowWidth);
+    margin: auto;
+    /* padding-top: 2vh; */
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 /*Main name*/
 h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 400;
     padding-bottom: 1rem;
     text-align: center;
@@ -106,7 +142,7 @@ h4 {
 }
 
 /*socialDiamonds separate social media links on about page*/
-.diamond, .socialDiamond {
+.socialDiamond {
     font-family: monospace;
     font-variant: small-caps;
 }
@@ -167,17 +203,6 @@ li {
     font-size: 1.25rem;
 }
 
-a {
-    text-decoration: none;
-    border-bottom: var(--underlineThickness) solid var(--linkColor);
-
-    /*font-weight: bold;*/
-    color: var(--linkColor);
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    transition: .25s;
-}
-
 .social a, .social a:hover {
     border-bottom: 0;
 }
@@ -188,14 +213,6 @@ a {
 
 .fab {
     margin: 0 .2em 0 .2em;
-}
-
-a:hover {
-    color: var(--linkColorHover);
-    border-bottom: var(--underlineThickness) solid var(--linkColorHover);
-    -webkit-transition: .25s;
-    -moz-transition: .25s;
-    transition: .25s;
 }
 
 #logoSign {
@@ -247,6 +264,11 @@ a:hover {
             transform: rotate(180deg);
 }
 
+footer {
+    margin-top: 2rem;
+    margin-bottom: 4vh;
+}
+
 .iframeDiv {
     display: flex;
     align-items: center;
@@ -258,9 +280,10 @@ a:hover {
 #kofiframe {
     /*background appears to be mandated by kofi iframe*/
     background: #f9f9f9;
-
-    padding-top: 1em;
-    max-height: 580px;
+    border-radius: 20px;
+    max-width: 500px;
+    max-height: 570px;
+    padding-top: 2rem;
 }
 
 .centerIg {
