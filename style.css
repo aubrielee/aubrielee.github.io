@@ -86,7 +86,7 @@ hr {
     margin-bottom: 2rem;
     height: 1.25px;
     width: calc(var(--narrowWidth)*1.06);
-    max-width: 100vw;
+    max-width: 90vw;
     background: #000;
     background-image: linear-gradient(to right, #fff, #000, #fff);
 }
