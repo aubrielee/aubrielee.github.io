@@ -50,7 +50,7 @@ nav a {
 #topName {
     font-size: 2rem;
     line-height: 1em;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .active {
@@ -322,11 +322,12 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     
     nav a {
         font-weight: normal;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
-    .topName {
-        font-size: 1.5rem;
+    #topName {
+        font-size: 1.75rem;
+        font-weight: 600;
     }
 
     .fab {
