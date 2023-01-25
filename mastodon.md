@@ -15,7 +15,7 @@ I’ll describe my process in more detail in case it helps anyone else.
 ## Requirements
 
 I wanted to:
-
+{: .noIndent }
 
 
 * Keep my GitHub Pages site going on aubrielee.com
@@ -26,7 +26,7 @@ I wanted to:
 ## Process
 
 The general stages were:
-
+{: .noIndent }
 
 
 1. Set up hosting
@@ -39,9 +39,11 @@ The general stages were:
 ### Setting up hosting
 
 For hosting, I chose DigitalOcean because of its reputation. Setting up my Mastodon instance required creating a new Droplet.
+<br>
+<br>
 
 To create the Droplet:
-
+{: .noIndent }
 
 
 1. Create DigitalOcean account (here’s my [referral link](https://m.do.co/c/d0e6256f5707) if you care to use it)
@@ -63,7 +65,7 @@ To create the Droplet:
 8. Choose **Create Droplet**.
 
 The Droplet will take a few minutes to be ready.
-
+{: .noIndent }
 
 ### Linking a subdomain
 
@@ -87,65 +89,59 @@ Now that I had the Droplet and domain connected, I could go through the setup of
 14. Open a command line. For me, this was via Terminal on Mac.
 15. SSH into the Droplet by typing **ssh root@_[your Droplet’s IP address]_** and hitting enter. Example results:
 
-```
-Users-iMac:~ user$ **ssh root@##.###.###.###**
+
+<pre>
+Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
 The authenticity of host '##.###.###.### (##.###.###.###)' can't be established.
 ECDSA key fingerprint is […].
-Are you sure you want to continue connecting (yes/no)? **yes**
+Are you sure you want to continue connecting (yes/no)? <b>yes</b>
 Warning: Permanently added ##.###.###.###' (ECDSA) to the list of known hosts.
-Enter passphrase for key '/Users/user/.ssh/id_rsa': 
-```
+Enter passphrase for key '/Users/user/.ssh/id_rsa':
+</pre>
 
 
 
 16. Enter your SSH passphrase.
 17. Go through the wizard. For example:
 
+<pre>
 Welcome to the Mastodon first-time setup!
-
-Domain name: **social.something.com**
-
-Do you want to store user-uploaded files on the cloud? **No**
+Domain name: <b>social.something.com</b>
+Do you want to store user-uploaded files on the cloud? <b>No</b>
+</pre>
 
 
 
 18. Set up SMTP if you’d like. I skipped it (I actually tried a test email to see what would happen; it failed):
 
-SMTP server: **localhost**
-
-SMTP port: **587**
-
-SMTP username: 
-
-SMTP password: 
-
-SMTP authentication: **plain**
-
-SMTP OpenSSL verify mode: **none**
-
-E-mail address to send e-mails "from": **Mastodon &lt;notifications@social.something.com>**
-
-Send a test e-mail with this configuration right now? **no**
+<pre>
+SMTP server: <b>localhost</b>
+SMTP port: <b>587</b>
+SMTP username:
+SMTP password:
+SMTP authentication: <b>plain</b>
+SMTP OpenSSL verify mode: <b>none</b>
+E-mail address to send e-mails "from": <b>Mastodon &lt;notifications@social.something.com></b>
+Send a test e-mail with this configuration right now? <b>no</b>
+</pre>
 
 
 
 19. Create an admin account. For example:
 
+<pre>
 It is time to create an admin account that you'll be able to use from the browser!
-
-Username: **Name**
-
-E-mail: **name@something.com**
-
+Username: <b>Name</b>
+E-mail: <b>name@something.com</b>
 You can login with the password: […]
-
 The web interface should be momentarily accessible via https://social.something.com/
+</pre>
 
 
 
 20. Save that password somewhere.
-21. Go through the final SSL notification items: enter an email address and choose whether to donate to EFF. When SSL and symlinks are ready, the wizard will say **Setup is complete! Login at [https://social.something.com](https://social.something.com)**.
-22. Visit social.something.com and log in with the email and password from action 19.
+21. Go through the final SSL notification items: enter an email address and choose whether to donate to EFF. When SSL and symlinks are ready, the wizard will say **Setup is complete! Login at https://social.something.com**.
+22. Visit your social.something.com and log in with the email and password from action 19.
 23. You can set a password different from the generated one.
 24. Go to Preferences and verify you have Administration privileges. You can also verify you can visit https:/social.something.com/admin/dashboard without error:
 
@@ -169,30 +165,31 @@ Instead of using Terminal, you can also use the console in DigitalOcean near the
 
 25. Install Ruby at the Droplet root. I’m not sure if this was necessary, but I was following a [GitHub thread](https://github.com/mastodon/mastodon/discussions/18137).
 
-root@hostname:~# apt **install ruby ruby-bundler**
+<pre>root@hostname:~# <b>apt install ruby ruby-bundler</b></pre>
 
 
 
 26. Sudo into the Mastodon app.
 
-root@hostname:~# **sudo su mastodon**
+<pre>root@hostname:~# <b>sudo su mastodon</b></pre>
 
 
 
 27. Change to the home directory, then to the live/bin directory.
 
-mastodon@hostname:/root$ **cd ~**
-
-mastodon@hostname:~$ **cd live/bin/**
+<pre>
+mastodon@hostname:/root$ <b>cd ~</b>
+mastodon@hostname:~$ <b>cd live/bin/</b>
+</pre>
 
 
 
 28. Use tootctl to change the role of your Name account to Owner. (You set Name in action 19.)
 
-mastodon@hostname:~/live/bin$ **RAILS_ENV=production ./tootctl accounts modify Name --role Owner**
+<pre>mastodon@hostname:~/live/bin$ <b>RAILS_ENV=production ./tootctl accounts modify Name --role Owner</b></pre>
 
 Now you should have full admin privileges.
-
+{: .noIndent }
 
 ### Setting up a custom domain
 
@@ -202,77 +199,80 @@ Setting up a custom domain allows your display name to be @[Name@something.com](
 
 29. Curl host-meta from social.something.com
 
-Users-iMac:~ user$ **curl -k https://social.something.com/.well-known/host-meta** \
+<pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/host-meta</b></pre>
 
 
 
 
 30. Copy the resulting XML and put it in a new GitHub Pages file called:
 
-githubpagesusername.github.io/.well-known/host-meta
-
+<pre>githubpagesusername.github.io/<b>.well-known/host-meta</b></pre>
 
 
 31. Do the same for nodeinfo. Curl nodeinfo from social.something.com
 
-Users-iMac:~ user$ **curl -k https://social.something.com/.well-known/nodeinfo**
+<pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/nodeinfo</b></pre>
 
 
 
 32. Copy the resulting JSON and put it in a new GitHub Pages file called:
 
-githubpagesusername.github.io/.well-known/nodeinfo
+<pre>githubpagesusername.github.io/<b>.well-known/nodeinfo</b></pre>
 
 
 
-33. Do the same for webfinger.
+33. Do the same for webfinger, curling and inserting into a file.
 
-Users-iMac:~ user$ **curl -k https://social.something.com/.well-known/webfinger?resource=acct:name@social.something.com**
+<pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/webfinger?resource=acct:name@social.something.com</b></pre>
 
-
+<pre>githubpagesusername.github.io/<b>.well-known/webfinger</b></pre>
 
 34. In your Mastodon instance, change to the /home/mastodon/live directory:
 
-mastodon@hostname:~$ **cd /home/mastodon/live**
+<pre>mastodon@hostname:~$ <b>cd /home/mastodon/live</b></pre>
 
 
 
 35. Edit the .env.production file with a text editor like vim or nano:
 
-mastodon@hostname:~/live$ **vim .env.production**
+<pre>mastodon@hostname:~/live$ <b>vim .env.production</b></pre>
 
 
 
 36. Add this to the top of the file, as specified by Mastodon documentation, and write the file.
 
-**LOCAL_DOMAIN=something.com**
-
-**WEB_DOMAIN=social.something.com**
+<pre>
+<b>LOCAL_DOMAIN=something.com
+WEB_DOMAIN=social.something.com</b>
+</pre>
 
 
 
 37. Exit back to the root. If you don’t, as I didn’t at first, you’ll be asked for a password until you get “3 incorrect password attempts” when trying the next sudo actions.
 
-mastodon@hostname:~/live$ **exit**
+<pre>mastodon@hostname:~/live$ <b>exit</b></pre>
 
 
 
 38. Restart Mastodon services with these commands:
 
-root@hostname:~# **systemctl restart mastodon-web**
-
-root@hostname:~# **systemctl restart mastodon-streaming**
-
-root@hostname:~# **systemctl restart mastodon-sidekiq**
+<pre>
+root@hostname:~# <b>systemctl restart mastodon-web</b>
+root@hostname:~# <b>systemctl restart mastodon-streaming</b>
+root@hostname:~# <b>systemctl restart mastodon-sidekiq</b>
+</pre>
 
 Now everything should be ready! Post, boost, follow at will. Follow me, even: https://verse.aubrielee.com/@Aubrie.
+{: .noIndent }
+<br>
+<br>
 
 Thank you to the people who saved me with their advice. Here are some resources I consulted along the way:
 
 * [No one can find my account even via profile URL · Discussion #23047 · mastodon/mastodon · GitHub](https://github.com/mastodon/mastodon/discussions/23047) 
-* [Setting up a Mastodon Server at DigitalOcean | Marc Kranat](https://300m.com/privacy/setting-up-a-mastodon-server-at-digitalocean/) 
+* [Setting up a Mastodon Server at DigitalOcean](https://300m.com/privacy/setting-up-a-mastodon-server-at-digitalocean/) 
 * [How to Set Up Your Own Mastodon Instance](https://www.freecodecamp.org/news/how-to-set-up-your-own-mastodon-instance/) 
 * [Admin CLI doesn't work out of the box for 1-click Digital Ocean installs · Discussion #18137 · mastodon/mastodon · GitHub](https://github.com/mastodon/mastodon/discussions/18137) 
-* [Mastodon usernames different from the domain used for installation | Masto.host](https://masto.host/mastodon-usernames-different-from-the-domain-used-for-installation/) 
+* [Mastodon usernames different from the domain used for installation - Masto.host](https://masto.host/mastodon-usernames-different-from-the-domain-used-for-installation/) 
 * [Configuring your environment - Mastodon documentation](https://docs.joinmastodon.org/admin/config/#federation) 
 * [mastodon-documentation/Serving_a_different_domain.md at master](https://github.com/felx/mastodon-documentation/blob/master/Running-Mastodon/Serving_a_different_domain.md) 
