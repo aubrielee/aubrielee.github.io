@@ -80,7 +80,7 @@ Now that I had the Droplet and domain connected, I could go through the setup of
 
 14. Open a command line. For me, this was via Terminal on Mac.
 15. SSH into the Droplet by typing **ssh root@_[your Droplet’s IP address]_** and hitting enter. Example results:
-    <pre>
+    <pre class="commandLine">
     Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
     The authenticity of host '##.###.###.### (##.###.###.###)' can't be established.
     ECDSA key fingerprint is […].
@@ -90,42 +90,30 @@ Now that I had the Droplet and domain connected, I could go through the setup of
     </pre>
 16. Enter your SSH passphrase.
 17. Go through the wizard. For example:
-
-<pre>
-Welcome to the Mastodon first-time setup!
-Domain name: <b>social.something.com</b>
-Do you want to store user-uploaded files on the cloud? <b>No</b>
-</pre>
-
-
-
+    <pre>
+    Welcome to the Mastodon first-time setup!
+    Domain name: <b>social.something.com</b>
+    Do you want to store user-uploaded files on the cloud? <b>No</b>
+    </pre>
 18. Set up SMTP if you’d like. I skipped it (I actually tried a test email to see what would happen; it failed):
-
-<pre>
-SMTP server: <b>localhost</b>
-SMTP port: <b>587</b>
-SMTP username:
-SMTP password:
-SMTP authentication: <b>plain</b>
-SMTP OpenSSL verify mode: <b>none</b>
-E-mail address to send e-mails "from": <b>Mastodon &lt;notifications@social.something.com></b>
-Send a test e-mail with this configuration right now? <b>no</b>
-</pre>
-
-
-
+    <pre>
+    SMTP server: <b>localhost</b>
+    SMTP port: <b>587</b>
+    SMTP username:
+    SMTP password:
+    SMTP authentication: <b>plain</b>
+    SMTP OpenSSL verify mode: <b>none</b>
+    E-mail address to send e-mails "from": <b>Mastodon &lt;notifications@social.something.com></b>
+    Send a test e-mail with this configuration right now? <b>no</b>
+    </pre>
 19. Create an admin account. For example:
-
-<pre>
-It is time to create an admin account that you'll be able to use from the browser!
-Username: <b>Name</b>
-E-mail: <b>name@something.com</b>
-You can login with the password: […]
-The web interface should be momentarily accessible via https://social.something.com/
-</pre>
-
-
-
+    <pre>
+    It is time to create an admin account that you'll be able to use from the browser!
+    Username: <b>Name</b>
+    E-mail: <b>name@something.com</b>
+    You can login with the password: […]
+    The web interface should be momentarily accessible via https://social.something.com/
+    </pre>
 20. Save that password somewhere.
 21. Go through the final SSL notification items: enter an email address and choose whether to donate to EFF. When SSL and symlinks are ready, the wizard will say **Setup is complete! Login at https://social.something.com**.
 22. Visit your social.something.com and log in with the email and password from action 19.
@@ -151,29 +139,16 @@ Instead of using Terminal, you can also use the console in DigitalOcean near the
 
 
 25. Install Ruby at the Droplet root. I’m not sure if this was necessary, but I was following a [GitHub thread](https://github.com/mastodon/mastodon/discussions/18137).
-
-<pre>root@hostname:~# <b>apt install ruby ruby-bundler</b></pre>
-
-
-
+    <pre>root@hostname:~# <b>apt install ruby ruby-bundler</b></pre>
 26. Sudo into the Mastodon app.
-
-<pre>root@hostname:~# <b>sudo su mastodon</b></pre>
-
-
-
+    <pre>root@hostname:~# <b>sudo su mastodon</b></pre>
 27. Change to the home directory, then to the live/bin directory.
-
-<pre>
-mastodon@hostname:/root$ <b>cd ~</b>
-mastodon@hostname:~$ <b>cd live/bin/</b>
-</pre>
-
-
-
+    <pre>
+    mastodon@hostname:/root$ <b>cd ~</b>
+    mastodon@hostname:~$ <b>cd live/bin/</b>
+    </pre>
 28. Use tootctl to change the role of your Name account to Owner. (You set Name in action 19.)
-
-<pre>mastodon@hostname:~/live/bin$ <b>RAILS_ENV=production ./tootctl accounts modify Name --role Owner</b></pre>
+    <pre>mastodon@hostname:~/live/bin$ <b>RAILS_ENV=production ./tootctl accounts modify Name --role Owner</b></pre>
 
 Now you should have full admin privileges.
 {: .noIndent }
@@ -186,68 +161,68 @@ Setting up a custom domain allows your display name to be @[Name@something.com](
 
 29. Curl host-meta from social.something.com
 
-<pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/host-meta</b></pre>
+    <pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/host-meta</b></pre>
 
 
 
 
 30. Copy the resulting XML and put it in a new GitHub Pages file called:
 
-<pre>githubpagesusername.github.io/<b>.well-known/host-meta</b></pre>
+    <pre>githubpagesusername.github.io/<b>.well-known/host-meta</b></pre>
 
 
 31. Do the same for nodeinfo. Curl nodeinfo from social.something.com
 
-<pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/nodeinfo</b></pre>
+    <pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/nodeinfo</b></pre>
 
 
 
 32. Copy the resulting JSON and put it in a new GitHub Pages file called:
 
-<pre>githubpagesusername.github.io/<b>.well-known/nodeinfo</b></pre>
+    <pre>githubpagesusername.github.io/<b>.well-known/nodeinfo</b></pre>
 
 
 
 33. Do the same for webfinger, curling and inserting into a file.
 
-<pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/webfinger?resource=acct:name@social.something.com</b></pre>
+    <pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/webfinger?resource=acct:name@social.something.com</b></pre>
 
-<pre>githubpagesusername.github.io/<b>.well-known/webfinger</b></pre>
+    <pre>githubpagesusername.github.io/<b>.well-known/webfinger</b></pre>
 
 34. In your Mastodon instance, change to the /home/mastodon/live directory:
 
-<pre>mastodon@hostname:~$ <b>cd /home/mastodon/live</b></pre>
+    <pre>mastodon@hostname:~$ <b>cd /home/mastodon/live</b></pre>
 
 
 
 35. Edit the .env.production file with a text editor like vim or nano:
 
-<pre>mastodon@hostname:~/live$ <b>vim .env.production</b></pre>
+    <pre>mastodon@hostname:~/live$ <b>vim .env.production</b></pre>
 
 
 
 36. Add this to the top of the file, as specified by Mastodon documentation, and write the file.
 
-<pre>
-<b>LOCAL_DOMAIN=something.com
-WEB_DOMAIN=social.something.com</b>
-</pre>
+    <pre>
+    <b>LOCAL_DOMAIN=something.com
+    WEB_DOMAIN=social.something.com</b>
+    </pre>
 
 
 
 37. Exit back to the root. If you don’t, as I didn’t at first, you’ll be asked for a password until you get “3 incorrect password attempts” when trying the next sudo actions.
 
-<pre>mastodon@hostname:~/live$ <b>exit</b></pre>
+    <pre>mastodon@hostname:~/live$ <b>exit</b></pre>
 
 
 
 38. Restart Mastodon services with these commands:
 
-<pre>
-root@hostname:~# <b>systemctl restart mastodon-web</b>
-root@hostname:~# <b>systemctl restart mastodon-streaming</b>
-root@hostname:~# <b>systemctl restart mastodon-sidekiq</b>
-</pre>
+    <pre>
+    root@hostname:~# <b>systemctl restart mastodon-web</b>
+    root@hostname:~# <b>systemctl restart mastodon-streaming</b>
+    root@hostname:~# <b>systemctl restart mastodon-sidekiq</b>
+    </pre>
 
 Now everything should be ready! Post, boost, follow at will. Follow me, even: https://verse.aubrielee.com/@Aubrie.
 {: .noIndent }
