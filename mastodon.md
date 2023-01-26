@@ -50,15 +50,7 @@ To create the Droplet:
 2. Begin a new Droplet.
 3. Choose a region and datacenter.
 4. Go to Marketplace, search for Mastodon, and choose it.
-
-
-
-
 ![alt_text](images/image1.png "image_tooltip")
-
-
-
-
 5. Choose size. I chose the most basic option, as I’ll be the only user on my instance. For “Additional Storage”, I didn’t opt in.
 6. Choose authentication method. I read Mastodon requires SSH, not password. I set up an SSH key on my Mac via Terminal.
 7. For the final settings, I opted into monitoring but not backups. I didn’t change the hostname or project from the defaults.
@@ -88,8 +80,6 @@ Now that I had the Droplet and domain connected, I could go through the setup of
 
 14. Open a command line. For me, this was via Terminal on Mac.
 15. SSH into the Droplet by typing **ssh root@_[your Droplet’s IP address]_** and hitting enter. Example results:
-
-
 <pre>
 Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
 The authenticity of host '##.###.###.### (##.###.###.###)' can't be established.
@@ -98,9 +88,6 @@ Are you sure you want to continue connecting (yes/no)? <b>yes</b>
 Warning: Permanently added ##.###.###.###' (ECDSA) to the list of known hosts.
 Enter passphrase for key '/Users/user/.ssh/id_rsa':
 </pre>
-
-
-
 16. Enter your SSH passphrase.
 17. Go through the wizard. For example:
 
