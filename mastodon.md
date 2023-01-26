@@ -5,6 +5,11 @@ permalink: /mastodonarticle
 ---
 # How I set up my own Mastodon server and custom display name
 
+2023.01.25
+{: centeredText}
+<br>
+<br>
+
 I was curious about Mastodon but only interested in joining if I could have the name I wanted: @Aubrie@aubrielee.com. The promise of open source is control and customizability, is it not?
 
 I already had a personal website at aubrielee.com hosted on GitHub Pages. Rather than rent a new domain, I set up my own Mastodon instance on a subdomain, verse.aubrielee.com. Then, I changed my display name from Aubrie@verse.aubrielee.com to Aubrie@aubrielee.com by setting up HTTP redirects and editing my Mastodon .env file.
@@ -46,7 +51,7 @@ To create the Droplet:
 {: .noIndent }
 
 
-1. Create DigitalOcean account (here’s my [referral link](https://m.do.co/c/d0e6256f5707) if you care to use it)
+1. Create DigitalOcean account (here’s my [referral link](https://m.do.co/c/d0e6256f5707) if you care to use it).
 2. Begin a new Droplet.
 3. Choose a region and datacenter.
 4. Go to Marketplace, search for Mastodon, and choose it.
