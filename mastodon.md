@@ -80,14 +80,14 @@ Now that I had the Droplet and domain connected, I could go through the setup of
 
 14. Open a command line. For me, this was via Terminal on Mac.
 15. SSH into the Droplet by typing **ssh root@_[your Droplet’s IP address]_** and hitting enter. Example results:
-<pre>
-Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
-The authenticity of host '##.###.###.### (##.###.###.###)' can't be established.
-ECDSA key fingerprint is […].
-Are you sure you want to continue connecting (yes/no)? <b>yes</b>
-Warning: Permanently added ##.###.###.###' (ECDSA) to the list of known hosts.
-Enter passphrase for key '/Users/user/.ssh/id_rsa':
-</pre>
+    <pre>
+    Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
+    The authenticity of host '##.###.###.### (##.###.###.###)' can't be established.
+    ECDSA key fingerprint is […].
+    Are you sure you want to continue connecting (yes/no)? <b>yes</b>
+    Warning: Permanently added ##.###.###.###' (ECDSA) to the list of known hosts.
+    Enter passphrase for key '/Users/user/.ssh/id_rsa':
+    </pre>
 16. Enter your SSH passphrase.
 17. Go through the wizard. For example:
 
