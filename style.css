@@ -202,7 +202,7 @@ li {
     font-size: 1.25rem;
 }
 
-.commandLine {
+pre {
     white-space: pre-line;
     margin: 1rem 0 1rem 0;
     padding: 1.5rem 2rem 1.5rem 2rem;
