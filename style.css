@@ -193,10 +193,6 @@ ol {
     padding-left: 2.4rem;
 }
 
-ol li {
-    text-indent: 0.6rem; /*This needs to result in 3rem to line up with indentations*/
-}
-
 li {
     font-family: Garamond, serif;
     font-size: 1.25rem;
