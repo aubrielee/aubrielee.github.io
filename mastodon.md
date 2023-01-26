@@ -120,6 +120,7 @@ The web interface should be momentarily accessible via https://social.something.
   <li>Visit your social.something.com and log in with the email and password from action 19.</li>
   <li>You can set a password different from the generated one.</li>
   <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit https:/social.something.com/admin/dashboard without error:
+  
   ![Administration tab underneath Moderation tab](/media/mastodon_admin.png "Administration tab")
   {: listImage}
   </li>
@@ -215,74 +216,8 @@ root@hostname:~# <b>systemctl restart mastodon-sidekiq</b>
   </li>
 </ol>
 
-29. Curl host-meta from social.something.com
-
-    <pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/host-meta</b></pre>
-
-
-
-
-30. Copy the resulting XML and put it in a new GitHub Pages file called:
-
-    <pre>githubpagesusername.github.io/<b>.well-known/host-meta</b></pre>
-
-
-31. Do the same for nodeinfo. Curl nodeinfo from social.something.com
-
-    <pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/nodeinfo</b></pre>
-
-
-
-32. Copy the resulting JSON and put it in a new GitHub Pages file called:
-
-    <pre>githubpagesusername.github.io/<b>.well-known/nodeinfo</b></pre>
-
-
-
-33. Do the same for webfinger, curling and inserting into a file.
-
-    <pre>Users-iMac:~ user$ <b>curl -k https://social.something.com/.well-known/webfinger?resource=acct:name@social.something.com</b></pre>
-
-    <pre>githubpagesusername.github.io/<b>.well-known/webfinger</b></pre>
-
-34. In your Mastodon instance, change to the /home/mastodon/live directory:
-
-    <pre>mastodon@hostname:~$ <b>cd /home/mastodon/live</b></pre>
-
-
-
-35. Edit the .env.production file with a text editor like vim or nano:
-
-    <pre>mastodon@hostname:~/live$ <b>vim .env.production</b></pre>
-
-
-
-36. Add this to the top of the file, as specified by Mastodon documentation, and write the file.
-
-    <pre>
-    <b>LOCAL_DOMAIN=something.com
-    WEB_DOMAIN=social.something.com</b>
-    </pre>
-
-
-
-37. Exit back to the root. If you don’t, as I didn’t at first, you’ll be asked for a password until you get “3 incorrect password attempts” when trying the next sudo actions.
-
-    <pre>mastodon@hostname:~/live$ <b>exit</b></pre>
-
-
-
-38. Restart Mastodon services with these commands:
-
-    <pre>
-    root@hostname:~# <b>systemctl restart mastodon-web</b>
-    root@hostname:~# <b>systemctl restart mastodon-streaming</b>
-    root@hostname:~# <b>systemctl restart mastodon-sidekiq</b>
-    </pre>
-
 Now everything should be ready! Post, boost, follow at will. Follow me, even: https://verse.aubrielee.com/@Aubrie.
 {: .noIndent }
-<br>
 <br>
 
 Thank you to the people who saved me with their advice. Here are some resources I consulted along the way:
