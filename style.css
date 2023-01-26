@@ -15,6 +15,7 @@
     --linkColorHover: #006f66;
     --linkColorCarousel: #c0ffee;
     --linkColorCarouselHover: #007061;
+    --imageBorder: #7c7c7c;
     --excerptBackground: #c5eae6;
     --underlineThickness: 1px;
     --underlineThicknessMobile: 1px;
@@ -200,6 +201,13 @@ ol li {
 li {
     font-family: Garamond, serif;
     font-size: 1.25rem;
+}
+
+.listImage {
+    margin: 1rem 0 1rem 0;
+    max-width: 600px;
+    border: solid var(--imageBorder);
+    border-width: .1rem;
 }
 
 pre {
