@@ -12,7 +12,7 @@ I already had a personal website at aubrielee.com hosted on GitHub Pages. Rather
 I’ll describe my process in more detail in case it helps anyone else.
 
 
-## Requirements
+## requirements
 
 I wanted to:
 {: .noIndent }
@@ -23,7 +23,7 @@ I wanted to:
 * Change my display name to a custom domain (@aubrielee.com instead of @subdomain.aubrielee.com)
 
 
-## Process
+## process
 
 The general stages were:
 {: .noIndent }
@@ -36,7 +36,7 @@ The general stages were:
 5. Set up a custom domain
 
 
-### Setting up hosting
+### setting up hosting
 
 For hosting, I chose DigitalOcean because of its reputation. Setting up my Mastodon instance required creating a new Droplet.
 <br>
@@ -50,7 +50,7 @@ To create the Droplet:
 2. Begin a new Droplet.
 3. Choose a region and datacenter.
 4. Go to Marketplace, search for Mastodon, and choose it.
-![alt_text](images/image1.png "image_tooltip")
+![Search result for mastodon returns Mastodon 4.0.2 on Ubuntu 20.04](/media/mastodon_marketplace.png "Result for Mastodon in the marketplace")
 5. Choose size. I chose the most basic option, as I’ll be the only user on my instance. For “Additional Storage”, I didn’t opt in.
 6. Choose authentication method. I read Mastodon requires SSH, not password. I set up an SSH key on my Mac via Terminal.
 7. For the final settings, I opted into monitoring but not backups. I didn’t change the hostname or project from the defaults.
@@ -59,7 +59,7 @@ To create the Droplet:
 The Droplet will take a few minutes to be ready.
 {: .noIndent }
 
-### Linking a subdomain
+### linking a subdomain
 
 I had aubrielee.com and wanted to set up on verse.aubrielee.com rather than rent another domain and fragment my domain architecture. This guide assumes you already have a domain—e.g., **something.com**—and you want to set up your Mastodon server on a subdomain—e.g., **social.something.com**.
 
@@ -72,11 +72,11 @@ I had aubrielee.com and wanted to set up on verse.aubrielee.com rather than rent
 </ol>
 
 
-### Going through the Mastodon setup wizard
+### going through the mastodon setup wizard
 
 Now that I had the Droplet and domain connected, I could go through the setup of the Mastodon app on the Droplet.
 
-<ol start="14">
+<ol start='14'>
   <li>Open a command line. For me, this was via Terminal on Mac.</li>
   <li>SSH into the Droplet by typing <b>ssh root@<em>[your Droplet’s IP address]</em></b> and hitting enter. Example results:
     <pre class="commandLine">Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
@@ -121,13 +121,13 @@ The web interface should be momentarily accessible via https://social.something.
   <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit https:/social.something.com/admin/dashboard without error:</li>
 </ol>
 
-### Fixing my admin privileges
+### fixing my admin privileges
 
 When I logged into my instance, I didn’t have an Administration tab. I changed my account role to Owner by entering my Mastodon instance via Terminal and using a tootctl command.
 
 Instead of using Terminal, you can also use the console in DigitalOcean near the top right of the web interface of your Droplet. This console is now my preferred way of entering my instance, rather than SSHing in on my computer.
 
-<ol>
+<ol start='25'>
   <li>Install Ruby at the Droplet root. I’m not sure if this was necessary, but I was following a <a href="https://github.com/mastodon/mastodon/discussions/18137">GitHub thread</a>.
     <pre>root@hostname:~# <b>apt install ruby ruby-bundler</b></pre>
   </li>
@@ -147,7 +147,7 @@ mastodon@hostname:~$ <b>cd live/bin/</b>
 Now you should have full admin privileges.
 {: .noIndent }
 
-### Setting up a custom domain
+### setting up a custom domain
 
 Setting up a custom domain allows your display name to be @[Name@something.com](mailto:Name@something.com) instead of @[Name@social.something.com](mailto:Name@social.something.com). (I believe, theoretically, it could also be @[Name@anythingelse.com](mailto:Name@anythingelse.com).) To display a custom domain, I set HTML redirects in GitHub Pages for three web resources: host-meta, nodeinfo, and webfinger. I also had to edit my Mastodon .env file.
 
