@@ -7,10 +7,10 @@ permalink: /mastodonarticle
 
 2023.01.25
 {: centeredText}
-<br>
+
 <br>
 
-I was curious about Mastodon but only interested in joining if I could have the name I wanted: @Aubrie@aubrielee.com. The promise of open source is control and customizability, is it not?
+I was curious about Mastodon but only interested in joining if I could have the name I wanted: [@Aubrie@aubrielee.com](https://verse.aubrielee.com/@Aubrie). The promise of open source is control and customizability, is it not?
 
 I already had a personal website at aubrielee.com hosted on GitHub Pages. Rather than rent a new domain, I set up my own Mastodon instance on a subdomain, verse.aubrielee.com. Then, I changed my display name from Aubrie@verse.aubrielee.com to Aubrie@aubrielee.com by setting up HTTP redirects and editing my Mastodon .env file.
 
@@ -59,10 +59,7 @@ To create the Droplet:
 5. Choose size. I chose the most basic option, as I’ll be the only user on my instance. For “Additional Storage”, I didn’t opt in.
 6. Choose authentication method. I read Mastodon requires SSH, not password. I set up an SSH key on my Mac via Terminal.
 7. For the final settings, I opted into monitoring but not backups. I didn’t change the hostname or project from the defaults.
-8. Choose **Create Droplet**.
-
-The Droplet will take a few minutes to be ready.
-{: .noIndent }
+8. Choose **Create Droplet**. The Droplet will take a few minutes to be ready.
 
 ### linking a subdomain
 
@@ -123,7 +120,7 @@ The web interface should be momentarily accessible via https://social.something.
   <li>Go through the final SSL notification items: enter an email address and choose whether to donate to EFF. When SSL and symlinks are ready, the wizard will say <b>Setup is complete! Login at https://social.something.com</b>.</li>
   <li>Visit your social.something.com and log in with the email and password from action 19.</li>
   <li>You can set a password different from the generated one.</li>
-  <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit https:/social.something.com/admin/dashboard without error:
+  <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit [https:/social.something.com/admin/dashboard](https:/social.something.com/admin/dashboard) without error:
   <img src='/media/mastodon_admin.png' alt='Administration tab underneath Moderation tab' class='listImage'>
   </li>
 </ol>
@@ -156,7 +153,7 @@ Now you should have full admin privileges.
 
 ### setting up a custom domain
 
-Setting up a custom domain allows your display name to be @[Name@something.com](mailto:Name@something.com) instead of @[Name@social.something.com](mailto:Name@social.something.com). (I believe, theoretically, it could also be @[Name@anythingelse.com](mailto:Name@anythingelse.com).) To display a custom domain, I set HTML redirects in GitHub Pages for three web resources: host-meta, nodeinfo, and webfinger. I also had to edit my Mastodon .env file.
+Setting up a custom domain allows your display name to be **@Name@something.com** instead of **@Name@social.something.com**. (I believe, theoretically, it could also be @Name@anythingelse.com.) To display a custom domain, I set HTML redirects in GitHub Pages for three web resources: host-meta, nodeinfo, and webfinger. I also had to edit my Mastodon .env file.
 
 <ol start='29'>
   <li>
@@ -218,7 +215,7 @@ root@hostname:~# <b>systemctl restart mastodon-sidekiq</b>
   </li>
 </ol>
 
-Now everything should be ready! Post, boost, follow at will. Follow me, even: https://verse.aubrielee.com/@Aubrie.
+Now everything should be ready! Post, boost, follow at will. Follow me, even: [https://verse.aubrielee.com/@Aubrie](https://verse.aubrielee.com/@Aubrie).
 {: .noIndent }
 <br>
 
