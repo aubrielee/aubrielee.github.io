@@ -354,6 +354,10 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
         font-weight: 600;
     }
 
+    .listImage {
+        max-width: 75vw;
+    }
+
     .fab {
         margin-top: 0;
     }
