@@ -6,7 +6,7 @@ permalink: /mastodonarticle
 # How I set up my own Mastodon server and custom display name
 
 2023.01.25
-{: centeredText}
+{: .centeredText .noIndent}
 
 <br>
 
