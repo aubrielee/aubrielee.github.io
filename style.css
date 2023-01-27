@@ -129,17 +129,18 @@ h1 {
 h2 {
     font-family: 'Vollkorn SC', Garamond, serif;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 2.75rem;
+    padding-bottom: .75rem;
 }
 
 h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     /* white-space: nowrap; */
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: .75rem;
 }
 
 /*Line break to display only on mobile*/
