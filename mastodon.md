@@ -55,7 +55,7 @@ To create the Droplet:
 2. Begin a new Droplet.
 3. Choose a region and datacenter.
 4. Go to Marketplace, search for Mastodon, and choose it.
-    <!-- <img src='/media/mastodon_marketplace.png' alt='Search result for mastodon returns Mastodon 4.0.2 on Ubuntu 20.04' class='listImage'> -->
+    <img src='/media/mastodon_marketplace.png' alt='Search result for mastodon returns Mastodon 4.0.2 on Ubuntu 20.04' class='listImage'>
 5. Choose size. I chose the most basic option, as I’ll be the only user on my instance. For “Additional Storage”, I didn’t opt in.
 6. Choose authentication method. I read Mastodon requires SSH, not password. I set up an SSH key on my Mac via Terminal.
 7. For the final settings, I opted into monitoring but not backups. I didn’t change the hostname or project from the defaults.
@@ -120,8 +120,8 @@ The web interface should be momentarily accessible via https://social.something.
   <li>Go through the final SSL notification items: enter an email address and choose whether to donate to EFF. When SSL and symlinks are ready, the wizard will say <b>Setup is complete! Login at https://social.something.com</b>.</li>
   <li>Visit your social.something.com and log in with the email and password from action 19.</li>
   <li>You can set a password different from the generated one.</li>
-  <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit [https:/social.something.com/admin/dashboard](https:/social.something.com/admin/dashboard) without error:
-  <!-- <img src='/media/mastodon_admin.png' alt='Administration tab underneath Moderation tab' class='listImage'> -->
+  <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit <a href="https:/social.something.com/admin/dashboard">https:/social.something.com/admin/dashboard</a> without error:
+  <img src='/media/mastodon_admin.png' alt='Administration tab underneath Moderation tab' class='listImage'>
   </li>
 </ol>
 
