@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Aubrie Lee
-permalink: /mastodonarticle
+permalink: /how-i-set-up-my-own-mastodon-server
 ---
 # How I set up my own Mastodon server and custom display name
 
