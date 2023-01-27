@@ -228,3 +228,4 @@ Thank you to the people who saved me with their advice. Here are some resources 
 * [Mastodon usernames different from the domain used for installation - Masto.host](https://masto.host/mastodon-usernames-different-from-the-domain-used-for-installation/) 
 * [Configuring your environment - Mastodon documentation](https://docs.joinmastodon.org/admin/config/#federation) 
 * [mastodon-documentation/Serving_a_different_domain.md at master](https://github.com/felx/mastodon-documentation/blob/master/Running-Mastodon/Serving_a_different_domain.md) 
+{: .lineWrap}
