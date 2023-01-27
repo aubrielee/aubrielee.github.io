@@ -120,7 +120,7 @@ The web interface should be momentarily accessible via https://social.something.
   <li>Go through the final SSL notification items: enter an email address and choose whether to donate to EFF. When SSL and symlinks are ready, the wizard will say <b>Setup is complete! Login at https://social.something.com</b>.</li>
   <li>Visit your social.something.com and log in with the email and password from action 19.</li>
   <li>You can set a password different from the generated one.</li>
-  <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit <a href="https:/social.something.com/admin/dashboard">https:/social.something.com/admin/dashboard</a> without error:
+  <li>Go to Preferences and verify you have Administration privileges. You can also verify you can visit <a href="https:/social.something.com/admin/dashboard" class='lineWrap'>https:/social.something.com/admin/dashboard</a> without error:
   <img src='/media/mastodon_admin.png' alt='Administration tab underneath Moderation tab' class='listImage'>
   </li>
 </ol>
@@ -153,9 +153,9 @@ Now you should have full admin privileges.
 
 ### setting up a custom domain
 
-Setting up a custom domain allows your display name to be **@Name@something.com** instead of **@Name@social.something.com**. (I believe, theoretically, it could also be @Name@anythingelse.com.) To display a custom domain, I set HTML redirects in GitHub Pages for three web resources: host-meta, nodeinfo, and webfinger. I also had to edit my Mastodon .env file.
+Setting up a custom domain allows your display name to be **@Name@something.com** instead of **@Name@social.something.com**. (I believe, theoretically, the display domain could be arbitrary, e.g., @Name@anythingelse.com.) To display a custom domain, I set HTML redirects in GitHub Pages for three web resources: host-meta, nodeinfo, and webfinger. I also had to edit my Mastodon .env file.
 
-<ol start='29'>
+<ol start='29' class='lineWrap'>
   <li>
     Curl host-meta from social.something.com
 
