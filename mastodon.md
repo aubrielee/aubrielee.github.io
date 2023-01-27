@@ -78,7 +78,7 @@ I had aubrielee.com and wanted to set up on verse.aubrielee.com rather than rent
 
 Now that I had the Droplet and domain connected, I could go through the setup of the Mastodon app on the Droplet.
 
-<ol start='14'>
+<ol start='14' class='lineWrap'>
   <li>Open a command line. For me, this was via Terminal on Mac.</li>
   <li>SSH into the Droplet by typing <b>ssh root@<em>[your Droplet’s IP address]</em></b> and hitting enter. Example results:
     <pre class="commandLine">Users-iMac:~ user$ <b>ssh root@##.###.###.###</b>
