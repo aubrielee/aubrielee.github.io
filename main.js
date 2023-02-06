@@ -240,21 +240,22 @@ console.log('java');
     });
 
     //Toggle about page
-    logo.addEventListener('click', function () {
+    // 2023.02.05 Commenting this out now that siema is in separate page
+    // logo.addEventListener('click', function () {
 
-        logo.classList.toggle('inverted');
-        currentSlideName = siema.innerElements[siema.currentSlide].id;
+    //     logo.classList.toggle('inverted');
+    //     currentSlideName = siema.innerElements[siema.currentSlide].id;
 
-        if (aboutPage.classList.contains('visibleOnLoad') || aboutPage.classList.contains('visible')) {
-            leaveAbout();
+    //     if (aboutPage.classList.contains('visibleOnLoad') || aboutPage.classList.contains('visible')) {
+    //         leaveAbout();
 
-            //show the first slide
-            siema.innerElements[siema.currentSlide].classList.add('show');
-        } else {
-            //No classes in list
-            showAbout();
-        }
-    });
+    //         //show the first slide
+    //         siema.innerElements[siema.currentSlide].classList.add('show');
+    //     } else {
+    //         //No classes in list
+    //         showAbout();
+    //     }
+    // });
 
     //Toggling expansions
     document.body.addEventListener('click', function (e) {
