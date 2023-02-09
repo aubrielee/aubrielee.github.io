@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Impart
+permalink: /impart
 ---
 
 <object src="https://github.com/aubrielee/aubrielee.github.io/blob/c851fc270a37c4f20ce2427530e16eb7d72384d2/Stanford%20Anastomosis%20-%20Fall-2018.pdf#page=13" width="100%" height="500px" type='application/pdf'></object>
