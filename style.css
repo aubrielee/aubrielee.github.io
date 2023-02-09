@@ -178,6 +178,11 @@ p.noIndent {
     text-indent: 0;
 }
 
+p.secondIndent {
+    text-indent: -2rem;
+    padding-left: 2rem;
+}
+
 .centeredText {
     text-align: center;
 }
