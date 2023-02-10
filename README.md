@@ -1,1 +1,1 @@
-# https://aubrielee.com/#about
+# https://aubrielee.com/
