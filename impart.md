@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: fullBleed
 title: Impart
 permalink: /impart
 ---
 
 <embed src="Stanford%20Anastomosis%20-%20Fall-2018.pdf#page=13" width="100%" height="500px" type='application/pdf'>
 
+<div class="narrow">
 <p class="secondIndent">The knowing limn for us these bodies of knowledge.</p>
 <p class="secondIndent">As dissection disciples, we&rsquo;re knowing these bodies to learn, to treat, to numb;</p>
 <p class="secondIndent">We have worn stereoscopic glasses, swiped the touch-screen table, made notes on inky paper,</p>
@@ -107,3 +108,4 @@ permalink: /impart
 <p class="secondIndent">The students move on to seek more answers, the professors stay to answer more students, and the fragmented cadavers burn.</p>
 <p class="secondIndent">By sacrificing an instrument they will never play again, the donors make themselves immortal; they become part of a deathless practice.</p>
 <p class="secondIndent">These undertakings of physical introspection are older than we are, and they will live longer than will any one of us.</p>
+</div>
