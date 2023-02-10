@@ -4,9 +4,15 @@ title: Impart
 permalink: /impart
 ---
 
-<embed src="Stanford%20Anastomosis%20-%20Fall-2018.pdf#page=13" width="100%" height="500px" type='application/pdf'>
+<embed src="Stanford%20Anastomosis%20-%20Fall-2018.pdf#page=13" width="100%" height="800px" type='application/pdf'>
 
 <div class="narrow">
+<br>
+
+_In my fourth year at Stanford, I took anatomy labs with Dr. John Gosling, Dr. Ian Whitmore, and Dr. Alan Detton. I then spent the summer writing this poem, which I consider one of my best works._
+
+#Impart
+
 <p class="secondIndent">The knowing limn for us these bodies of knowledge.</p>
 <p class="secondIndent">As dissection disciples, we&rsquo;re knowing these bodies to learn, to treat, to numb;</p>
 <p class="secondIndent">We have worn stereoscopic glasses, swiped the touch-screen table, made notes on inky paper,</p>
