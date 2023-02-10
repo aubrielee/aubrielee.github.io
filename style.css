@@ -147,6 +147,8 @@ h3 {
     padding-bottom: .75rem;
 }
 
+.inset
+
 /*Line break to display only on mobile*/
 .break {
     display: none;
@@ -386,6 +388,10 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     }
 
     br.poemBreak {
+        display: none;
+    }
+
+    .inset {
         display: none;
     }
 
