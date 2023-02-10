@@ -147,11 +147,6 @@ h3 {
     padding-bottom: .75rem;
 }
 
-.annotation {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-}
-
 /*Line break to display only on mobile*/
 .break {
     display: none;
@@ -186,6 +181,11 @@ p.noIndent {
 p.secondIndent {
     text-indent: -2rem;
     padding-left: 2rem;
+}
+
+p.annotation {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .centeredText {
