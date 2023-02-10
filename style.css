@@ -147,7 +147,10 @@ h3 {
     padding-bottom: .75rem;
 }
 
-.inset
+.annotation {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 
 /*Line break to display only on mobile*/
 .break {
