@@ -385,6 +385,10 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
         max-width: 65vw;
     }
 
+    br.poemBreak {
+        display: none;
+    }
+
     .fab {
         margin-top: 0;
     }
