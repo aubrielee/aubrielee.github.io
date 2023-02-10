@@ -10,7 +10,7 @@ permalink: /impart
 <br>
 
 _In my fourth year at Stanford, I took anatomy labs with Dr. John Gosling, Dr. Ian Whitmore, and Dr. Alan Detton. I then spent the summer writing this poem, which I consider one of my best works._
-
+<br>
 
 #Impart
 
