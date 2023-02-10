@@ -3,7 +3,7 @@ layout: default
 title: More
 permalink: /more
 ---
-Feel free to connect:
+Find me elsewhere:
 {: .noIndent}
 
 {% include socials.html %}
