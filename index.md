@@ -14,8 +14,7 @@ You can reach out to me if you’re seeking:
 <br>
 <br>
 
-A bit of my journey:
-{: .noIndent }
+## a bit of my journey
 
 I’m a professional namer at Google, where I’ve had the honor of being part of several marketing teams since 2013 and attending an executive training at Wharton (here are my notes).
 
