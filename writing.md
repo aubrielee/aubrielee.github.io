@@ -24,7 +24,7 @@ permalink: /writing
 
 ## poetry
 <ul>
-    <li><a href="https://aubrielee.com/impart" target="_blank" tabindex="0"><span class="pieceTitle">Impart</span></a>, Stanford University School of Medicine’s Anastomosis journal, 2018.</li>
+    <li><a href="https://aubrielee.com/impart" tabindex="0"><span class="pieceTitle">Impart</span></a>, Stanford University School of Medicine’s Anastomosis journal, 2018.</li>
     <li><a href="http://hekint.org/2017/01/22/cadaver-palavers/" target="_blank" tabindex="0"><span class="pieceTitle">Cadaver Palavers</span></a>, Hektoen International Journal of Medical Humanities, 2011.</li>
 </ul>
 <br>
