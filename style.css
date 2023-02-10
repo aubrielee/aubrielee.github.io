@@ -426,6 +426,10 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     .break {
         display: inline;
     }
+
+    .emailA {
+        margin-right: 0em;
+    }
     
     /*socialDiamonds separate social media links on about page*/
     .socialDiamond {
