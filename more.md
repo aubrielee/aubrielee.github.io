@@ -49,7 +49,7 @@ Feel free to connect:
 </div>
 <script async src="https://www.instagram.com/embed.js"></script>
 
-<p class="centeredText noIndent altText">Alt text: A Chinese American woman in a manual traveling wheelchair poses in a beam of light within a cathedral. She wears a cream cardigan and red skirt.</p>
+<p class="centeredText noIndent altText">Image description: A Chinese American woman in a manual traveling wheelchair poses in a beam of light within a cathedral. She wears a cream cardigan and red skirt.</p>
 
 ## my disabilities
 I have a rare form of muscular dystrophy. The more I use my muscles, the weaker they get. Some of the basics:
