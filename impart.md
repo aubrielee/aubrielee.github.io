@@ -9,10 +9,9 @@ permalink: /impart
 <div class="narrow">
 <br>
 
-_In my fourth year at Stanford, I took anatomy labs with Dr. John Gosling, Dr. Ian Whitmore, and Dr. Alan Detton. I then spent the summer writing this poem, which I consider one of my best works._
-<br>
+_In my fourth year at Stanford, I took anatomy labs with Dr. John Gosling, Dr. Ian Whitmore, and Dr. Alan Detton. I then spent the summer of 2014 writing this poem, which I consider one of my best works. It was later published in Anastomosis, the humanities and literary journal of the Stanford University School of Medicine._
 
-#Impart
+# Impart
 
 <p class="secondIndent">The knowing limn for us these bodies of knowledge.</p>
 <p class="secondIndent">As dissection disciples, we&rsquo;re knowing these bodies to learn, to treat, to numb;</p>
