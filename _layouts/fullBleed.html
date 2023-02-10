@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Engineer by training, namer by trade, artist at heart.">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:400,600,700,900" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S70PKGFG5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3S70PKGFG5');
+    </script>
+    
+    <script src="https://kit.fontawesome.com/9782667c52.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    {% include nav.html %}
+    <!-- <span class="diamond">&blacklozenge;</span> -->
+    <hr>
+    <div class="">
+      <!-- <h1>{{ page.title }}</h1> -->
+      <section>
+        {{ content }}
+      </section>
+
+      <img id="logoSign" src="Aubrie-Lee_AL-Ambigram-Logo_White.png" alt="An ambigram formed from an A and an L. It can never be upside down." />
+
+      <hr>
+
+      <section>
+        <h2>like my work?</h2>
+        <p>I appreciate support of any kind, whether that’s sharing this page, telling me what you thought, or treating me to something yummy:</p>
+        </br>
+        <p>Venmo: <a href="https://account.venmo.com/u/aubrie"><b>@aubrie</b></a></p>
+        <p>PayPal: <a href="https://www.paypal.com/paypalme/aubrieality"><b>aubrieality</b></a></bold></p>
+        <p>Kofi:</p>
+        <div class='iframeDiv'>
+          <iframe id='kofiframe' src='https://ko-fi.com/aubrielee/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;' height='712' title='aubrielee'></iframe>
+        </div>
+      </section>
+
+      <hr>
+
+      <footer class="social">
+        {% include socials.html %}
+      </footer>
+    </div>
+  </body>
+</html>
