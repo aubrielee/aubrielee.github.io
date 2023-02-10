@@ -36,16 +36,7 @@
   </head>
 
   <body>
-    <nav>
-      <!-- The h1 must surround the a tag, and it must not be followed by br tag. Otherwise broken styles -->
-      <h1><a href="/" id="topName">Aubrie Lee</a></h1> 
-      <!-- <br> -->
-      <a href="/art.html">art</a>
-      <a href="/writing" {% if page.url == "/writing" %}class="active"{% endif %}>writing</a>
-      <!-- <a href="/latest" {% if page.url == "/latest" %}class="active"{% endif %}>latest</a> -->
-      <a href="/more" {% if page.url == "/more" %}class="active"{% endif %}>more</a>
-      <!-- <a href="/">contact</a> -->
-    </nav>
+    {% include nav.html %}
     <!-- <span class="diamond">&blacklozenge;</span> -->
     <hr>
     <div class="narrow">
