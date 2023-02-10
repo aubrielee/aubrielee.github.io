@@ -25,7 +25,7 @@ I have always loved creating art, whether with painted lines or written ones. In
 
 ## highlighted works
 - [Merusa](https://www.instagram.com/p/CkZ0RtRL4HY/?utm_source=ig_web_copy_link), self-portrait, 2022.
-- <a href="https://med.stanford.edu/content/dam/sm/medicineandthemuse/documents/Fall-2018.pdf#page=13" target="_blank" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford's Anastomosis journal</a>, 2018.
+- <a href="https://aubrielee.com/impart" target="_blank" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford School of Medicine's Anastomosis journal</a>, 2018.
 - <a href="https://www.youtube.com/watch?v=cNyE5ZhvGDI" target="_blank" tabindex="0"><span class="pieceTitle">Science Campus</span></a>, art film. Finalist in Stanford Art of Science Competition, 2013.
 
 ## my interests
