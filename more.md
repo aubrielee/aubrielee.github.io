@@ -96,3 +96,6 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - <a href="https://www.curbfreewithcorylee.com/2018/05/23/san-francisco-citypass/" target="_blank" tabindex="0">Guest writing</a> for a wheelchair travel blog, 2018.
 - <a href="https://web.archive.org/web/20151029174749/http://static.stanford.edu/2014/09/29/lack-sessibility-at-stanford/" target="_blank" tabindex="0"><span class="pieceTitle">Lack-sessibility</span></a>, a comic strip featured in <a href="https://web.archive.org/web/20170311212720/http://www.stanforddaily.com/an-overlooked-minority-disabled-students-discuss-shortfall-in-support/" target="_blank" tabindex="0">Stanford Daily</a>, 2014.
 - Co-founded Power2ACT, Stanford's disability student group (renamed to Stanford Disability Alliance in 2021), 2011.
+
+## links i like
+- My sister Cadence Lee's professional photography: [cadenceleephoto.com](https://www.cadenceleephoto.com/)
