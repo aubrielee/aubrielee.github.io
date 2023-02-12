@@ -112,6 +112,39 @@ hr {
     padding-right: 4vh;
 }
 
+.storybook {
+    /* display: flex; */
+}
+
+.photobooth {
+    /* flex-basis: 10%; */
+    /* display: none; */
+    /* background-color: black; */
+    float: left;
+    border: solid rgb(154, 154, 154);
+    border-width: .1rem;
+    background-color: white;
+    padding: 10px 0 50px 0;
+    margin-right: 2rem;
+    width: 340px;
+    max-width: 100%;
+}
+
+.photoboothTile {
+    display: block;
+    /* background-color: black; */
+    width: 300px;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+
+}
+
+.sideText {
+    /* margin-left: 2rem; */
+    /* padding-left: 2rem; */
+}
+
 h1 {
     font-family: Garamond;
     font-weight: lighter;
@@ -200,6 +233,7 @@ ul {
     list-style-type: none;
     padding-left: 3rem;
     position: relative;
+    overflow: hidden;
 }
 
 ul li:before {
