@@ -2,6 +2,14 @@
 layout: default
 title: Aubrie Lee
 ---
+
+<div class="photobooth">
+    <img src="/media/aubrie-lee_photobooth-1.jpg" alt="Aubrie looks at the camera from within a photobooth. Her hair is in a braid, and she wears a glittering dress, a black choker, and gold ear jewelry." class="photoboothTile">
+    <img src="/media/aubrie-lee_photobooth-2.jpg" alt="In this second tile of this photo strip, she's facing to her right, with her face in profile. Her left hand is lifted to her chin. The headrest of her echair is behind her." class="photoboothTile">
+    <img src="/media/aubrie-lee_photobooth-3.jpg" alt="In this third tile, she's facing to her left." class="photoboothTile">
+    <img src="/media/aubrie-lee_photobooth-4.jpg" alt="Finally, she's looking straight at the camera, with her hands folded together under her chin and her fingers flared outwards." class="photoboothTile">
+</div>
+
 Welcome to my self-coded website – so kind of you to stop by!<br>
 {: .noIndent }
 <br>
@@ -23,7 +31,7 @@ I have always loved creating art, whether with painted lines or written ones. In
 
 ## highlighted works
 - [Merusa](https://www.instagram.com/p/CkZ0RtRL4HY/?utm_source=ig_web_copy_link), self-portrait, 2022.
-- <a href="https://aubrielee.com/impart" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford School of Medicine's Anastomosis journal</a>, 2018.
+- <a href="https://med.stanford.edu/content/dam/sm/medicineandthemuse/documents/Fall-2018.pdf#page=13" target="_blank" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford's Anastomosis journal</a>, 2018.
 - <a href="https://www.youtube.com/watch?v=cNyE5ZhvGDI" target="_blank" tabindex="0"><span class="pieceTitle">Science Campus</span></a>, art film. Finalist in Stanford Art of Science Competition, 2013.
 
 ## my interests
