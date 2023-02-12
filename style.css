@@ -451,6 +451,23 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
         transition: .25s;
     }
 
+    p {
+        text-indent: 1.8rem;
+    }
+
+    ul {
+        padding-left: 1.8rem;
+    }
+    
+    ul li:before {
+        padding-left: 0.6rem;
+    }
+    
+    ol li {
+        margin-left: 1.4rem;
+        padding-left: .4rem;
+    }
+
     /*Line breaks originally for social links*/
     .break {
         display: inline;
