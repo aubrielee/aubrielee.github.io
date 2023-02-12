@@ -112,14 +112,7 @@ hr {
     padding-right: 4vh;
 }
 
-.storybook {
-    /* display: flex; */
-}
-
 .photobooth {
-    /* flex-basis: 10%; */
-    /* display: none; */
-    /* background-color: black; */
     float: left;
     border: solid rgb(154, 154, 154);
     border-width: .1rem;
@@ -132,17 +125,11 @@ hr {
 
 .photoboothTile {
     display: block;
-    /* background-color: black; */
     width: 300px;
     max-width: 100%;
     margin: auto;
     padding: 10px 0 10px 0;
 
-}
-
-.sideText {
-    /* margin-left: 2rem; */
-    /* padding-left: 2rem; */
 }
 
 h1 {
@@ -418,6 +405,10 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     #topName {
         font-size: 1.75rem;
         font-weight: 600;
+    }
+
+    .photobooth {
+        margin-bottom: 2rem;
     }
 
     .listImage {
