@@ -216,6 +216,10 @@ p.annotation {
     text-align: center;
 }
 
+.spacedText p, .spacedText li, .spacedText h2 {
+    margin-bottom: 1em;
+}
+
 .altText {
     font-style: italic;
 }
@@ -343,6 +347,8 @@ pre {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
 }
+
+
 
 footer {
     margin-top: 2rem;
