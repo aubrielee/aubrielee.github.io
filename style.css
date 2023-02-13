@@ -258,6 +258,15 @@ li {
     border-width: .1rem;
 }
 
+.bioPhoto {
+    display: block;
+    margin: 1em auto 1em auto;
+
+    height: auto; 
+    width: auto; 
+    max-width: 400px;
+}
+
 pre {
     white-space: pre-line;
     margin: 1rem 0 1rem 0;
@@ -347,8 +356,6 @@ pre {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
 }
-
-
 
 footer {
     margin-top: 2rem;
