@@ -25,11 +25,11 @@ You can reach out to me if you’re seeking:
 
 I'm an artist and engineer. My life's purpose is to create what only I can.
 
-Since 2013, I’ve worked at Google, where I’m a professional namer and brand manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being chosen as the honoree of the 15th annual ADCOLOR Change Agent award for enhancing corporate culture and creating a more inclusive environment, and completing an executive training at Wharton ((here are my notes)[https://www.instagram.com/p/BgWwmAoDWQh/]).
+Since 2013, I’ve worked at Google, where I’m a professional namer and brand manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being chosen as the honoree of the 15th annual ADCOLOR Change Agent award for enhancing corporate culture and creating a more inclusive environment, and completing an executive training at Wharton ([here are my notes](https://www.instagram.com/p/BgWwmAoDWQh/)).
 
 I earned my engineering degree in Product Design from Stanford University’s Mechanical Engineering department. I also completed the premed curriculum because, before Google recruited me, I planned to follow my parents’ path and become a doctor. I joined Tau Beta Pi (in my third year, a year ahead of most invitees) and Phi Beta Kappa before graduating with honors in 2014.
 
-I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into a poem published in Stanford School of Medicine’s literary journal ((Impart)[https://aubrielee.com/impart]). I studied oil painting as a child, explored graphic design in college, and now do 3D modeling and animation with Blender.
+I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into a poem published in Stanford School of Medicine’s literary journal ([Impart](https://aubrielee.com/impart)). I studied oil painting as a child, explored graphic design in college, and now do 3D modeling and animation with Blender.
 
 ## highlighted works
 - [Merusa](https://www.instagram.com/p/CkZ0RtRL4HY/?utm_source=ig_web_copy_link), self-portrait, 2022.
@@ -48,4 +48,5 @@ I have always loved creating art, whether with painted lines or written ones. In
 - The study of humor
 - Holographic foil
 - Jackets with inside pockets
+- Vegan macarons
 - Meeting new people
