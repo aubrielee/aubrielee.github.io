@@ -129,7 +129,6 @@ hr {
     max-width: 100%;
     margin: auto;
     padding: 10px 0 10px 0;
-
 }
 
 h1 {
@@ -425,7 +424,17 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     }
 
     .photobooth {
+        float: none;
+        margin: auto;
         margin-bottom: 2rem;
+        padding: calc(90% / 50) 0 50px 0;
+        width: 340px;
+        max-width: 100%;
+    }
+    
+    .photoboothTile {
+        max-width: 90%;
+        padding: calc(90% / 50) 0 calc(90% / 50) 0;
     }
 
     .listImage {
