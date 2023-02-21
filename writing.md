@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Writing
+title: Aubrie Lee - Writing
 permalink: /writing
 ---
 
@@ -28,5 +28,8 @@ permalink: /writing
     <li><a href="http://hekint.org/2017/01/22/cadaver-palavers/" target="_blank" tabindex="0"><span class="pieceTitle">Cadaver Palavers</span></a>, Hektoen International Journal of Medical Humanities, 2011.</li>
 </ul>
 <br>
+
+## fiction
+* [Bo for Broke](https://aubrielee.com/boforbroke), 2014.
 
 <p class="rss-subscribe noIndent">Subscribe <a href="{{ "/feed.xml" }}">via RSS</a>.</p>
