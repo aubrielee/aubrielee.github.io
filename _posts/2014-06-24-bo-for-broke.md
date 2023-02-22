@@ -8,7 +8,7 @@ permalink: /boforbroke
 2014
 {: .centeredText}
 
-*(Writing prompts from Bret Anthony Johnston, via Harriet, via Megan)
+(Writing prompts from Bret Anthony Johnston, via Harriet, via Megan)
 Spend a few minutes describing:
 {: .noIndent}
 
@@ -24,10 +24,12 @@ Spend a few minutes describing:
 * An incident underwater.
 * Things you keep in your purse or pocket (or backpack).
 * A science fiction story set in the White House.
-* Your arrival at a party where every guest is naked except for you. What do you do?*
+* Your arrival at a party where every guest is naked except for you. What do you do?
 {: .annotation}
 
+
 <span class="diamondDivider">&blacklozenge;</span>
+
 
 You, there. You weren’t supposed to see my porticalivolizzer. What? No, it’s not an umbrella. It’s a Model 24-8 porticalivolizzer. And of course I’m supposed to stand inside it. Clearly you don’t understand how personal teleporters work. No, you can’t try it right now, because I’m on an important mission.
 
