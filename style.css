@@ -98,6 +98,7 @@ a:hover {
     display: block;
     padding: 1em 0 1em 0;
     text-align: center;
+    text-indent: 0;
 }
 
 hr {
@@ -214,11 +215,13 @@ p.secondIndent {
 }
 
 p.annotation ul.annotation {
+    text-indent: 0;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
 .centeredText {
+    text-indent: 0;
     text-align: center;
 }
 
