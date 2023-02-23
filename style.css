@@ -93,6 +93,13 @@ a:hover {
     /* background-color: lavender; */
 }
 
+.diamondDivider {
+    font-size: 1.5rem;
+    display: block;
+    padding: 1em 0 1em 0;
+    text-align: center;
+}
+
 hr {
     margin: auto;
     margin-top: 2rem;
@@ -206,7 +213,7 @@ p.secondIndent {
     padding-left: 2rem;
 }
 
-p.annotation li.annotation {
+p.annotation ul.annotation {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
