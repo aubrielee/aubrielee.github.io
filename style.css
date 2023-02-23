@@ -214,7 +214,7 @@ p.secondIndent {
     padding-left: 2rem;
 }
 
-p.annotation ul.annotation {
+p.annotation, ul.annotation {
     text-indent: 0;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
