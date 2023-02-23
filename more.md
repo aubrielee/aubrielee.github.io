@@ -64,12 +64,6 @@ I have a rare form of muscular dystrophy. The more I use my muscles, the weaker 
 Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.com.
 {: .noIndent}
 
-## board membership
-- [NMD United](https://www.nmdunited.org/our-board): Connecting adults living with neuromuscular disabilities.
-- [DREDF, Disability Rights Education & Defense Fund](https://dredf.org/about-us/people/aubrie-lee/): Leading national civil rights law and policy center.
-- [The Kelsey](https://thekelsey.org/about/): Disability-forward housing solutions.
-- Past: [Inevitable Foundation](https://inevitable.foundation): Funding and mentoring the next generation of disabled screenwriters.
-
 ## speaking
 - Speaker at <a href="https://sustainabledevelopment.un.org/index.php?page=view&type=20000&nr=7770&menu=2993" target="_blank" tabindex="0">United Nations' High Level Political Forum</a>, 2021.
 - <a href="https://aubrielee.com/ncfitpodcast" target="_blank" tabindex="0">Podcast guest on NCFIT's Women Make Waves</a>, 2021.
@@ -80,6 +74,12 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - <a href="https://dmtalliance.com/aubrie-lee/" target="_blank" tabindex="0">Mentor at the Global Accessibility Symposium</a> in Mountain View, 2019.
 - Panelist at <a href="https://cloud.withgoogle.com/next18/sf/speakers/speaker/7D4365A4812A83EF" target="_blank" tabindex="0">Google Cloud Next 2018</a>.
 - Interviewed for a film about <a href="https://youtu.be/tAGs7Vc1rm8?t=1m8s" target="_blank" tabindex="0">accessibility at Google I/O 2018</a>.
+
+## board membership
+- [NMD United](https://www.nmdunited.org/our-board): Connecting adults living with neuromuscular disabilities.
+- [DREDF, Disability Rights Education & Defense Fund](https://dredf.org/about-us/people/aubrie-lee/): Leading national civil rights law and policy center.
+- [The Kelsey](https://thekelsey.org/about/): Disability-forward housing solutions.
+- Past: [Inevitable Foundation](https://inevitable.foundation): Funding and mentoring the next generation of disabled screenwriters.
 
 ## features
 - <a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>, Yahoo News, and <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, In The Know, 2021.
