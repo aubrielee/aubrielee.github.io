@@ -43,7 +43,6 @@ What planet am I from? Not telling. I’m a secret agent, remember? My commander
 You’re hungry? You know what, me too. Let’s hope this place has better food in there than out here.
 
 <span class="diamondDivider">⧫</span>
-{: .centeredText}
 
 These sugar packets are delicious. I’ll give Earth that much—y’all know how to flavor your ingestibles. Back on Tiolun, all we have is nutritionally complete water. Hey, what’s the matter, kid? Let me pay the bill first. Check it out: these marbles will morph into whatever shape I want. I think ten dollars and forty-six cents is in order.
 
@@ -52,7 +51,6 @@ Okay, kid, what was the hurry back there? The waiter seemed normal enough to me.
 The problem with teleporting is you don’t get to enjoy the views. You go from point A to point B without any of the decimals in between. Of course letters have decimals. You have to stop thinking like a sapien, kid. Maybe then you’ll get a gentian badge, too.
 
 <span class="diamondDivider">⧫</span>
-{: .centeredText}
 
 Taxi! Hey, can you take us to the beach? Yes, the dog one.
 
@@ -63,7 +61,6 @@ Oh yeah, driver? You get me? Ah, you’re from Ceuragoc! Nice. I’m from Tiolun
 Thanks for the ride. How much do I owe you? Sorry, I’m gonna keep the kid. Have a marble.
 
 <span class="diamondDivider">⧫</span>
-{: .centeredText}
 
 Don’t look so stricken, you wanted to come along. Are you afraid the driver was gonna eat you, too? You’re not even two bites and a juice box. That’s not it? Then what? Oh, I didn’t even notice. You should point it out to me next time. I would have wanted to see his pigeon foot collection.
 
@@ -76,7 +73,6 @@ You want to go in the water? Sure, I’ll come with you.
 The ocean waves on Earth are so funny. It’s as if someone shook a bucket, and the water never stopped moving. Tiolun’s oceans don’t crash like that. They just spin. Kind of like the water in those white bathroom bowls that sapiens use to do their laundry.
 
 <span class="diamondDivider">⧫</span>
-{: .centeredText}
 
 So what do you like about Earth? Yeah, that’s true, I guess you don’t have anything else to compare it to. But at least you seem to be allowed to do what you want, and you’re only a youngling. On Tiolun, only the forward engineers have that kind of freedom. Then they decide what the rest of us have to do.
 
@@ -97,7 +93,6 @@ The dog just bolted after something. All I have to do is port over there and sna
 I can’t see the kid’s face.
 
 <span class="diamondDivider">⧫</span>
-{: .centeredText}
 
 Hey there, kid. Glad you’re awake. It’s amazing how a little water can zap you sapiens. Okay, it was a lot of water. But nothing that my porticalivolizzer couldn’t get through.
 
