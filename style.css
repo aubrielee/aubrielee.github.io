@@ -206,7 +206,7 @@ p.secondIndent {
     padding-left: 2rem;
 }
 
-.annotation {
+p.annotation li.annotation {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
