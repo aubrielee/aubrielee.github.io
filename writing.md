@@ -17,7 +17,7 @@ permalink: /writing
     <li><a href="https://blog.google/outreach-initiatives/accessibility/here-loud-disabled-and-proud/" target="_blank" tabindex="0">We’re here, we’re loud, we’re disabled and proud</a>, Google blog, 2021.</li>
     <li><a href="https://rootedinrights.org/the-hardest-part-of-being-disabled-is-being-ignored/" target="_blank" tabindex="0">The Hardest Part of Being Disabled is Being Ignored</a>, Rooted in Rights, 2020.</li>
     <li><a href="https://www.nmdunited.org/single-post/ss-aubrie-lee" target="_blank" tabindex="0">A letter to my younger self</a>, NMD United, 2020.</li>
-    <li><a href="https://theletterwriterscollective.com/2021/04/11/to-a-future-me/" target="_blank" tabindex="0">A letter to my future self</a>, The Letter Writers, 2021.</li>
+    <li><a href="https://web.archive.org/web/20211025040512/https://theletterwriterscollective.com/2021/04/11/to-a-future-me/" target="_blank" tabindex="0">A letter to my future self</a>, The Letter Writers, 2021.</li>
     <li><a href="https://manhassetlibrary.org/aubrie-lee/" target="_blank" tabindex="0"><span class="pieceTitle">No Bility</span></a>, exhibited at the Manhasset Public Library, 2016, and featured on <a href="https://www.fshdsociety.org/finding-beauty-in-disability/" target="_blank" tabindex="0">FSHD Society</a>, 2018.</li>
     <li><a href="https://www.facebook.com/aubrieality/posts/10152926673649992:0" target="_blank" tabindex="0"><span class="pieceTitle">Infinity of the Soul</span></a>, baccalaureate reflection, 2014.</li>
 </ul>
