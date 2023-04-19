@@ -1,6 +1,6 @@
 ---
 layout: default
-title: More
+title: Aubrie Lee - More
 permalink: /more
 ---
 Find me elsewhere:
