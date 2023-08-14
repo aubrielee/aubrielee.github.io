@@ -91,6 +91,7 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - Highlighted in the <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Mountain View Voice</a> for the 2014 Disability Pride Parade.
 
 ## more disability work
+- Created [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
 - Collaborated on <a href="https://disabilityisdiversity.com/team" target="_blank" tabindex="0">Disability is Diversity</a> campaign for the entertainment industry, 2022. Featured on <a href="https://tiltingthelens.com/2022/10/01/the-campaign-calling-for-disabled-representation-in-film-tv/" target="_blank" tabindex="0">Tilting the Lens</a>.
 - Created <a href="https://www.cripcorps.com/" target="_blank" tabindex="0">cripcorps.com</a>, a collective disability justice blog, 2019.
 - Started the <a href="https://en.wikipedia.org/wiki/Crip_(disability_term)" target="_blank" tabindex="0">Wikipedia page for "Crip (disability term)"</a> and fought with the admins for a week before they approved it, 2019.
