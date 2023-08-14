@@ -34,6 +34,7 @@ I earned my engineering degree in Product Design from Stanford University’s Me
 I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into a poem published in Stanford School of Medicine’s literary journal ([Impart](https://aubrielee.com/impart)). I studied oil painting as a child, explored graphic design in college, and now do 3D modeling and animation with Blender.
 
 ## highlighted works
+- [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
 - [Merusa](https://www.instagram.com/p/CkZ0RtRL4HY/?utm_source=ig_web_copy_link), self-portrait, 2022.
 - <a href="https://aubrielee.com/impart" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford's Anastomosis journal</a>, 2018.
 - <a href="https://www.youtube.com/watch?v=cNyE5ZhvGDI" target="_blank" tabindex="0"><span class="pieceTitle">Science Campus</span></a>, art film. Finalist in Stanford Art of Science Competition, 2013.
