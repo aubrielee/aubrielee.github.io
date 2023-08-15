@@ -1,0 +1,48 @@
+<h1>My Analog Clock</h1>
+<canvas id="clock" width="200" height="200"></canvas>
+<script>
+var canvas = document.getElementById("clock");
+var ctx = canvas.getContext("2d");
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+var seconds = currentTime.getSeconds();
+var radius = 100;
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var hourHand = {
+x: centerX,
+y: centerY - radius * 0.75,
+};
+var minuteHand = {
+x: centerX,
+y: centerY - radius * 0.6,
+};
+var secondHand = {
+x: centerX,
+y: centerY - radius * 0.5,
+};
+function drawClock() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "black";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+ctx.fill();
+ctx.fillStyle = "black";
+ctx.beginPath();
+ctx.moveTo(centerX, centerY);
+ctx.lineTo(centerX + radius * Math.cos(hours * Math.PI / 12), centerY - radius * Math.sin(hours * Math.PI / 12));
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(centerX, centerY);
+ctx.lineTo(centerX + radius * Math.cos(minutes * Math.PI / 60), centerY - radius * Math.sin(minutes * Math.PI / 60));
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(centerX, centerY);
+ctx.lineTo(centerX + radius * Math.cos(seconds * Math.PI / 60), centerY - radius * Math.sin(seconds * Math.PI / 60));
+ctx.stroke();
+}
+setInterval(drawClock, 1000);
+</script>
