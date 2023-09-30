@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Aubrie Lee
-permalink: /personal-project-management
 ---
 # Personal project management: a sheet, a script, and a column per day
 
