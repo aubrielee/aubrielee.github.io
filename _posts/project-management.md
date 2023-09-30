@@ -12,7 +12,7 @@ permalink: /personal-project-management
 
 One of my life planning tools is my personal project management spreadsheet. I call mine “Projectory”—a projection of the trajectory of my projects.
 
-<img src='/media/projectory-simplified.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them.' class='listImage'>
+<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them.' class='listImage'>
 
 ## Layout
 
