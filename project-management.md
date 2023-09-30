@@ -1,23 +1,30 @@
 ---
 layout: default
 title: Aubrie Lee
+permalink: /daily-planning
 ---
-# Personal project management: a sheet, a script, and a column per day
+# Daily planning with a sheet, a script, and a column per day
 
 2023.09.30
 {: .centeredText .noIndent}
 
 <br>
 
-One of my life planning tools is my personal project management spreadsheet. I call mine “Projectory”—a projection of the trajectory of my projects.
+In grade school, I used a paper planner (a “binder reminder”) for my daily tasks. After that, I tried other people’s systems: Gantt charts, GTD, Asana, Notion, Emacs org mode, Roam. None of it worked better than the binder reminder, so I started with a simple spreadsheet and turned it into a planner that scrolls horizontally through a calendar and vertically through goals. I call it “Projectory”—a projection of the trajectory of my projects.
 
-<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them.' class='listImage'>
+<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them.'>
 
-## Layout
+## layout
 
 Each row represents a goal.
 
 I previously outlined these goals in my Archiridion, and I realized I wanted a more structured way to outline tasks within goals each day. Some of these goals are also categories for sub-goals.
+
+A few fun examples:
+* Abod: Regarding my body and abode.
+* Treadger: A ledger of my treasure; digital records, and records of the location of physical objects.
+* Quand If I: My take on the quantified self.
+* Optimel: Managing time optimally.
 
 Each column represents a day.
 
@@ -46,62 +53,56 @@ Apply to column A
 Custom formula: `=A1<>TODAY()`  <br>
 Apply to whole sheet
 
-## Moving through time
+## moving along the days
 All columns older than three days ago are hidden by a script:
 <pre>
 function processProjectorySimplified() {
+var sheet = SpreadsheetApp.getActiveSheet();
 
-  var sheet = SpreadsheetApp.getActiveSheet();
+var now = new Date(); // today
+var reach = 3; // span of number of days ago and ahead I want to keep salient; 3 days ago is day before ereyesterday
+var hideThroughDate = new Date(now);
+hideThroughDate.setDate(now.getDate() - reach - 1); // hide through day before reach date, show from reach date onward
 
-  var now = new Date(); // today
-  var reach = 3; // span of number of days ago I want to have awareness of; 3 days ago is day before ereyesterday
-  var hideThroughDate = new Date(now);
-  hideThroughDate.setDate(now.getDate() - reach - 1); // hide through day before reach date, show from reach date onward
-  
-  // Create an array of arrays of the date cells and their dates
-  // getSheetValues(startRow, startColumn, numRows, numColumns)
-  var cellDates = sheet.getSheetValues(1, 2, 1, sheet.getLastColumn()); // All dates in the spreadsheet in row 1
-  
-  // find the index for the day just before the start day.
-  // Starting from the left, inspect each item in cellDates and see whether it's the start day.
-  var hideThroughCol = 0; // number of columns to hide
-  while(hideThroughCol++ <= sheet.getLastColumn()) {
-    var then = new Date(cellDates[0][hideThroughCol]);
-    
-    // if equal to hideThroughDate
-    if(then >= hideThroughDate) {
-      break;
-    }
-  }
-  
-  //bounds check
-  if(hideThroughCol > sheet.getLastColumn()) return;
-  
-  // hide all date columns through hideThroughDate
-  sheet.hideColumn(sheet.getRange(1, 2, 1, hideThroughCol)); // row 1, column B, for one row, for number of columns defined by hideThroughCol
-  
-  var lastFewDays = sheet.getRange(1, hideThroughCol+1, sheet.getLastRow(), reach+1); // add 1 to hideThroughCol to push past project column (column A); add 1 to reach to include last column hidden
-  lastFewDays.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP); // 2021.08.28 set text wrapping to clip for days before today
-  
-  Logger.log("Yay!");
+// Create an array of arrays of the date cells and their dates
+// getSheetValues(startRow, startColumn, numRows, numColumns)
+var cellDates = sheet.getSheetValues(1, 2, 1, sheet.getLastColumn()); // All dates in the spreadsheet in row 1
+
+// find the index for the day just before the start day.
+// Starting from the left, inspect each item in cellDates and see whether it's the start day.
+var hideThroughCol = 0; // number of columns to hide
+while(hideThroughCol++ <= sheet.getLastColumn()) {
+var then = new Date(cellDates[0][hideThroughCol]);
+
+// if equal to hideThroughDate
+if(then >= hideThroughDate) {
+break;
+}
+}
+
+//bounds check
+if(hideThroughCol > sheet.getLastColumn()) return;
+
+// hide all date columns through hideThroughDate
+sheet.hideColumn(sheet.getRange(1, 2, 1, hideThroughCol)); // row 1, column B, for one row, for number of columns defined by hideThroughCol
+
+var lastFewDays = sheet.getRange(1, hideThroughCol+1, sheet.getLastRow(), reach+1); // add 1 to hideThroughCol to push past project column (column A); add 1 to reach to include last column hidden
+lastFewDays.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP); // 2021.08.28 set text wrapping to clip for days before today
+
+Logger.log("Yay!");
 }
 
 </pre>
 
-## More details
+## more notes
 
 * I started this spreadsheet almost four years ago, in January of 2021. The sheet became slow, so now I’m archiving each quarter, whose limits I’ve defined by solinoxes.
 * The main tab of Projectory is called “Timetrix” (time matrix). If I no longer prioritize a row, I put it in a tab called “Cryoritized” (deprioritized and put in cryo).
-* (Not shown) I delineate quarters by solstices and equinoxes. To make solstices and equinoxes teal: <br>
+* I delineate quarters by solstices and equinoxes. To make solstices and equinoxes teal: <br>
 Custom formula: =MATCH(A$1,INDIRECT("Solinoxes!A1:A"),0) <br>
 I hav​​e two of these, one of which makes the date bold and italicized.
-
-## Where I’ve been:
-Gantt charts, GTD, Asana, Notion, other people’s templates. Nothing works better for me than my own design.
 
 ## Where I go from here:
 * A better way to see today’s tasks on mobile
 * Simplenote notes
 * Better matching to Archiridion
-
-
