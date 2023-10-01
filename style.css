@@ -267,6 +267,15 @@ li {
     border-width: .1rem;
 }
 
+.articleImage {
+    display: block;
+    margin: 1em auto 1em auto;
+
+    height: auto; 
+    width: auto; 
+    max-width: 400px;
+}
+
 .bioPhoto {
     display: block;
     margin: 1em auto 1em auto;
