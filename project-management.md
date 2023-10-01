@@ -1,24 +1,25 @@
 ---
 layout: default
 title: Aubrie Lee
-permalink: /daily-planning
+permalink: /daily-planner
 ---
-# Daily planning with a sheet, a script, and a column per day
+# My digital daily planner: a sheet, a script, and a column per day
 
 2023.09.30
 {: .centeredText .noIndent}
 
 <br>
 
-In grade school, I used a paper planner (a “binder reminder”) for my daily tasks. After that, I tried other people’s systems: Gantt charts, GTD, Asana, Notion, Emacs org mode, Roam. None of it worked better than the binder reminder, so I started with a simple spreadsheet and turned it into a planner that scrolls horizontally through a calendar and vertically through goals. I call it “Projectory”—a projection of the trajectory of my projects.
+In grade school, I used a paper “binder reminder” for my daily tasks. After that, I wanted a digital system. I tried Gantt charts, GTD, Asana, Notion, Emacs org mode, Roam. None of it worked better than the binder reminder, so I started with a simple spreadsheet and turned it into a planner that scrolls horizontally through a calendar and vertically through goals. I call it “Projectory”—a projection of the trajectory of my projects.
 
-<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them.'>
+<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them. For example, J1 contains 2023.09.30, A5 contains “my website”, and J5 contains “write article about Projectory”. Other tasks are about going to the cardinal tech center, scheduling aquatherapy and eye appointments, organizing gopro footage, investigating espanso, and researching manual chairs and echairs.'>
 
-## layout
+_A snapshot of my personal project management spreadsheet._
+{: .centeredText .noIndent}
 
-Each row represents a goal.
+## rows represent goals
 
-I previously outlined these goals in my Archiridion, and I realized I wanted a more structured way to outline tasks within goals each day. Some of these goals are also categories for sub-goals.
+I previously outlined these goals in my life plan (my Archiridion), and I realized I wanted a more structured way to outline tasks within goals each day. Some of these goals are also categories for sub-goals.
 
 A few fun examples:
 * Abod: Regarding my body and abode.
@@ -26,7 +27,7 @@ A few fun examples:
 * Quand If I: My take on the quantified self.
 * Optimel: Managing time optimally.
 
-Each column represents a day.
+# columns represent days
 
 I have the columns colored to represent days’ salience in my mind. Today is clearest, and the further a day is from today, the more obscure it is. By my observations, salience is likely logarithmic rather than linear; for example, I can easily distinguish today and yesterday, but events from yesterday seem more proximate to the day before than to today.
 
@@ -54,7 +55,7 @@ Custom formula: `=A1<>TODAY()`  <br>
 Apply to whole sheet
 
 ## moving along the days
-All columns older than three days ago are hidden by a script:
+All columns older than three days ago are hidden by a script, which I adapted from [this script](https://stackoverflow.com/questions/35208357/google-sheets-hiding-columns-based-on-date-in-row-1):
 <pre>
 function processProjectorySimplified() {
 var sheet = SpreadsheetApp.getActiveSheet();
@@ -94,15 +95,14 @@ Logger.log("Yay!");
 
 </pre>
 
+Old tasks don’t carry over. This is by design; if I don’t specifically carry a task over, it drifts away rather than cluttering my days.
+
 ## more notes
 
-* I started this spreadsheet almost four years ago, in January of 2021. The sheet became slow, so now I’m archiving each quarter, whose limits I’ve defined by solinoxes.
 * The main tab of Projectory is called “Timetrix” (time matrix). If I no longer prioritize a row, I put it in a tab called “Cryoritized” (deprioritized and put in cryo).
-* I delineate quarters by solstices and equinoxes. To make solstices and equinoxes teal: <br>
+* I started this spreadsheet almost four years ago, in January of 2021. The sheet became slow, so now I’m archiving each quarter, whose limits I’ve defined by solstices and equinoxes. To make solstices and equinoxes teal, I compare dates to those in a sheet called Solinoxes: <br>
 Custom formula: =MATCH(A$1,INDIRECT("Solinoxes!A1:A"),0) <br>
-I hav​​e two of these, one of which makes the date bold and italicized.
+I hav​​e two of these entries, one of which makes the date bold and italicized.
+* Eventually, I want to make a better way to collect today’s tasks and easily see them on my phone.
 
-## Where I go from here:
-* A better way to see today’s tasks on mobile
-* Simplenote notes
-* Better matching to Archiridion
+On 2021.05.07, I wrote in my Archiridion that I wanted to write a blog post about my project spreadsheet. More than two years later, I’ve finally written it! Logger.log(“Yay!);
