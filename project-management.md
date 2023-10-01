@@ -12,7 +12,7 @@ permalink: /daily-planner
 
 In grade school, I used a paper “binder reminder” for my daily tasks. After that, I wanted a digital system. I tried Gantt charts, GTD, Asana, Notion, Emacs org mode, Roam. None of it worked better than the binder reminder, so I started with a simple spreadsheet and turned it into a planner that scrolls horizontally through a calendar and vertically through goals. I call it “Projectory”—a projection of the trajectory of my projects.
 
-<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them. For example, J1 contains 2023.09.30, A5 contains “my website”, and J5 contains “write article about Projectory”. Other tasks are about going to the cardinal tech center, scheduling aquatherapy and eye appointments, organizing gopro footage, investigating espanso, and researching manual chairs and echairs.' class='articleImage'>
+<img src='/media/projectory-timetrix.png' alt='Spreadsheet with dates along the top and projects down the left. Some cells in the middle have tasks in them. For example, J1 contains 2023.09.30, A5 contains “my website”, and J5 contains “write article about Projectory”. Other tasks are about going to the cardinal tech center, scheduling aquatherapy and eye appointments, organizing gopro footage, investigating espanso, and researching manual chairs and echairs.' class='listImage'>
 
 _A snapshot of my personal project management spreadsheet._
 {: .centeredText .noIndent}
