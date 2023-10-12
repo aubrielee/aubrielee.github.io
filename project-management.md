@@ -108,4 +108,5 @@ Custom formula: =MATCH(A$1,INDIRECT("Solinoxes!A1:A"),0) <br>
 I hav​​e two of these entries, one of which makes the date bold and italicized.
 * Eventually, I want to make a better way to collect today’s tasks and easily see them on my phone.
 
+<br>
 On 2021.05.07, I wrote in my Archiridion that I wanted to write a blog post about my project spreadsheet. More than two years later, I’ve finally written it! Logger.log(“Yay!);
