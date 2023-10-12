@@ -58,44 +58,45 @@ Apply to whole sheet
 
 ## moving along the days
 All columns older than three days ago are hidden by a script, which I adapted from [this script](https://stackoverflow.com/questions/35208357/google-sheets-hiding-columns-based-on-date-in-row-1):
-<pre>
+
+```js
 function processProjectorySimplified() {
-var sheet = SpreadsheetApp.getActiveSheet();
+    var sheet = SpreadsheetApp.getActiveSheet();
 
-var now = new Date(); // today
-var reach = 3; // span of number of days ago and ahead I want to keep salient; 3 days ago is day before ereyesterday
-var hideThroughDate = new Date(now);
-hideThroughDate.setDate(now.getDate() - reach - 1); // hide through day before reach date, show from reach date onward
+    var now = new Date(); // today
+    var reach = 3; // span of number of days ago and ahead I want to keep salient; 3 days ago is day before ereyesterday
+    var hideThroughDate = new Date(now);
+    hideThroughDate.setDate(now.getDate() - reach - 1); // hide through day before reach date, show from reach date onward
 
-// Create an array of arrays of the date cells and their dates
-// getSheetValues(startRow, startColumn, numRows, numColumns)
-var cellDates = sheet.getSheetValues(1, 2, 1, sheet.getLastColumn()); // All dates in the spreadsheet in row 1
+    // Create an array of arrays of the date cells and their dates
+    // getSheetValues(startRow, startColumn, numRows, numColumns)
+    var cellDates = sheet.getSheetValues(1, 2, 1, sheet.getLastColumn()); // All dates in the spreadsheet in row 1
 
-// find the index for the day just before the start day.
-// Starting from the left, inspect each item in cellDates and see whether it's the start day.
-var hideThroughCol = 0; // number of columns to hide
-while(hideThroughCol++ <= sheet.getLastColumn()) {
-var then = new Date(cellDates[0][hideThroughCol]);
+    // find the index for the day just before the start day.
+    // Starting from the left, inspect each item in cellDates and see whether it's the start day.
+    var hideThroughCol = 0; // number of columns to hide
+    while(hideThroughCol++ <= sheet.getLastColumn()) {
+        var then = new Date(cellDates[0][hideThroughCol]);
 
-// if equal to hideThroughDate
-if(then >= hideThroughDate) {
-break;
+        // if equal to hideThroughDate
+        if(then >= hideThroughDate) {
+        break;
+        }
+    }
+
+    //bounds check
+    if(hideThroughCol > sheet.getLastColumn()) return;
+
+    // hide all date columns through hideThroughDate
+    sheet.hideColumn(sheet.getRange(1, 2, 1, hideThroughCol)); // row 1, column B, for one row, for number of columns defined by hideThroughCol
+
+    var lastFewDays = sheet.getRange(1, hideThroughCol+1, sheet.getLastRow(), reach+1); // add 1 to hideThroughCol to push past project column (column A); add 1 to reach to include last column hidden
+    lastFewDays.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP); // 2021.08.28 set text wrapping to clip for days before today
+
+    Logger.log("Yay!");
 }
-}
 
-//bounds check
-if(hideThroughCol > sheet.getLastColumn()) return;
-
-// hide all date columns through hideThroughDate
-sheet.hideColumn(sheet.getRange(1, 2, 1, hideThroughCol)); // row 1, column B, for one row, for number of columns defined by hideThroughCol
-
-var lastFewDays = sheet.getRange(1, hideThroughCol+1, sheet.getLastRow(), reach+1); // add 1 to hideThroughCol to push past project column (column A); add 1 to reach to include last column hidden
-lastFewDays.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP); // 2021.08.28 set text wrapping to clip for days before today
-
-Logger.log("Yay!");
-}
-
-</pre>
+```
 
 Old tasks don’t carry over. This is by design; if I don’t specifically carry a task over, it drifts away rather than cluttering my days.
 
