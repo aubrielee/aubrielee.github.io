@@ -11,7 +11,7 @@
 
 :root {
     --narrowWidth: 720px;
-    /* --narrowPadding: 8vw; */
+    --narrowPadding: 8vw;
     --linkColor: #004544;
     --linkColorHover: #006f66;
     --linkColorCarousel: #c0ffee;
