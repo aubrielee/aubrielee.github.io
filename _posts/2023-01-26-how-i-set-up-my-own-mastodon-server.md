@@ -98,14 +98,14 @@ Do you want to store user-uploaded files on the cloud? <b>No</b>
   </li>
   <li>Set up SMTP if you’d like. I skipped it (I actually tried a test email to see what would happen; it failed):
     <pre>
-        SMTP server: <b>localhost</b>
-        SMTP port: <b>587</b>
-        SMTP username:
-        SMTP password:
-        SMTP authentication: <b>plain</b>
-        SMTP OpenSSL verify mode: <b>none</b>
-        E-mail address to send e-mails "from": <b>Mastodon &lt;notifications@social.something.com&gt;</b>
-        Send a test e-mail with this configuration right now? <b>no</b>
+SMTP server: <b>localhost</b>
+SMTP port: <b>587</b>
+SMTP username:
+SMTP password:
+SMTP authentication: <b>plain</b>
+SMTP OpenSSL verify mode: <b>none</b>
+E-mail address to send e-mails "from": <b>Mastodon &lt;notifications@social.something.com&gt;</b>
+Send a test e-mail with this configuration right now? <b>no</b>
     </pre>
   </li>
   <li>Create an admin account. For example:
