@@ -16,9 +16,9 @@ Welcome to my self-coded website – so kind of you to stop by!<br>
 You can reach out to me if you’re seeking:
 {: .noIndent }
 
-- A speaker or panelist on Disability inclusion
-- A Disabled, Asian American fashion model
-- A thought-provoking conversation and a new friend
+- A speaker or panelist
+- A fashion model
+- A thought-provoking conversation with a new friend
 <br>
 
 ## a bit of my journey
