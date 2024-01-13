@@ -104,7 +104,7 @@ Old tasks don’t carry over. This is by design; if I don’t specifically carry
 
 * The main tab of Projectory is called “Timetrix” (time matrix). If I no longer prioritize a row, I put it in a tab called “Cryoritized” (deprioritized and put in cryo).
 * I started this spreadsheet almost four years ago, in January of 2021. The sheet became slow, so now I’m archiving each quarter, whose limits I’ve defined by solstices and equinoxes. To make solstices and equinoxes teal, I compare dates to those in a sheet called Solinoxes: <br>
-Custom formula: =MATCH(A$1,INDIRECT("Solinoxes!A1:A"),0) <br>
+Custom formula: `=MATCH(A$1,INDIRECT("Solinoxes!A1:A"),0)` <br>
 I hav​​e two of these entries, one of which makes the date bold and italicized.
 * Eventually, I want to make a better way to collect today’s tasks and easily see them on my phone.
 
