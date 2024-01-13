@@ -17,8 +17,8 @@ You can reach out to me if you’re seeking:
 {: .noIndent }
 
 - A speaker or panelist on Disability justice, self-improvement, or 3D modeling
-- A Disabled, Asian American fashion model
-- A thought-provoking conversation with a new friend
+- A Disabled, Asian American fashion model with muscular dystrophy
+- A thought-provoking conversation and a new friend
 <br>
 
 ## a bit of my journey
