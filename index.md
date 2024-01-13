@@ -16,8 +16,8 @@ Welcome to my self-coded website – so kind of you to stop by!<br>
 You can reach out to me if you’re seeking:
 {: .noIndent }
 
-- A speaker or panelist
-- A fashion model
+- A speaker or panelist on Disability justice, self-improvement, or 3D modeling
+- A Disabled, Asian American fashion model
 - A thought-provoking conversation with a new friend
 <br>
 
@@ -25,7 +25,7 @@ You can reach out to me if you’re seeking:
 
 I'm an artist and engineer. My life's purpose is to create what only I can.
 
-Among my descriptors are: professional fashion model, 3D modeler, award-winning poet, published writer, public speaker, activist by necessity.
+Among my descriptors are: professional model, 3D modeler, award-winning poet, published writer, public speaker, activist by necessity.
 
 Since 2013, I’ve worked at Google, where I’m a professional namer and senior brand marketing manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being nominated for and chosen as the honoree of the 15th annual ADCOLOR Change Agent award for creating a more inclusive environment, and discovering I actually enjoyed Wharton's executive education curriculum despite never having liked school ([here are my notes](https://www.instagram.com/p/BgWwmAoDWQh/)).
 
