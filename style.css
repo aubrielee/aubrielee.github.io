@@ -294,6 +294,7 @@ li {
 }
 
 pre {
+    word-wrap: break-word;
     white-space: pre-wrap;
     /* white-space: pre-line; */
     margin: 1rem 0 1rem 0;
