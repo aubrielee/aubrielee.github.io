@@ -81,6 +81,13 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - Past: [The Kelsey](https://thekelsey.org/about/): Disability-forward housing solutions.
 - Past: [Inevitable Foundation](https://inevitable.foundation): Funding and mentoring the next generation of disabled screenwriters.
 
+## more features
+- In The Know: <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, 2021.
+- <a href="https://www.instagram.com/p/CDJ5ZNrlCmP/" target="_blank" tabindex="0">Featured on Google's Instagram</a> for the 30th anniversary of the Americans with Disabilities Act, 2020.
+- Cameo in the <a href="https://www.youtube.com/watch?v=TQSaPsKHPqs&feature=youtu.be&t=2710" target="_blank" tabindex="0">CEO keynote at Google I/O 2019</a>.
+- <a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.
+- <a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.
+
 ## more disability work
 - Created [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
 - Collaborated on <a href="https://disabilityisdiversity.com/team" target="_blank" tabindex="0">Disability is Diversity</a> campaign for the entertainment industry, 2022. Featured on <a href="https://tiltingthelens.com/2022/10/01/the-campaign-calling-for-disabled-representation-in-film-tv/" target="_blank" tabindex="0">Tilting the Lens</a>.
