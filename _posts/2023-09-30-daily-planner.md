@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Aubrie Lee
+title: Aubrie Lee - My digital daily planner
 permalink: /daily-planner
 ---
 # My digital daily planner: a sheet, a script, and a column per day
