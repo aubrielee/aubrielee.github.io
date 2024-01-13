@@ -57,26 +57,25 @@ Custom formula: `=A1<>TODAY()`  <br>
 Apply to whole sheet
 
 ## moving along the days
-All columns older than three days ago are hidden by a script, which I adapted from [this script](https://stackoverflow.com/questions/35208357/google-sheets-hiding-columns-based-on-date-in-row-1):
+All columns older than three days ago are hidden by a script, which I [adapted from this script](https://stackoverflow.com/questions/35208357/google-sheets-hiding-columns-based-on-date-in-row-1):
 
 ```js
 function processProjectorySimplified() {
     var sheet = SpreadsheetApp.getActiveSheet();
 
     var now = new Date(); // today
-    var reach = 3; // span of number of days ago and ahead I want to keep salient; 3 days ago is day before ereyesterday
+    var reach = 3; // span of number of days ago and ahead I want to keep salient; 3 days ago is foreyesterday
     var hideThroughDate = new Date(now);
-    hideThroughDate.setDate(now.getDate() - reach - 1); // hide through day before reach date, show from reach date onward
+    hideThroughDate.setDate(now.getDate() - reach - 1); // plan to hide through day before reach date, show from reach date onward
 
     // Create an array of arrays of the date cells and their dates
-    // getSheetValues(startRow, startColumn, numRows, numColumns)
     var cellDates = sheet.getSheetValues(1, 2, 1, sheet.getLastColumn()); // All dates in the spreadsheet in row 1
 
-    // find the index for the day just before the start day.
+    // Find the index for the day just before the start day.
     // Starting from the left, inspect each item in cellDates and see whether it's the start day.
     var hideThroughCol = 0; // number of columns to hide
     while(hideThroughCol++ <= sheet.getLastColumn()) {
-        var then = new Date(cellDates[0][hideThroughCol]);
+        var then = new Date(cellDates[0][hideThroughCol]); // then is this
 
         // if equal to hideThroughDate
         if(then >= hideThroughDate) {
@@ -84,14 +83,15 @@ function processProjectorySimplified() {
         }
     }
 
-    //bounds check
+    // Bounds check
     if(hideThroughCol > sheet.getLastColumn()) return;
 
-    // hide all date columns through hideThroughDate
+    // Hide all date columns through hideThroughDate
     sheet.hideColumn(sheet.getRange(1, 2, 1, hideThroughCol)); // row 1, column B, for one row, for number of columns defined by hideThroughCol
 
+    // 2021.08.28 set text wrapping to clip for days before today
     var lastFewDays = sheet.getRange(1, hideThroughCol+1, sheet.getLastRow(), reach+1); // add 1 to hideThroughCol to push past project column (column A); add 1 to reach to include last column hidden
-    lastFewDays.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP); // 2021.08.28 set text wrapping to clip for days before today
+    lastFewDays.setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP);
 
     Logger.log("Yay!");
 }
@@ -109,4 +109,4 @@ I hav​​e two of these entries, one of which makes the date bold and italiciz
 * Eventually, I want to make a better way to collect today’s tasks and easily see them on my phone.
 
 <br>
-On 2021.05.07, I wrote in my Archiridion that I wanted to write a blog post about my project spreadsheet. More than two years later, I’ve finally written it! Logger.log(“Yay!);
+On 2021.05.07, I wrote in my Archiridion that I wanted to write a blog post about my project management spreadsheet. More than two years later, I’ve finally written it! Logger.log(“Yay!);
