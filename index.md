@@ -27,7 +27,7 @@ I'm an artist and engineer. My life's purpose is to create what only I can.
 
 Among my descriptors are: professional fashion model, 3D modeler, award-winning poet, published writer, public speaker, activist by necessity.
 
-Since 2013, I’ve worked at Google, where I’m a professional namer and brand manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being nominated for and chosen as the honoree of the 15th annual ADCOLOR Change Agent award for creating a more inclusive environment, and discovering I actually enjoyed Wharton's executive education curriculum despite never having liked school ([here are my notes](https://www.instagram.com/p/BgWwmAoDWQh/)).
+Since 2013, I’ve worked at Google, where I’m a professional namer and senior brand marketing manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being nominated for and chosen as the honoree of the 15th annual ADCOLOR Change Agent award for creating a more inclusive environment, and discovering I actually enjoyed Wharton's executive education curriculum despite never having liked school ([here are my notes](https://www.instagram.com/p/BgWwmAoDWQh/)).
 
 I earned my engineering degree in Product Design from Stanford University’s Mechanical Engineering department. I also completed the premed curriculum because, before Google recruited me, I planned to follow my parents’ path and become a doctor. I was invited to join Phi Beta Kappa and Tau Beta Pi before graduating with honors in 2014.
 
