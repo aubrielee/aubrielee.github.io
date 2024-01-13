@@ -39,6 +39,16 @@ I have always loved creating art, whether with painted lines or written ones. In
 - <a href="https://aubrielee.com/impart" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford's Anastomosis journal</a>, 2018.
 - <a href="https://www.youtube.com/watch?v=cNyE5ZhvGDI" target="_blank" tabindex="0"><span class="pieceTitle">Science Campus</span></a>, art film. Finalist in Stanford Art of Science Competition, 2013.
 
+## features
+- Interviewed on NPR: [How AI helps some people with disabilities communicate](https://www.marketplace.org/2024/01/02/how-ai-helps-some-people-with-disabilities-communicate/), 2024.
+- Interviewed for Bloomberg's documentary series <a href="https://www.bloomberg.com/news/videos/2023-03-23/technology-and-ai-for-social-inclusion-the-future-with-hannah-fry-episode-5-digital">The Future With Hannah Fry, Episode 5: Technology and AI for Social Inclusion</a>, 2023.
+- <a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>, Yahoo News, and <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, In The Know, 2021.
+- <a href="https://www.instagram.com/p/CDJ5ZNrlCmP/" target="_blank" tabindex="0">Featured on Google's Instagram</a> for the 30th anniversary of the Americans with Disabilities Act, 2020.
+- Cameo in the <a href="https://www.youtube.com/watch?v=TQSaPsKHPqs&feature=youtu.be&t=2710" target="_blank" tabindex="0">CEO keynote at Google I/O 2019</a>.
+- <a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.
+- <a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.
+- Highlighted in the <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Mountain View Voice</a> for the 2014 Disability Pride Parade.
+
 ## my interests
 - Self-improvement. Check out <a href="https://medium.com/@aubrie/how-to-make-a-life-plan-and-actually-follow-it-801e5335a63a" target="_blank" tabindex="0"><span class="pieceTitle">How to make a life plan and actually follow it</span></a>
 - Collecting the <a href="https://www.reddit.com/r/Handwriting/comments/ndcful/help_me_collect_the_handwriting_of_the_world_if/" target="_blank" tabindex="0">handwriting of the world</a>
