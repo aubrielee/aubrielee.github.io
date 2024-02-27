@@ -98,4 +98,5 @@ Not every disabled person likes to be asked about their disabilities, but if you
 - Co-founded Power2ACT, Stanford's disability student group (renamed to Stanford Disability Alliance in 2021), 2011.
 
 ## links i like
+- My brother Blaze Lee's motion graphics showreel: [blazelee.net](https://blazelee.net/)
 - My sister Cadence Lee's professional photography: [cadenceleephoto.com](https://www.cadenceleephoto.com/)
