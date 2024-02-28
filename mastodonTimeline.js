@@ -27,16 +27,18 @@ window.addEventListener("load", () => {
 //     timeline_type: "profile",
 
     // Your user ID number on Mastodon instance. Leave it empty if you didn't choose 'profile' as type of timeline
-//     user_id: "109599644401889599",
+    user_id: "109599644401889599",
 
     // Your user name on Mastodon instance (including the @ symbol at the beginning). Leave it empty if you didn't choose 'profile' as type of timeline
-//     profile_name: "@Aubrie",
+    profile_name: "@Aubrie",
 
     // The name of the hashtag (not including the # symbol). Leave it empty if you didn't choose 'hashtag' as type of timeline
     hashtag_name: "",
 
     // Maximum amount of posts to get. Default: 20
     posts_limit: "8",
+
+    hidePinnedPosts: false,
 
     // Hide unlisted posts. Default: don't hide
     hide_unlisted: false,
@@ -128,25 +130,41 @@ MastodonApi.prototype.buildTimeline = async function () {
   // Get server data
   await this.getTimelineData();
 
+  // 2024.02.28 Merge pinned posts with timeline posts
+  let posts;
+  if (
+    !this.hidePinnedPosts
+    // &&
+    // this.pinned.length !== 0
+  ) {
+    const pinnedPosts = this.FETCHED_DATA.pinned.map((obj) => ({
+      ...obj,
+      pinned: true,
+    }));
+    posts = [...pinnedPosts, ...this.FETCHED_DATA.timeline];
+  } else {
+    posts = this.FETCHED_DATA.timeline;
+  }
+  
   // Empty the <div> container
   this.CONTAINER_BODY_ID.innerHTML = "";
 
-  for (let i in this.FETCHED_DATA.timeline) {
+  for (let i in posts) {
     // First filter (Public / Unlisted)
     if (
-      this.FETCHED_DATA.timeline[i].visibility == "public" ||
+      posts[i].visibility == "public" ||
       (!this.HIDE_UNLISTED &&
-        this.FETCHED_DATA.timeline[i].visibility == "unlisted")
+        posts[i].visibility == "unlisted")
     ) {
       // Second filter (Reblog / Replies)
       if (
-        (this.HIDE_REBLOG && this.FETCHED_DATA.timeline[i].reblog) ||
-        (this.HIDE_REPLIES && this.FETCHED_DATA.timeline[i].in_reply_to_id)
+        (this.HIDE_REBLOG && posts[i].reblog) ||
+        (this.HIDE_REPLIES && posts[i].in_reply_to_id)
       ) {
         // Nothing here (Don't append posts)
       } else {
         // Append posts
-        this.appendpost(this.FETCHED_DATA.timeline[i], Number(i));
+        this.appendpost(posts[i], Number(i));
       }
     }
   }
@@ -357,6 +375,9 @@ MastodonApi.prototype.getTimelineData = async function () {
       urls.timeline = `${this.INSTANCE_URL}/api/v1/timelines/tag/${this.HASHTAG_NAME}?limit=${this.postS_LIMIT}`;
     } else if (this.TIMELINE_TYPE === "local") {
       urls.timeline = `${this.INSTANCE_URL}/api/v1/timelines/public?local=true&limit=${this.postS_LIMIT}`;
+      if (!this.hidePinnedPosts) {
+        urls.pinned = `${this.INSTANCE_URL}/api/v1/accounts/${this.USER_ID}/statuses?pinned=true`;
+      }
       
       console.log("urls");
       console.log(urls);
