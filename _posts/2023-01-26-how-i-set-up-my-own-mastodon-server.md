@@ -234,4 +234,4 @@ Thank you to the people who saved me with their advice. Here are some resources 
 2024.02.28 Update: 
 {: .noIndent }
 
-For a long time, I've been wanting to embed an excerpt of my timeline into this website. I've now done so at https://aubrielee.com/more using [i.j's Mastodon embed timeline widget](https://gitlab.com/idotj/mastodon-embed-timeline). Many thanks to [i.j](https://mastodon.online/@idotj) for being so kind and helpful in getting it set up!
+For a long time, I've been wanting to embed an excerpt of my timeline into this website. I've now done so at [https://aubrielee.com/more](https://aubrielee.com/more) using [i.j's Mastodon embed timeline widget](https://gitlab.com/idotj/mastodon-embed-timeline). Many thanks to [i.j](https://mastodon.online/@idotj) for being so kind and helpful in getting it set up!
