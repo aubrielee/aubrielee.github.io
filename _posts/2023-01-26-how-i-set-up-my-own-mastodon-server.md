@@ -229,5 +229,9 @@ Thank you to the people who saved me with their advice. Here are some resources 
 * [Configuring your environment - Mastodon documentation](https://docs.joinmastodon.org/admin/config/#federation) 
 * [mastodon-documentation/Serving_a_different_domain.md at master](https://github.com/felx/mastodon-documentation/blob/master/Running-Mastodon/Serving_a_different_domain.md) 
 {: .lineWrap}
+<br>
 
-2024.02.28 Update: For a long time, I've been wanting to embed an excerpt of my timeline into this website. I've now done so at https://aubrielee.com/more using [i.j's Mastodon embed timeline widget](https://gitlab.com/idotj/mastodon-embed-timeline). Many thanks to [i.j](https://mastodon.online/@idotj) for being so kind and helpful in getting it set up!
+2024.02.28 Update: 
+{: .noIndent }
+
+For a long time, I've been wanting to embed an excerpt of my timeline into this website. I've now done so at https://aubrielee.com/more using [i.j's Mastodon embed timeline widget](https://gitlab.com/idotj/mastodon-embed-timeline). Many thanks to [i.j](https://mastodon.online/@idotj) for being so kind and helpful in getting it set up!
