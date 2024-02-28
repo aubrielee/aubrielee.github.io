@@ -690,10 +690,22 @@ html[data-theme="dark"] {
   display: block;
   font-weight: normal;
 }
+
 .mt-post-header-date {
+    display: flex;
+    align-items: center;
   font-size: 1rem;
   text-align: right;
   margin: 0rem 0 0 auto;
+}
+.mt-post-header-date svg {
+    /* margin-top: 3px; */
+}
+.mt-pinnedLabel {
+    margin: 0 20px 0 2px;
+    /* font-size: 1.2rem; */
+    font-weight: 400;
+    /* font-style: italic; */
 }
 .mt-post-header-date > a {
 /*   color: var(--contrast-gray-color) !important; */
