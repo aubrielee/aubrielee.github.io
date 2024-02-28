@@ -610,6 +610,11 @@ MastodonApi.prototype.assamblepost = function (c, i) {
   formattedDate = this.formatDate(date);
   const timestamp =
     '<div class="mt-post-header-date">' +
+    (c.pinned
+      ? '<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="mt-post-pinned" aria-hidden="true"><path d="m640-480 80 80v80H520v240l-40 40-40-40v-240H240v-80l80-80v-280h-40v-80h400v80h-40v280Zm-286 80h252l-46-46v-314H400v314l-46 46Zm126 0Z"></path></svg><span class="mt-pinnedLabel">Pinned</span>'
+      // ? '<i class="fa fa-thumb-tack status__prepend-icon fa-fw"></i></svg><span class="mt-pinnedLabel">Pinned</span>'
+      : "") +
+  
     '<a href="' +
     url +
     '" rel="nofollow noopener noreferrer" target="_blank">' +
