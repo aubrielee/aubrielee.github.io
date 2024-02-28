@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
     hashtag_name: "",
 
     // Maximum amount of posts to get. Default: 20
-    posts_limit: "8",
+    posts_limit: "7",
 
     hidePinnedPosts: false,
 
@@ -359,8 +359,8 @@ MastodonApi.prototype.getTimelineData = async function () {
       }
 
       const data = await response.json();
-      console.log("data");      
-      console.log(data);
+      // console.log("data");      
+      // console.log(data);
       return data;
     }
 
@@ -379,11 +379,11 @@ MastodonApi.prototype.getTimelineData = async function () {
         urls.pinned = `${this.INSTANCE_URL}/api/v1/accounts/${this.USER_ID}/statuses?pinned=true`;
       }
       
-      console.log("urls");
-      console.log(urls);
+      // console.log("urls");
+      // console.log(urls);
       
-      console.log("urls.timeline");
-      console.log(urls.timeline);
+      // console.log("urls.timeline");
+      // console.log(urls.timeline);
     }
     if (!this.HIDE_EMOJOS) {
       urls.emojos = this.INSTANCE_URL + "/api/v1/custom_emojis";
@@ -392,8 +392,8 @@ MastodonApi.prototype.getTimelineData = async function () {
     // pinned post
     let pinnedURL = {};
     pinnedURL.post = `https://verse.aubrielee.com/api/v1/statuses/109855701678446647`;
-      console.log("pinnedURL");
-      console.log(pinnedURL.post);
+      // console.log("pinnedURL");
+      // console.log(pinnedURL.post);
 
     const urlsPromises = Object.entries(urls).map(([key, url]) => {
       return fetchData(url)
@@ -409,10 +409,10 @@ MastodonApi.prototype.getTimelineData = async function () {
         });
     });
 
-      console.log("urlsPromises");
-      console.log(urlsPromises);
-    console.log(urlsPromises[0]);
-    console.log(urlsPromises.Promise);    
+    //   console.log("urlsPromises");
+    //   console.log(urlsPromises);
+    // console.log(urlsPromises[0]);
+    // console.log(urlsPromises.Promise);    
           
     const pinnedUrlPromises = Object.entries(pinnedURL).map(([key, pinnedUrl]) => {
       return fetchData(pinnedUrl)
@@ -428,8 +428,8 @@ MastodonApi.prototype.getTimelineData = async function () {
         });
     });
 
-      console.log("pinnedUrlPromises");
-      console.log(pinnedUrlPromises);
+      // console.log("pinnedUrlPromises");
+      // console.log(pinnedUrlPromises);
 
 // 	const combinedUrlsPromises = pinnedUrlPromises[0].concat(urlsPromises[0]);
 //       console.log("combinedUrlsPromises");
@@ -441,11 +441,11 @@ MastodonApi.prototype.getTimelineData = async function () {
         return { ...result, ...dataItem };
       }, {});
 
-      console.log("Timeline data fetched: ", this.FETCHED_DATA);
+    //   console.log("Timeline data fetched: ", this.FETCHED_DATA);
       
-		console.log("FETCHED_DATA");
-		console.log(this.FETCHED_DATA);
-		console.log(this.FETCHED_DATA.timeline);
+		// console.log("FETCHED_DATA");
+		// console.log(this.FETCHED_DATA);
+		// console.log(this.FETCHED_DATA.timeline);
 		
 // 		this.FETCHED_DATA.timeline.unshift
 // 		console.log(dataObjects);
@@ -923,35 +923,38 @@ MastodonApi.prototype.placeMedias = function (m, s) {
     }
   }
 
-  if (type === "video") {
-    if (!this.HIDE_VIDEO_PREVIEW) {
-      media =
-        '<div class="mt-post-media video-ratio14_7 ' +
-        (spoiler ? "mt-post-media-spoiler " : "") +
-        this.SPINNER_CLASS +
-        '" data-video-url="' +
-        m.url +
-        '">' +
-        (spoiler ? '<button class="spoiler-btn">Show content</button>' : "") +
-        '<img src="' +
-        m.preview_url +
-        '" alt="' +
-        (m.description ? this.escapeHtml(m.description) : "") +
-        '" loading="lazy" />' +
-        '<button class="mt-post-media-play-icon" title="Load video"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M9.5 7l-9 6.3V.7z"/></svg></button>' +
-        "</div>";
-    } else {
-      media =
-        '<div class="mt-post-media video-ratio14_7 ' +
-        (spoiler ? "mt-post-media-spoiler " : "") +
-        '">' +
-        (spoiler ? '<button class="spoiler-btn">Show content</button>' : "") +
-        '<video controls src="' +
-        m.url +
-        '"></video>' +
-        "</div>";
+    if (type === "video" || type === "gifv") {
+      if (!this.HIDE_VIDEO_PREVIEW) {
+        media =
+          '<div class="mt-post-media video-ratio14_7 ' +
+          (spoiler ? "mt-post-media-spoiler " : "") +
+          this.SPINNER_CLASS +
+          '" data-video-url="' +
+          m.url +
+          '">' +
+          (spoiler ? '<button class="spoiler-btn">Show content</button>' : "") +
+          '<img src="' +
+          m.preview_url +
+          '" alt="' +
+          (m.description ? this.escapeHtml(m.description) : "") +
+          '" loading="lazy" />' +
+          '<button class="mt-post-media-play-icon" title="Load video"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M9.5 7l-9 6.3V.7z"/></svg></button>' +
+          "</div>";
+      } else {
+        media =
+          '<div class="mt-post-media video-ratio14_7 ' +
+          (spoiler ? "mt-post-media-spoiler " : "") +
+          '">' +
+          (spoiler ? '<button class="spoiler-btn">Show content</button>' : "") +
+          '<video controls src="' +
+          m.url +
+          '"></video>' +
+          "</div>";
+      }
     }
-  }
+
+  console.log("media");
+  console.log(media);
 
   return media;
 };
