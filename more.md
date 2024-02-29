@@ -12,7 +12,8 @@ permalink: /more
 </div>
 
 <br>
-Subscribe to my posts on Mastodon by signing into your own instance and doing a search for my profile link: https://verse.aubrielee.com/@Aubrie 
+Subscribe to my posts on Mastodon by signing into your own instance and doing a search for my profile link: [https://verse.aubrielee.com/@Aubrie](https://verse.aubrielee.com/@Aubrie)
+
 or [via RSS](https://verse.aubrielee.com/@Aubrie.rss) with your favorite RSS reader.
 
 ## my disabilities
