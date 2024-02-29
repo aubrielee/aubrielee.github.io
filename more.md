@@ -11,6 +11,10 @@ permalink: /more
   </div>
 </div>
 
+<br>
+Subscribe to my posts on Mastodon by signing into your own instance and doing a search for my profile link: https://verse.aubrielee.com/@Aubrie 
+or [via RSS](https://verse.aubrielee.com/@Aubrie.rss) with your favorite RSS reader.
+
 ## my disabilities
 I have a rare form of muscular dystrophy. The more I use my muscles, the weaker they get. Some of the basics:
 
