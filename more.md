@@ -4,18 +4,20 @@ title: Aubrie Lee - More
 permalink: /more
 ---
 
+<!--
+<br>
+Find me elsewhere:
+{: .noIndent}
+
+{% include socials.html %}
+-->
+
 ## posts
 <div class="mt-container">
   <div id="mt-body" class="mt-body" role="feed">
     <div class="loading-spinner"></div>
   </div>
 </div>
-
-<br>
-Find me elsewhere:
-{: .noIndent}
-
-{% include socials.html %}
 
 ## my disabilities
 I have a rare form of muscular dystrophy. The more I use my muscles, the weaker they get. Some of the basics:
