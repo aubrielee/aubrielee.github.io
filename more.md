@@ -4,15 +4,6 @@ title: Aubrie Lee - More
 permalink: /more
 ---
 
-<!--
-<br>
-Find me elsewhere:
-{: .noIndent}
-
-{% include socials.html %}
-
--->
-
 ## posts
 <div class="mt-container">
   <div id="mt-body" class="mt-body" role="feed">
