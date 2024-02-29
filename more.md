@@ -17,6 +17,46 @@ Find me elsewhere:
 
 {% include socials.html %}
 
+## my disabilities
+I have a rare form of muscular dystrophy. The more I use my muscles, the weaker they get. Some of the basics:
+
+- I can’t smile. If you smile at me and I don’t smile back, trust that I’m smiling with my heart.
+- I’m hard of hearing. I rely on lip reading and closed captions.
+- I have an accent of sorts. Ironically, even though I read lips, my lips don’t move when I talk. It may take you some time to understand my speech.
+- I’ve been using a power wheelchair full-time since I was a teenager. People tend to stand to my side when they talk to me, but it’s tough for me to turn my body to face them. You can face me directly, don’t worry. If you’re worried about being run over, I’m actually less likely to run you over if you’re where I can see you.
+<br>
+<br>
+
+Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.com.
+{: .noIndent}
+
+## speaking
+- Speaker at <a href="https://sustainabledevelopment.un.org/index.php?page=view&type=20000&nr=7770&menu=2993" target="_blank" tabindex="0">United Nations' High Level Political Forum</a>, 2021.
+- <a href="https://aubrielee.com/ncfitpodcast" target="_blank" tabindex="0">Podcast guest on NCFIT's Women Make Waves</a>, 2021.
+- Panelist at <a href="https://reelabilities.org/newyork/guest/aubrie-lee/" target="_blank" tabindex="0">ReelAbilities Film Festival: Fashion, Beauty And Disability</a>, 2021.
+- Panelist at <a href="https://stanfordwomenindesign.com/speakers" target="_blank" tabindex="0">Designing for Inclusion</a>, hosted by Stanford Womxn in Design, 2021. Featured in <a href="https://t.co/BMnb59nEfw?amp=1">the Stanford Daily</a>.
+- Keynote speaker for the <a href="https://www.amatriangle.org/event/disabilities-matter-making-inclusive-marketing/" target="_blank" tabindex="0">American Marketing Association</a>, 2021.
+- Panelist at the <a href="https://www.inclusiveafrica.org/conference" target="_blank" tabindex="0">Inclusive Africa Conference 2020</a>.
+- <a href="https://dmtalliance.com/aubrie-lee/" target="_blank" tabindex="0">Mentor at the Global Accessibility Symposium</a> in Mountain View, 2019.
+- Panelist at <a href="https://cloud.withgoogle.com/next18/sf/speakers/speaker/7D4365A4812A83EF" target="_blank" tabindex="0">Google Cloud Next 2018</a>.
+- Interviewed for a film about <a href="https://youtu.be/tAGs7Vc1rm8?t=1m8s" target="_blank" tabindex="0">accessibility at Google I/O 2018</a>.
+
+## board membership
+- [NMD United](https://www.nmdunited.org/our-board): Connecting adults living with neuromuscular disabilities.
+- [DREDF, Disability Rights Education & Defense Fund](https://dredf.org/about-us/people/aubrie-lee/): Leading national civil rights law and policy center.
+- Past: [The Kelsey](https://thekelsey.org/about/): Disability-forward housing solutions.
+- Past: [Inevitable Foundation](https://inevitable.foundation): Funding and mentoring the next generation of disabled screenwriters.
+
+## features
+- NPR: [How AI helps some people with disabilities communicate](https://www.marketplace.org/2024/01/02/how-ai-helps-some-people-with-disabilities-communicate/), 2024.
+- Bloomberg: <a href="https://www.bloomberg.com/news/videos/2023-03-23/technology-and-ai-for-social-inclusion-the-future-with-hannah-fry-episode-5-digital">The Future With Hannah Fry, Episode 5: Technology and AI for Social Inclusion</a>, 2023.
+- Yahoo News: <a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>; In The Know: <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, 2021.
+- <a href="https://www.instagram.com/p/CDJ5ZNrlCmP/" target="_blank" tabindex="0">Featured on Google's Instagram</a> for the 30th anniversary of the Americans with Disabilities Act, 2020.
+- Cameo in the <a href="https://www.youtube.com/watch?v=TQSaPsKHPqs&feature=youtu.be&t=2710" target="_blank" tabindex="0">CEO keynote at Google I/O 2019</a>.
+- <a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.
+- <a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.
+- Mountain View Voice: <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Pride on parade in downtown Mountain View</a>, 2014.
+
 <br>
 <div class="centerIg">
     <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CDJ5ZNrlCmP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
@@ -60,43 +100,6 @@ Find me elsewhere:
 <script async src="https://www.instagram.com/embed.js"></script>
 
 <p class="centeredText noIndent altText">Image description: A Chinese American woman in a manual traveling wheelchair poses in a beam of light within a cathedral. She wears a cream cardigan and red skirt.</p>
-
-## my disabilities
-I have a rare form of muscular dystrophy. The more I use my muscles, the weaker they get. Some of the basics:
-
-- I can’t smile. If you smile at me and I don’t smile back, trust that I’m smiling with my heart.
-- I’m hard of hearing. I rely on lip reading and closed captions.
-- I have an accent of sorts. Ironically, even though I read lips, my lips don’t move when I talk. It may take you some time to understand my speech.
-- I’ve been using a power wheelchair full-time since I was a teenager. People tend to stand to my side when they talk to me, but it’s tough for me to turn my body to face them. You can face me directly, don’t worry. If you’re worried about being run over, I’m actually less likely to run you over if you’re where I can see you.
-<br>
-<br>
-
-Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.com.
-{: .noIndent}
-
-## speaking
-- Speaker at <a href="https://sustainabledevelopment.un.org/index.php?page=view&type=20000&nr=7770&menu=2993" target="_blank" tabindex="0">United Nations' High Level Political Forum</a>, 2021.
-- <a href="https://aubrielee.com/ncfitpodcast" target="_blank" tabindex="0">Podcast guest on NCFIT's Women Make Waves</a>, 2021.
-- Panelist at <a href="https://reelabilities.org/newyork/guest/aubrie-lee/" target="_blank" tabindex="0">ReelAbilities Film Festival: Fashion, Beauty And Disability</a>, 2021.
-- Panelist at <a href="https://stanfordwomenindesign.com/speakers" target="_blank" tabindex="0">Designing for Inclusion</a>, hosted by Stanford Womxn in Design, 2021. Featured in <a href="https://t.co/BMnb59nEfw?amp=1">the Stanford Daily</a>.
-- Keynote speaker for the <a href="https://www.amatriangle.org/event/disabilities-matter-making-inclusive-marketing/" target="_blank" tabindex="0">American Marketing Association</a>, 2021.
-- Panelist at the <a href="https://www.inclusiveafrica.org/conference" target="_blank" tabindex="0">Inclusive Africa Conference 2020</a>.
-- <a href="https://dmtalliance.com/aubrie-lee/" target="_blank" tabindex="0">Mentor at the Global Accessibility Symposium</a> in Mountain View, 2019.
-- Panelist at <a href="https://cloud.withgoogle.com/next18/sf/speakers/speaker/7D4365A4812A83EF" target="_blank" tabindex="0">Google Cloud Next 2018</a>.
-- Interviewed for a film about <a href="https://youtu.be/tAGs7Vc1rm8?t=1m8s" target="_blank" tabindex="0">accessibility at Google I/O 2018</a>.
-
-## board membership
-- [NMD United](https://www.nmdunited.org/our-board): Connecting adults living with neuromuscular disabilities.
-- [DREDF, Disability Rights Education & Defense Fund](https://dredf.org/about-us/people/aubrie-lee/): Leading national civil rights law and policy center.
-- Past: [The Kelsey](https://thekelsey.org/about/): Disability-forward housing solutions.
-- Past: [Inevitable Foundation](https://inevitable.foundation): Funding and mentoring the next generation of disabled screenwriters.
-
-## more features
-- In The Know: <a href="https://www.intheknow.com/post/aubrie-lee-google-crip-corps/">Disability activist Aubrie Lee shares her biggest tips for young people who want to make a difference</a>, 2021.
-- <a href="https://www.instagram.com/p/CDJ5ZNrlCmP/" target="_blank" tabindex="0">Featured on Google's Instagram</a> for the 30th anniversary of the Americans with Disabilities Act, 2020.
-- Cameo in the <a href="https://www.youtube.com/watch?v=TQSaPsKHPqs&feature=youtu.be&t=2710" target="_blank" tabindex="0">CEO keynote at Google I/O 2019</a>.
-- <a href="https://www.kulturamag.com/article/aubrie-lee" target="_blank" tabindex="0">“Aubrie Lee: Art(iv)ist” in Kultura Magazine</a> and their <a href="https://www.instagram.com/p/BtgYf3fnC1o/" target="_blank" tabindex="0">Instagram</a>, 2019.
-- <a href="https://www.blog.google/topics/google-org/on-idpd-working-toward-more-accessible/" target="_blank" tabindex="0">Featured on the Google blog</a> for International Day of Persons with Disabilities, 2015.
 
 ## more disability work
 - Created [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
