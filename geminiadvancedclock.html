@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analog Clock</title>
+    <style>
+        #clock { position: relative; width: 200px; height: 200px; border-radius: 50%; border: 2px solid black; }
+        #hour, #minute, #second { position: absolute; background: black; border-radius: 5px; transform-origin: bottom; }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <script>
+        setInterval(function () {
+            const now = new Date();
+            const seconds = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hours now.getHours();
+
+            const secondDegrees = ((seconds / 60)*360) + 90; 
+            document.getElementById('second').style.transform = `rotate(${secondDegrees}deg)`;
+            
+            const minuteDegrees = ((minutes / 60)* 360) + 90;
+            document.getElementById('minute').style.transform = `rotate(${minuteDegrees}deg)`;
+
+            const hourDegrees = ((hours / 12)* 360) + 90;
+            document.getElementById('hour').style.transform = `rotate(${hourDegrees}deg)`;
+        }, 1000); 
+    </script>
+</body>
+</html>
