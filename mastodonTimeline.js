@@ -760,9 +760,11 @@ MastodonApi.prototype.assamblepost = function (c, i) {
     url +
     '" tabindex="0">' +
     '<div class="mt-post-header">' +
+    '<div class="mt-post-header-photoAndName">' + // AL added
     avatar +
 //     user +
 	nameBadge + // AL added
+	'</div>' + // AL added
     timestamp +
     "</div>" +
     content +
