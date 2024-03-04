@@ -439,123 +439,6 @@ a[class="CaptionCommentsExpand"] { display: none !important; }
     height: var(--spaceBlockHeight);
 }
 
-/*Phone in portrait orientation*/
-@media only screen and (max-width: 600px) {
-    
-    nav a {
-        font-weight: normal;
-        font-size: 1.25rem;
-    }
-
-    #topName {
-        font-size: 1.75rem;
-        font-weight: 600;
-    }
-
-    .photobooth {
-        float: none;
-        margin: auto;
-        margin-bottom: 2rem;
-        padding: calc(90% / 50) 0 50px 0;
-        width: 340px;
-        max-width: 100%;
-    }
-    
-    .photoboothTile {
-        max-width: 90%;
-        padding: calc(90% / 50) 0 calc(90% / 50) 0;
-    }
-
-    .listImage {
-        max-width: 65vw;
-    }
-
-    br.poemBreak {
-        display: none;
-    }
-
-    .inset {
-        display: none;
-    }
-
-    .fab {
-        margin-top: 0;
-    }
-
-    h2, h3 {
-        font-size: 1rem;
-    }
-    
-    h4, p, li, button {
-        font-size: 100%;
-        /*line-height: 144%;*/
-    }
-
-    a, #about .pieceTitle {
-        text-decoration: none;
-        border-bottom: var(--underlineThicknessMobile) solid var(--linkColor);
-
-        font-weight: bold;
-        color: var(--linkColor);
-        -webkit-transition: .25s;
-        -moz-transition: .25s;
-        transition: .25s;
-    }
-
-    p {
-        text-indent: 1.8rem;
-    }
-
-    ul {
-        padding-left: 1.8rem;
-    }
-    
-    ul li:before {
-        padding-left: 0.6rem;
-    }
-    
-    ol li {
-        margin-left: 1.4rem;
-        padding-left: .4rem;
-    }
-
-    /*Line breaks originally for social links*/
-    .break {
-        display: inline;
-    }
-
-    .emailA {
-        margin-right: 0em;
-    }
-    
-    /*socialDiamonds separate social media links on about page*/
-    .socialDiamond {
-        display: none;
-    }
-    
-    #logo {
-        max-height: 12.5%;
-        bottom: 12.5%;
-    }
-
-    .spaceBlock {
-        height: var(--spaceBlockHeightMobile);
-    }
-}
-
-/*Phone in landscape orientation*/
-@media only screen and (max-width: 800px) {
-    h3, h4, p, li, button {
-        font-size: 100%;
-        /*line-height: 144%;*/
-    }
-
-    #logo {
-        max-height: 16%;
-        bottom: 12.5%;
-    }
-}
-
 
 /* Mastodon embed feed timeline v3.13.2 */
 /* More info at: */
@@ -667,10 +550,15 @@ html[data-theme="dark"] {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: .4rem;
   margin: .6rem 0 1rem 0;
 }
 .mt-post-header a {
   border-bottom: none;
+}
+.mt-post-header-photoAndName {
+    display: flex;
 }
 .mt-post-header-user {
 /*   margin-top: 0.5rem; */
@@ -696,7 +584,7 @@ html[data-theme="dark"] {
     align-items: center;
   font-size: 1rem;
   text-align: right;
-  margin: 0rem 0 0 auto;
+/*   margin: 0rem 0 0 auto; */
 }
 .mt-post-header-date svg {
     /* margin-top: 3px; */
@@ -1027,4 +915,146 @@ html[data-theme="dark"] {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+
+/*Phone in portrait orientation*/
+@media only screen and (max-width: 600px) {
+    
+    nav a {
+        font-weight: normal;
+        font-size: 1.25rem;
+    }
+
+    #topName {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+
+    .photobooth {
+        float: none;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding: calc(90% / 50) 0 50px 0;
+        width: 340px;
+        max-width: 100%;
+    }
+    
+    .photoboothTile {
+        max-width: 90%;
+        padding: calc(90% / 50) 0 calc(90% / 50) 0;
+    }
+
+    .listImage {
+        max-width: 65vw;
+    }
+
+    br.poemBreak {
+        display: none;
+    }
+
+    .inset {
+        display: none;
+    }
+
+    .fab {
+        margin-top: 0;
+    }
+
+    h2, h3 {
+        font-size: 1rem;
+    }
+    
+    h4, p, li, button {
+        font-size: 100%;
+        /*line-height: 144%;*/
+    }
+
+    a, #about .pieceTitle {
+        text-decoration: none;
+        border-bottom: var(--underlineThicknessMobile) solid var(--linkColor);
+
+        font-weight: bold;
+        color: var(--linkColor);
+        -webkit-transition: .25s;
+        -moz-transition: .25s;
+        transition: .25s;
+    }
+
+    p {
+        text-indent: 1.8rem;
+    }
+
+    ul {
+        padding-left: 1.8rem;
+    }
+    
+    ul li:before {
+        padding-left: 0.6rem;
+    }
+    
+    ol li {
+        margin-left: 1.4rem;
+        padding-left: .4rem;
+    }
+
+    /*Line breaks originally for social links*/
+    .break {
+        display: inline;
+    }
+
+    .emailA {
+        margin-right: 0em;
+    }
+    
+    /*socialDiamonds separate social media links on about page*/
+    .socialDiamond {
+        display: none;
+    }
+    
+    #logo {
+        max-height: 12.5%;
+        bottom: 12.5%;
+    }
+
+    .spaceBlock {
+        height: var(--spaceBlockHeightMobile);
+    }
+    
+/*     Mastodon widget */
+	
+/* 
+	.mt-body {
+		padding: 0 0 0 0;
+	}
+	
+	.mt-post-header {
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: .6rem 0 1rem 0;
+	}
+	
+	.mt-post-header-date {
+		margin: .6rem 0 0 0;
+	}
+ */
+ 
+ 	.mt-post-header-date a {
+		font-weight: normal;
+	}
+
+}
+
+/*Phone in landscape orientation*/
+@media only screen and (max-width: 800px) {
+    h3, h4, p, li, button {
+        font-size: 100%;
+        /*line-height: 144%;*/
+    }
+
+    #logo {
+        max-height: 16%;
+        bottom: 12.5%;
+    }
 }
