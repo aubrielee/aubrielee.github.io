@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the clock face */
+        .clock {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        /* Style for the clock hands */
+        .hour, .minute, .second {
+            position: absolute;
+            background-color: #333;
+            transform-origin: center;
+        }
+
+        .hour {
+            width: 4px;
+            height: 60px;
+            top: 70px;
+            left: 98px;
+        }
+
+        .minute {
+            width: 2px;
+            height: 80px;
+            top: 60px;
+            left: 99px;
+        }
+
+        .second {
+            width: 1px;
+            height: 90px;
+            top: 50px;
+            left: 99.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour" id="hour"></div>
+        <div class="minute" id="minute"></div>
+        <div class="second" id="second"></div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hour = now.getHours() % 12;
+            const minute = now.getMinutes();
+            const second = now.getSeconds();
+
+            const hourDeg = (hour * 30) + (minute * 0.5);
+            const minuteDeg = (minute * 6) + (second * 0.1);
+            const secondDeg = second * 6;
+
+            document.getElementById('hour').style.transform = `rotate(${hourDeg}deg)`;
+            document.getElementById('minute').style.transform = `rotate(${minuteDeg}deg)`;
+            document.getElementById('second').style.transform = `rotate(${secondDeg}deg)`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to set the clock hands correctly
+    </script>
+</body>
+</html>
