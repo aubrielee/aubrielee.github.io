@@ -10,15 +10,8 @@ title: Aubrie Lee
     <img src="/media/aubrie-lee_photobooth-4.jpg" alt="Finally, she's looking straight at the camera, with her hands folded together under her chin and her fingers flared outwards." class="photoboothTile">
 </div>
 
-Welcome to my self-coded website – so kind of you to stop by!<br>
+Welcome to my self-coded website – so kind of you to stop by! Feel free to reach out any time.<br>
 {: .noIndent }
-<br>
-You can reach out to me if you’re seeking:
-{: .noIndent }
-
-- A speaker or panelist on Disability justice, self-improvement, or 3D modeling
-- A Disabled, Asian American fashion model with muscular dystrophy
-- A thought-provoking conversation and a new friend
 <br>
 
 ## a bit of my journey
