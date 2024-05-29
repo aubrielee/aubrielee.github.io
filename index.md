@@ -23,7 +23,7 @@ Since 2013, I’ve worked at Google, where I’m a professional namer and senior
 
 I earned my engineering degree in Product Design from Stanford University’s Mechanical Engineering department. I also completed the premed curriculum because, before Google recruited me, I planned to follow my parents’ path and become a doctor. I graduated with honors in 2014 after being invited to join Phi Beta Kappa and Tau Beta Pi.
 
-I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into ([Impart](https://aubrielee.com/impart)), a poem published in Stanford School of Medicine’s literary journal. I studied oil painting as a child, explored graphic design in college, and now play with 3D creation in Blender.
+I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into ([Impart](https://aubrielee.com/impart)), a poem published in Stanford School of Medicine’s literary journal. I studied oil painting as a child, explored graphic design in college, and then started playing with 3D creation in Blender.
 
 ## highlighted works
 - [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
