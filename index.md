@@ -10,18 +10,18 @@ title: Aubrie Lee
     <img src="/media/aubrie-lee_photobooth-4.jpg" alt="Finally, she's looking straight at the camera, with her hands folded together under her chin and her fingers flared outwards." class="photoboothTile">
 </div>
 
-Welcome to my self-coded website – so kind of you to stop by! Feel free to reach out any time.<br>
+So kind of you to stop by my site! Feel free to reach out any time.<br>
 {: .noIndent }
 
 ## a bit of my journey
 
 I'm an artist and engineer. My life's purpose is to create what only I can.
 
-I've been a professional model, 3D modeler, award-winning poet, published writer, public speaker, and activist by necessity.
+I've been a professional model, 3D modeler, award-winning poet, published writer, public speaker, and accidental activist.
 
-Since 2013, I’ve worked at Google, where I’m a professional namer and senior brand marketing manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being nominated for and chosen as the honoree of the 15th annual ADCOLOR Change Agent award for creating a more inclusive environment, and discovering I actually enjoyed Wharton's executive education curriculum despite never having liked school ([here are my notes](https://www.instagram.com/p/BgWwmAoDWQh/)).
+Since 2013, I’ve worked at Google, where I’m a professional namer and senior brand marketing manager. Three highlights during this time have been serving as the Global President of Google's Disability Alliance employee resource group, being nominated for and chosen as the honoree of the 15th annual ADCOLOR Change Agent award for creating a more inclusive environment, and discovering I actually enjoyed Wharton's executive education curriculum despite never having liked school ([here are my lecture notes](https://www.instagram.com/p/BgWwmAoDWQh/)).
 
-I earned my engineering degree in Product Design from Stanford University’s Mechanical Engineering department. I also completed the premed curriculum because, before Google recruited me, I planned to follow my parents’ path and become a doctor. I was invited to join Phi Beta Kappa and Tau Beta Pi before graduating with honors in 2014.
+I earned my engineering degree in Product Design from Stanford University’s Mechanical Engineering department. I also completed the premed curriculum because, before Google recruited me, I planned to follow my parents’ path and become a doctor. I graduated with honors in 2014 after being invited to join Phi Beta Kappa and Tau Beta Pi.
 
 I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into ([Impart](https://aubrielee.com/impart)), a poem published in Stanford School of Medicine’s literary journal. I studied oil painting as a child, explored graphic design in college, and now play with 3D creation in Blender.
 
