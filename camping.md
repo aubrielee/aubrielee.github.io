@@ -39,38 +39,6 @@ I had COVID two weeks ago, but after two negative tests, I had no luck using it 
 I’m grateful that Elliot, Layla, and others keep checking up on how Peter and I are doing. I feel reassured when Elliot says we can figure something out if we need to get me off-site early. But I decide I’m in for the full core memory:
 
 * getting to know Elliot’s and Layla’s kind and often over-educated friends;
-
-* being patiently understood through my speech impairment;
-
-* laughing over games and Lorenzo’s hilarious sense of humor;
-
-* crying at Adrian’s toast;
-
-* laughing at others’ roasts;
-
-* relishing lavish dishes that impress me every time;
-
-* gathering at toothbrush parties;
-
-* admiring the genius of whoever rested the toothpaste in the counter’s mystery nozzle;
-
-* witnessing Peter and Daniel discover they both read the Caltrain High Speed Rail Compatibility Blog;
-
-* seeing drum-circlers’ joy as they fall into a rising pulse;
-
-* replenishing my energy with a fruit bowl D. J. caringly prepared for me;
-
-* aww-ing at the right and wrong times during Elliot’s vows;
-
-* watching sunlight stream and sunset bleed through the trees;
-
-* feeling happy—even in a tent—because I’m with my sweet dreamy love;
-
-* looking up through the tent window at clouds flowing by;
-
-* receiving hello smiles and goodbye hugs.
-
-* getting to know Elliot’s and Layla’s kind and often over-educated friends;
 * being patiently understood through my speech impairment;
 * laughing over games and Lorenzo’s hilarious sense of humor;
 * crying at Adrian’s toast;
@@ -86,6 +54,8 @@ I’m grateful that Elliot, Layla, and others keep checking up on how Peter and 
 * feeling happy—even in a tent—because I’m with my sweet dreamy love;
 * looking up through the tent window at clouds flowing by;
 * receiving hello smiles and goodbye hugs.
+
+<br>
 
 On the way home, my airway gradually improves. By the next day, it’s significantly better. I say the coughing was from breathing in all the mosquitoes. Peter says it could have been from the wood-burning stove. I say it was because I’m allergic to camping. Peter says it was probably the wood-burning stove.
 
