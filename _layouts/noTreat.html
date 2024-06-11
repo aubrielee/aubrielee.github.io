@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    {% include headTags.html %}
+  </head>
+
+  <body>
+    {% include nav.html %}
+    <!-- <span class="diamond">&blacklozenge;</span> -->
+    <hr>
+    <div class="narrow">
+      <!-- <h1>{{ page.title }}</h1> -->
+      <section>
+        {{ content }}
+      </section>
+
+      <img id="logoSign" src="Aubrie-Lee_AL-Ambigram-Logo_White.png" alt="An ambigram formed from an A and an L. It can never be upside down." />
+
+      <hr>
+
+      <footer class="social">
+        {% include socials.html %}
+      </footer>
+    </div>
+  </body>
+</html>
