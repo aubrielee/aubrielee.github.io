@@ -35,4 +35,4 @@ permalink: /writing
 <br>
 <br>
 
-<p class="rss-subscribe noIndent">Subscribe to my website articles<a href="{{ "/feed.xml" }}">via RSS</a>.</p>
+<p class="rss-subscribe noIndent">Subscribe to my website articles <a href="{{ "/feed.xml" }}">via RSS</a>.</p>
