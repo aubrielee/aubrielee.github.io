@@ -35,7 +35,7 @@ I have always loved creating art, whether with painted lines or written ones. In
 - NPR: [How AI helps some people with disabilities communicate](https://www.marketplace.org/2024/01/02/how-ai-helps-some-people-with-disabilities-communicate/), 2024.
 - Bloomberg: <a href="https://www.bloomberg.com/news/videos/2023-03-23/technology-and-ai-for-social-inclusion-the-future-with-hannah-fry-episode-5-digital">The Future With Hannah Fry, Episode 5: Technology and AI for Social Inclusion</a>, 2023.
 - Yahoo News: <a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>, 2021.
-- Mountain View Voice: <a href="https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1" target="_blank" tabindex="0">Pride on parade in downtown Mountain View</a>, 2014.
+- Mountain View Voice: <a href="[https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1](https://web.archive.org/web/20231002090102/https://www.mv-voice.com/news/show_photo.php?main_id=8360&type=p&media_id=6618&section_id=1)" target="_blank" tabindex="0">Pride on parade in downtown Mountain View</a>, 2014.
 
 ## my interests
 - Self-improvement. Check out <a href="https://medium.com/@aubrie/how-to-make-a-life-plan-and-actually-follow-it-801e5335a63a" target="_blank" tabindex="0"><span class="pieceTitle">How to make a life plan and actually follow it</span></a>
