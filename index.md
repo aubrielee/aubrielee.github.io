@@ -48,6 +48,6 @@ I have always loved creating art, whether with painted lines or written ones. In
 - Linguistics, polyglottery, wordplay
 - The study of humor
 - Holographic foil
-- Jackets with inside pockets
+- Capes instead of jackets
 - Vegan macarons
 - Meeting new people
