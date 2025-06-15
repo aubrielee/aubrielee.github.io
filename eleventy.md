@@ -6,6 +6,8 @@ permalink: /eleventy
 
 # How to make a website with Eleventy and NearlyFreeSpeech
 
+2025.06.14
+
 I'm mostly writing this to remind myself. I honestly don't much care for NearlyFreeSpeech, as I find its copy and documentation to be terribly unclear. I can't promise this little article of mine will be much clearer.
 
 Eleventy helps one make webpages that one can then upload to NearlyFreeSpeech via a file transfer software. This article covers:
@@ -14,28 +16,31 @@ Eleventy helps one make webpages that one can then upload to NearlyFreeSpeech vi
 * Uploading your site.
 
 
-## Make a webpage with Eleventy.
+## make a webpage with Eleventy
 
 You'll set up a basic page you can visit locally on your computer. Later, you'll upload it to the internet.
 
-### Set up Eleventy
+### set up eleventy
 
-To simplify Eleventy's documentation (https://www.11ty.dev/) in a way that makes sense to me:
-* Open a terminal window.
+To simplify [Eleventy's documentation](https://www.11ty.dev/) in a way that makes sense to me:
+* Open a terminal window on your computer.
 * Enter `node --version` to check whether you have Node.js version 18 or newer installed.
-* If you don't, follow nodejs.org's documentation (https://nodejs.org/en/download/). That site has a "Copy to clipboard" button, but you'll need to enter each non-comment line into your terminal one at a time.
-* Make a folder on your computer called whatever you'd like, e.g., "eleventy-project".
+* If you don't, follow [nodejs.org's documentation to download it](https://nodejs.org/en/download/). That site has a "Copy to clipboard" button, but you'll need to enter each non-comment line into your terminal one at a time.
+* Make a folder on your computer called whatever you'd like, e.g., **eleventy-project**.
 * Change directory in your terminal to the eleventy-project folder. I do this by typing `cd` and then dragging the folder into the terminal window. Then hit enter. For example:
 <pre>
 cd /Users/Documents/eleventy-project
 </pre>
-* Enter into terminal: `npx @11ty/eleventy --serve`
+* Enter into terminal: 
+<pre>
+npx @11ty/eleventy --serve
+</pre>
 Eleventy should start running continuously.
 
-### Make a rudimentary webpage
+### make a rudimentary webpage
 
-In the eleventy-project folder, make a plain text file called index.md. I rather loathe Markdown, yet here I am using it.
-Here's a basic site you can put in that file:
+In the **eleventy-project** folder, make a plain-text Markdown file called **index.md** I rather loathe Markdown, yet here I am using it.
+Here's a basic page you can put in that file:
 
 <pre>
 # Hello, world.
@@ -43,11 +48,11 @@ Here's a basic site you can put in that file:
 Abolish portrait mode.
 </pre>
 
-Eleventy makes (? maybe you have to make it yourself) a subfolder called _site, in which it creates the main index.html and other files that you'll later upload to NearlyFreeSpeech.
+Eleventy makes (? maybe you have to make it yourself) a subfolder called **_site**, in which it creates the main index.html and other files that you'll later upload to NearlyFreeSpeech.
 
-While it's running, Eleventy hosts the index.html file at `http://localhost:8080/`. Enter that into your browser's address bar, and the browser should display your site.
+While it's running, Eleventy hosts the **index.html** file at `http://localhost:8080/`. Enter that into your browser's address bar, and the browser should display your site.
 
-When you update and save your index.md file, your site at http://localhost:8080/ should update, too.
+When you update and save your **index.html** file, your site at `http://localhost:8080/` should update, too.
 
 ## Set up domain and hosting.
 
@@ -75,7 +80,7 @@ It'll take a while for HTTPS rather than HTTP to be enabled (not sure who enable
 
 * Take note of the **SSH/SFTP Information** section of your NFSN site information page.
 * Get a file transfer protocol (FTP) app. I won't say which I use, because it isn't accessible to screen readers.
-* Connect to your NFSN site using the FTP app. For Host, use **SSH/SFTP Hostname** from your NFSN site information page. For Username and Password, use the **Username** and **Password** from that page. For Port, use 22.
+* Connect to your NFSN site using the FTP app. For Host, use the **SSH/SFTP Hostname** from your NFSN site information page. For Username and Password, use the **Username** and **Password** from that page. For Port, use 22.
 * Once you're connected, your FTP app should show you a directory of files locally and files on NFSN.
 * Under the **public** folder of your NFSN site, upload the contents of your **eleventy-project** > **_site** subfolder. Don't upload the **_site** folder itself. At this point, you probably have only an index.html file.
 
