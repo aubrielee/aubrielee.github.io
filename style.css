@@ -303,6 +303,11 @@ pre {
     /* border: solid #000; */
     /* border-width: .1rem; */
     line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+code {
+    font-size: 1rem;
 }
 
 /* from a website */
