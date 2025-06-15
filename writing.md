@@ -7,8 +7,9 @@ permalink: /writing
 ## guides
 <ul>
     <li><a href="https://aubrielee.com/daily-planner">My digital daily planner: a sheet, a script, and a column per day</a>, 2023.</li>
-    <li><a href="https://aubrielee.com/how-i-set-up-my-own-mastodon-server">How I set up my own Mastodon server and custom display name</a>, 2023.</li>
     <li><a href="https://aubrie.medium.com/how-to-make-a-life-plan-and-actually-follow-it-801e5335a63a">How to make a life plan and actually follow it</a>, 2020.</li>
+    <li><a href="https://aubrielee.com/how-i-set-up-my-own-mastodon-server">How I set up my own Mastodon server and custom display name</a>, 2023.</li>
+    <li><a href="https://aubrielee.com/eleventy">How to make a website with Eleventy and NearlyFreeSpeech</a>, 2025.</li>
 </ul>
 
 ## essays
