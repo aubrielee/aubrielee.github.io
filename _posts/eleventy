@@ -1,0 +1,75 @@
+
+# How to make a website with Eleventy and NearlyFreeSpeech
+
+I'm mostly writing this to remind myself. I honestly don't much care for NearlyFreeSpeech, as I find its copy and documentation to be terribly unclear. I can't promise this little article of mine will be much clearer.
+
+Eleventy helps one make webpages that one can then upload to NearlyFreeSpeech via a file transfer software. This article covers:
+Making a basic webpage with Eleventy.
+Setting up NearlyFreeSpeech hosting with a custom third-party domain.
+Uploading your site.
+
+
+## Make a webpage with Eleventy.
+
+You'll set up a basic page you can visit locally on your computer. Later, you'll upload it to the internet.
+
+### Set up Eleventy
+
+To simplify Eleventy's documentation (https://www.11ty.dev/) in a way that makes sense to me:
+Open a terminal window.
+Enter `node --version` to check whether you have Node.js version 18 or newer installed.
+If you don't, follow nodejs.org's documentation (https://nodejs.org/en/download/). That site has a "Copy to clipboard" button, but you'll need to enter each non-comment line into your terminal one at a time.
+Make a folder on your computer called whatever you'd like, e.g., "eleventy-project".
+Change directory in your terminal to the eleventy-project folder. I do this by typing `cd` and then dragging the folder into the terminal window. Then hit enter. For example:
+<pre>
+cd /Users/Documents/eleventy-project
+</pre>
+Enter into terminal: `npx @11ty/eleventy --serve`
+It should start running continuously.
+
+### Make a rudimentary webpage
+
+In the eleventy-project folder, make a plain text file called index.md. I rather loathe Markdown, yet here I am using it.
+Here's a basic site you can put in that file:
+
+<pre>
+# Hello, world.
+
+Abolish portrait mode.
+</pre>
+
+Eleventy makes (? maybe you have to make it yourself) a subfolder called _site, in which it creates the main index.html and other files that you'll later upload to NearlyFreeSpeech.
+While it's running, Eleventy hosts the index.html file at `http://localhost:8080/`. Enter that into your browser's address bar, and the browser should display your site.
+When you update and save your index.md file, your site at http://localhost:8080/ should update, too.
+
+## Set up domain and hosting.
+
+You'll set up the place that'll hold your site online.
+
+Rent a domain at some registrar. I try not to rent any domain for more than $12 a year. I used a third-party registrar, not NFSN.
+Make a NearlyFreeSpeech.Net (NFSN) account. Don't do the paid membership.
+Add money to the account, on the order of $20.
+Make a new site. Name the site the same as your second-level domain. For example, if you rented **something.com**, name your NFSN site **something**.
+
+### Connect your third-party domain to NFSN
+
+No amount of internet searching gave me an easy answer to this, and NFSN's documentation sure didn't help, so I figured it out myself by trial and retrial.
+Go to the DNS settings of your site in your third-party domain registrar. You do not need DNS from NFSN.
+Erase any A, AAAA, and CNAME records.
+In NFSN, go to sites, then click on the short name of your site (e.g., **something**).
+On the page called **something Site Information**, find **Web Site IP Addresses**. Note those two numbers (e.g., ###.##.###.## and ####:####:##:#::####)
+Go back to your site's DNS settings in the third-party registrar.
+Set up an A record with Host being **something.com** and Answer being the first IP address (e.g., ###.##.###.##).
+Set up an AAAA record with Host being **something.com** and Answer being the second IP address (e.g., ####:####:##:#::####).
+Set up a CNAME record with Host being **www.something.com** and answer being **something.nfshost.com**.
+It'll take a while for HTTPS rather than HTTP to be enabled (not sure who enables it). When it is enabled, a 🔐 emoji will appear next to all three **Site Names & Aliases** at the top of the site information page on NFSN.
+
+## Upload your website
+
+Take note of the **SSH/SFTP Information** section of your NFSN site information page.
+Get a file transfer protocol (FTP) app. I won't say which I use, because it isn't accessible to screen readers.
+Connect to your NFSN site using the FTP app. For Host, use **SSH/SFTP Hostname** from your NFSN site information page. For Username and Password, use the **Username** and **Password** from that page. For Port, use 22.
+Once you're connected, your FTP app should show you a directory of files locally and files on NFSN.
+Under the **public** folder of your NFSN site, upload the contents of your **eleventy-project** > **_site** subfolder. Don't upload the **_site** folder itself. At this point, you probably have only an index.html file.
+
+To update files after editing them locally, just upload them to NFSN and overwrite their past versions.
