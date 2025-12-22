@@ -9,6 +9,7 @@ permalink: /training-my-senses
 2025.12.21
 {: .centeredText .noIndent}
 <br>
+
 I've explored ways to make my phone enhance my understanding of my physical and temporal world. Two of these ways are by perfecting my pitch and gauging the passage of time.
 
 ## perfecting my pitch
@@ -22,7 +23,7 @@ I have my phone vibrate at the :00, :20, and :40 marks, so that I can calibrate 
 If I'm looking at my computer when my phone buzzes, it reminds me to spend some time looking away from my screen. Sometimes, when I'm rushing to catch a bus or train, I'll feel my phone buzz in my purse and have a better sense of how much time I have without stopping to look at my watch.
 
 In the past, I used MacroDroid to play a buzz from a list of presets, but after I had to [reset my phone](https://verse.aubrielee.com/@Aubrie/115504160660682936), MacroDroid no longer worked. I discovered that [Automate by LlamaLab](https://llamalab.com/automate/) not only allowed me to achieve what MacroDroid did, it also let me customize the buzz (and Automate is free without ads, unlike MacroDroid).
-
+<br>
 
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
 <br>
