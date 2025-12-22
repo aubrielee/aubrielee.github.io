@@ -42,17 +42,19 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
         <br>
         Proceed = <pre>Immediately</pre>
         <ul>
-            <li>Yes → Loop back to block 2.
+            <li style="margin-left:0">Yes → Loop back to block 2.
             <br>
             Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).
             </li>
-            <li>- No → **Vibrate**  
-    Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
-    
-        Pattern = <pre>{"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
-        <em>with credit and many thanks to <a href="https://github.com/henrik-lindqvist">Henrik Lindqvist</a>.</em>  
-        
-        Then loop back to block 2.</li>
+            <li>No → <strong>Vibrate</strong>
+                <br>
+                Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
+                <br>
+                Pattern = <pre>{"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
+                <em>with credit and many thanks to <a href="https://github.com/henrik-lindqvist">Henrik Lindqvist</a>.</em>  
+                <br>
+                Then loop back to block 2.
+            </li>
         </ul>
     </li>
 </ol>
