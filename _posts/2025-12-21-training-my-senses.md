@@ -24,14 +24,15 @@ If I'm looking at my computer when my phone buzzes, it reminds me to spend some 
 In the past, I used MacroDroid to play a buzz from a list of presets, but after I had to [reset my phone](https://verse.aubrielee.com/@Aubrie/115504160660682936), MacroDroid no longer worked. I discovered that [Automate by LlamaLab](https://llamalab.com/automate/) not only allowed me to achieve what MacroDroid did, it also let me customize the buzz (and Automate is free without ads, unlike MacroDroid).
 
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
-1. <strong>Flow beginning</strong>
-2. <strong>Await time</strong>  
+1. **Flow beginning**
+2. **Await time**
     Wait for :00, :20, and :40.
    
     Proceed = <pre>Exact</pre>
     
     Time of day = <pre>time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20)</pre>
     <em>based on [this forum comment](https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/).</em>
+    {: .noIndent}
 3. **Is power source plugged**  
 
     Proceed = <pre>Immediately</pre>
