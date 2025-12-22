@@ -24,6 +24,32 @@ If I'm looking at my computer when my phone buzzes, it reminds me to spend some 
 In the past, I used MacroDroid to play a buzz from a list of presets, but after I had to [reset my phone](https://verse.aubrielee.com/@Aubrie/115504160660682936), MacroDroid no longer worked. I discovered that [Automate by LlamaLab](https://llamalab.com/automate/) not only allowed me to achieve what MacroDroid did, it also let me customize the buzz (and Automate is free without ads, unlike MacroDroid).
 
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
+<ol>
+    <li><strong>Flow beginning</strong></li>
+    <li><strong>Await time</strong>
+        Wait for :00, :20, and :40.
+
+        Proceed = 
+        <pre>Exact</pre>
+
+        Time of day = 
+        <pre>time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20)</pre>
+        <em>based on [this forum comment](https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/).</em>
+    </li>
+    
+    <li><strong>Is power source plugged</strong>
+        Proceed = <pre>Immediately</pre>
+    - Yes → Loop back to block 2.  
+    Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).  
+    - No → **Vibrate**  
+    Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
+    
+        Pattern = <pre>{"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
+        <em>with credit and many thanks to [Henrik Lindqvist](https://github.com/henrik-lindqvist).</em>  
+        
+        Then loop back to block 2.
+    </li>
+</ol>
 1. **Flow beginning**
 2. **Await time**
     Wait for :00, :20, and :40.
