@@ -24,6 +24,7 @@ If I'm looking at my computer when my phone buzzes, it reminds me to spend some 
 In the past, I used MacroDroid to play a buzz from a list of presets, but after I had to [reset my phone](https://verse.aubrielee.com/@Aubrie/115504160660682936), MacroDroid no longer worked. I discovered that [Automate by LlamaLab](https://llamalab.com/automate/) not only allowed me to achieve what MacroDroid did, it also let me customize the buzz (and Automate is free without ads, unlike MacroDroid).
 
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
+<br>
 <ol>
     <li><strong>Flow beginning</strong></li>
     <li><strong>Await time</strong>
@@ -46,7 +47,7 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
             <br>
             Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).
             </li>
-            <li>No → <strong>Vibrate</strong>
+            <li style="margin-left:0">No → <strong>Vibrate</strong>
                 <br>
                 Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
                 <br>
@@ -58,5 +59,5 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
         </ul>
     </li>
 </ol>
-
+<br>
 Whenever I sense these time-based vibrations, I try to take a moment to breathe, drink water, and appreciate the world around me. I call this "Rexist"—remember to reenter existence.
