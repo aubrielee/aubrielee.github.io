@@ -64,4 +64,5 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
     </li>
 </ol>
 <br>
+
 Whenever I sense these time-based vibrations, I try to take a moment to breathe, drink water, and appreciate the world around me. I call this "Rexist"—remember to reenter existence.
