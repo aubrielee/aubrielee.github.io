@@ -22,12 +22,13 @@ I have my phone vibrate at the :00, :20, and :40 marks, so that I can calibrate 
 If I'm looking at my computer when my phone buzzes, it reminds me to spend some time looking away from my screen. Sometimes, when I'm rushing to catch a bus or train, I'll feel my phone buzz in my purse and have a better sense of how much time I have without stopping to look at my watch.
 
 In the past, I used MacroDroid to play a buzz from a list of presets, but after I had to [reset my phone](https://verse.aubrielee.com/@Aubrie/115504160660682936), MacroDroid no longer worked. I discovered that [Automate by LlamaLab](https://llamalab.com/automate/) not only allowed me to achieve what MacroDroid did, it also let me customize the buzz (and Automate is free without ads, unlike MacroDroid).
-
+<br>
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
 <br>
 <br>
 <ol>
     <li><strong>Flow beginning</strong></li>
+    <br>
     <li><strong>Await time</strong>
         <br>
         Wait for :00, :20, and :40.
@@ -40,7 +41,7 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
         <pre>time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20)</pre>
         <em>based on <a href="https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/">this forum comment</a>.</em>
     </li>
-    
+    <br>
     <li><strong>Is power source plugged</strong>
         <br>
         Proceed = <pre>Immediately</pre>
