@@ -8,7 +8,7 @@ permalink: /training-my-senses
 
 2025.12.21
 {: .centeredText .noIndent}
-
+<br>
 I've explored ways to make my phone enhance my understanding of my physical and temporal world. Two of these ways are by perfecting my pitch and gauging the passage of time.
 
 ## perfecting my pitch
