@@ -26,13 +26,20 @@ I used to use MacroDroid to play a buzz from a list of presets, but after I had 
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
 1. Flow beginning
 2. Await time
+<br>
 Proceed = Exact
+<br>
 Time of day = time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20) based on https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/
-3. Is power source plugged
+4. Is power source plugged
+<br>
 Proceed = Immediately
+<br>
 Y) loop back to #2
+<br>
 N) Vibrate
+<br>
 Pattern = { "0": 0x9, "1": 0x4, "2": 0xC }[dateFormat(Now, "m")//1], with many thanks to Henrik Lindqvist
+<br>
 then loop back to #2
 
 Whenever I sense one of these time-based vibrations, I try to take a moment to look away from my screen, breathe, and appreciate the world around me. I call this practice "Rexist"—a reminder to reenter existence.
