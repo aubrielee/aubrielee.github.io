@@ -27,48 +27,34 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
 <ol>
     <li><strong>Flow beginning</strong></li>
     <li><strong>Await time</strong>
+        <br>
         Wait for :00, :20, and :40.
-
+        <br>
         Proceed = 
         <pre>Exact</pre>
 
         Time of day = 
         <pre>time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20)</pre>
-        <em>based on [this forum comment](https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/).</em>
+        <em>based on <a href="https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/">this forum comment</a>.</em>
     </li>
     
     <li><strong>Is power source plugged</strong>
+        <br>
         Proceed = <pre>Immediately</pre>
-    - Yes → Loop back to block 2.  
-    Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).  
-    - No → **Vibrate**  
+        <ul>
+            <li>Yes → Loop back to block 2.
+            <br>
+            Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).
+            </li>
+            <li>- No → **Vibrate**  
     Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
     
         Pattern = <pre>{"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
-        <em>with credit and many thanks to [Henrik Lindqvist](https://github.com/henrik-lindqvist).</em>  
+        <em>with credit and many thanks to <a href="https://github.com/henrik-lindqvist">Henrik Lindqvist</a>.</em>  
         
-        Then loop back to block 2.
+        Then loop back to block 2.</li>
+        </ul>
     </li>
 </ol>
-1. **Flow beginning**
-2. **Await time**
-    Wait for :00, :20, and :40.
-   
-    Proceed = <pre>Exact</pre>
-    
-    Time of day = <pre>time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20)</pre>
-    <em>based on [this forum comment](https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/).</em>
-3. **Is power source plugged**  
-
-    Proceed = <pre>Immediately</pre>
-    - Yes → Loop back to block 2.  
-    Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).  
-    - No → **Vibrate**  
-    Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
-    
-        Pattern = <pre>{"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
-        <em>with credit and many thanks to [Henrik Lindqvist](https://github.com/henrik-lindqvist).</em>  
-        
-        Then loop back to block 2.
 
 Whenever I sense these time-based vibrations, I try to take a moment to breathe, drink water, and appreciate the world around me. I call this "Rexist"—remember to reenter existence.
