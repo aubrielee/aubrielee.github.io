@@ -25,11 +25,13 @@ In the past, I used MacroDroid to play a buzz from a list of presets, but after 
 
 To play different vibration patterns every 20 minutes while the phone isn't plugged in, I use this flow:
 <br>
+<br>
 <ol>
     <li><strong>Flow beginning</strong></li>
     <li><strong>Await time</strong>
         <br>
         Wait for :00, :20, and :40.
+        <br>
         <br>
         Proceed = 
         <pre>Exact</pre>
@@ -47,12 +49,15 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
             <br>
             Don't buzz if the phone is plugged in (a proxy for when I'm sleeping).
             </li>
+            <br>
             <li style="margin-left:0">No → <strong>Vibrate</strong>
                 <br>
                 Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
                 <br>
+                <br>
                 Pattern = <pre>{"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
                 <em>with credit and many thanks to <a href="https://github.com/henrik-lindqvist">Henrik Lindqvist</a>.</em>  
+                <br>
                 <br>
                 Then loop back to block 2.
             </li>
