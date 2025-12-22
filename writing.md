@@ -5,24 +5,21 @@ permalink: /writing
 ---
 
 ## guides
-<ul>
-    <li><a href="https://aubrielee.com/daily-planner">My digital daily planner: a sheet, a script, and a column per day</a>, 2023.</li>
-    <li><a href="https://aubrie.medium.com/how-to-make-a-life-plan-and-actually-follow-it-801e5335a63a">How to make a life plan and actually follow it</a>, 2020.</li>
-    <li><a href="https://aubrielee.com/how-i-set-up-my-own-mastodon-server">How I set up my own Mastodon server and custom display name</a>, 2023.</li>
-    <li><a href="https://aubrielee.com/eleventy">How to make a website with Eleventy and NearlyFreeSpeech</a>, 2025.</li>
-</ul>
+* [My digital daily planner: a sheet, a script, and a column per day](https://aubrielee.com/daily-planner), 2023.
+* [How to make a life plan and actually follow it](https://aubrie.medium.com/how-to-make-a-life-plan-and-actually-follow-it-801e5335a63a), 2020.
+* [Training my senses using my phone](https://aubrielee.com/training-my-senses), 2025.
+* [How I set up my own Mastodon server and custom display name](https://aubrielee.com/how-i-set-up-my-own-mastodon-server), 2023.
+* [How to make a website with Eleventy and NearlyFreeSpeech](https://aubrielee.com/eleventy), 2025.
 
 ## essays
-<ul>
-    <li><a href="https://immerse.news/how-innovation-sets-me-backwards-91b30e0b6b95" target="_blank" tabindex="0">How innovation sets me backwards</a>, Immerse News, 2023.</li>
-    <li><a href="https://disabilityvisibilityproject.com/2021/10/12/20-questions-for-disability-inclusive-employers/" target="_blank" tabindex="0">20 Questions for Disability-Inclusive Employers</a>, Disability Visibility Project, 2021.</li>
-    <li><a href="https://blog.google/outreach-initiatives/accessibility/here-loud-disabled-and-proud/" target="_blank" tabindex="0">We’re here, we’re loud, we’re disabled and proud</a>, Google blog, 2021.</li>
-    <li><a href="https://rootedinrights.org/the-hardest-part-of-being-disabled-is-being-ignored/" target="_blank" tabindex="0">The Hardest Part of Being Disabled is Being Ignored</a>, Rooted in Rights, 2020.</li>
-    <li><a href="https://www.nmdunited.org/single-post/ss-aubrie-lee" target="_blank" tabindex="0">A letter to my younger self</a>, NMD United, 2020.</li>
-    <li><a href="https://web.archive.org/web/20211025040512/https://theletterwriterscollective.com/2021/04/11/to-a-future-me/" target="_blank" tabindex="0">A letter to my future self</a>, The Letter Writers, 2021.</li>
-    <li><a href="https://manhassetlibrary.org/aubrie-lee/" target="_blank" tabindex="0"><span class="pieceTitle">No Bility</span></a>, exhibited at the Manhasset Public Library, 2016, and featured on <a href="https://www.fshdsociety.org/finding-beauty-in-disability/" target="_blank" tabindex="0">FSHD Society</a>, 2018.</li>
-    <li><a href="https://www.facebook.com/aubrieality/posts/10152926673649992:0" target="_blank" tabindex="0"><span class="pieceTitle">Infinity of the Soul</span></a>, baccalaureate reflection, 2014.</li>
-</ul>
+* [How innovation sets me backwards](https://immerse.news/how-innovation-sets-me-backwards-91b30e0b6b95), Immerse News, 2023.
+* [20 Questions for Disability-Inclusive Employers](https://disabilityvisibilityproject.com/2021/10/12/20-questions-for-disability-inclusive-employers/), Disability Visibility Project, 2021.
+* [We’re here, we’re loud, we’re disabled and proud](https://blog.google/outreach-initiatives/accessibility/here-loud-disabled-and-proud/), Google blog, 2021.
+* [The Hardest Part of Being Disabled is Being Ignored](https://rootedinrights.org/the-hardest-part-of-being-disabled-is-being-ignored/), Rooted in Rights, 2020.
+* [A letter to my younger self](https://www.nmdunited.org/single-post/ss-aubrie-lee), NMD United, 2020.
+* [A letter to my future self](https://web.archive.org/web/20211025040512/https://theletterwriterscollective.com/2021/04/11/to-a-future-me/), The Letter Writers, 2021.
+* [No Bility](https://manhassetlibrary.org/aubrie-lee/), exhibited at the Manhasset Public Library, 2016, and featured on [FSHD Society](https://www.fshdsociety.org/finding-beauty-in-disability/), 2018.
+* [Infinity of the Soul](https://www.facebook.com/aubrieality/posts/10152926673649992:0), baccalaureate reflection, 2014.
 
 ## poetry
 <ul>
