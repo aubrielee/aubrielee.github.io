@@ -32,7 +32,6 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
     
     Time of day = <pre>time(dateFormat(Now, "H"), dateFormat(Now, "m") - (dateFormat(Now, "m") % 20) + 20)</pre>
     <em>based on [this forum comment](https://www.reddit.com/r/AutomateUser/comments/1mnohda/comment/n86j3r2/).</em>
-    {: .noIndent}
 3. **Is power source plugged**  
 
     Proceed = <pre>Immediately</pre>
