@@ -53,8 +53,8 @@ To play different vibration patterns every 20 minutes while the phone isn't plug
             <br>
             <li style="margin-left:0">No → <strong>Vibrate</strong>
                 <br>
-                Play one 1-second buzz (pause for 0 milliseconds, buzz for 1000 milliseconds), two 1-second buzzes (pause for 0 seconds, buzz for 100 milliseconds, pause for 500 milliseconds, buzz for 1000 milliseconds), and three 1-second buzzes.  
-                <pre>Pattern = {"0": [0, 1000], "1": [0, 1000, 500, 1000], "2": [0, 1000, 500, 1000, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
+                Play two half-second buzzes (pause for 0 milliseconds, buzz for 500 milliseconds, pause for 500 milliseconds, buzz for 500 milliseconds), a 1-second buzz followed by a half-second buzz (pause for 0 seconds, buzz for 1000 milliseconds, pause for 500 milliseconds, buzz for 500 milliseconds), and a half-second buzz followed by a 1-second buzz.  
+                <pre>Pattern = {"0": [0, 500, 500, 500], "1": [0, 1000, 500, 500], "2": [0, 500, 500, 1000]}[dateFormat(Now, "m") // 20]</pre>
                 <em>with credit and many thanks to <a href="https://github.com/henrik-lindqvist">Henrik Lindqvist</a>.</em>  
                 <br>
                 <br>
