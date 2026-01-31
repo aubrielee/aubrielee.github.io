@@ -26,12 +26,14 @@ I earned my engineering degree in Product Design from Stanford University’s Me
 I have always loved creating art, whether with painted lines or written ones. In my first year at Stanford, poet Eavan Boland selected my entry for 1st place in Stanford’s Urmy–Hardy Prize in Poetry, and after I graduated, I spent the summer coalescing all my observations from cadaver anatomy labs into ([Impart](https://aubrielee.com/impart)), a poem published in Stanford School of Medicine’s literary journal. I studied oil painting as a child, explored graphic design in college, and now play with 3D creation in Blender.
 
 ## highlighted works
+- [Traveling across the country on Amtrak](https://youtu.be/3gypPf3KUU4), from my [YouTube channel](https://www.youtube.com/@AubrieAndPeter) with Peter Saathoff-Harshfield, 2025.
 - [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
 - [Merusa](https://www.instagram.com/p/CkZ0RtRL4HY/?utm_source=ig_web_copy_link), self-portrait, 2022.
 - <a href="https://aubrielee.com/impart" tabindex="0"><span class="pieceTitle">Impart</span></a>, the poem inspired by taking anatomy labs, written in 2014. Published in <a href="https://med.stanford.edu/medicineandthemuse/events/About.html" target="_blank" tabindex="0">Stanford's Anastomosis journal</a>, 2018.
 - <a href="https://www.youtube.com/watch?v=cNyE5ZhvGDI" target="_blank" tabindex="0"><span class="pieceTitle">Science Campus</span></a>, art film. Finalist in Stanford Art of Science Competition, 2013.
 
 ## features
+- New York Times: [Disabled Amtrak Riders See Progress, but Still ‘Feel Like Freight’](https://www.nytimes.com/2025/08/14/travel/amtrak-riders-passengers-disabilities.html?unlocked_article_code=1.eE8.o6lx.2Ub6IYFPJtRy&smid=url-share), 2025.
 - NPR: [How AI helps some people with disabilities communicate](https://www.marketplace.org/2024/01/02/how-ai-helps-some-people-with-disabilities-communicate/), 2024.
 - Bloomberg: <a href="https://www.bloomberg.com/news/videos/2023-03-23/technology-and-ai-for-social-inclusion-the-future-with-hannah-fry-episode-5-digital">The Future With Hannah Fry, Episode 5: Technology and AI for Social Inclusion</a>, 2023.
 - Yahoo News: <a href="https://www.yahoo.com/news/aubrie-lee-daily-acts-resistance-133931290.html">Aubrie Lee’s daily acts of resistance are paving the way for disabled people across the country</a>, 2021.
