@@ -26,7 +26,7 @@ I have a rare form of muscular dystrophy. The more I use my muscles, the weaker 
 <br>
 <br>
 
-Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.com.
+Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.blogspot.com <!--comment-->(formerly cripcorps.com)<!--comment-->.
 {: .noIndent}
 
 ## speaking
