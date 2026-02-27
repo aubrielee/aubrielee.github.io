@@ -26,7 +26,7 @@ I have a rare form of muscular dystrophy. The more I use my muscles, the weaker 
 <br>
 <br>
 
-Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at cripcorps.blogspot.com <!--comment-->(formerly cripcorps.com)<!--comment-->.
+Not every disabled person likes to be asked about their disabilities, but if you meet me, you’re welcome to ask me questions. I’m Disabled and proud, and I want us all to include disability in more conversations. If you want to learn more about disability, check out the resources I’ve put together at [cripcorps.blogspot.com](https://cripcorps.blogspot.com/) <!--comment-->(formerly cripcorps.com)<!--comment-->.
 {: .noIndent}
 
 ## speaking
@@ -103,7 +103,7 @@ Not every disabled person likes to be asked about their disabilities, but if you
 ## more disability work
 - Created [Our Truths, Our Power](https://blog.google/inside-google/life-at-google/disability-pride-month-2023/), a film [with audio description](https://youtu.be/LojBpZ_CpRY) or [without audio description](https://youtu.be/mof8iaLz4mk), 2023.
 - Collaborated on <a href="https://disabilityisdiversity.com/team" target="_blank" tabindex="0">Disability is Diversity</a> campaign for the entertainment industry, 2022. Featured on <a href="https://tiltingthelens.com/2022/10/01/the-campaign-calling-for-disabled-representation-in-film-tv/" target="_blank" tabindex="0">Tilting the Lens</a>.
-- Created <a href="https://www.cripcorps.com/" target="_blank" tabindex="0">cripcorps.com</a>, a collective disability justice blog, 2019.
+- Created <a href="https://cripcorps.blogspot.com/" target="_blank" tabindex="0">Crip Corps</a>, a collective disability justice blog, 2019.
 - Started the <a href="https://en.wikipedia.org/wiki/Crip_(disability_term)" target="_blank" tabindex="0">Wikipedia page for "Crip (disability term)"</a> and fought with the admins for a week before they approved it, 2019.
 - <a href="https://www.curbfreewithcorylee.com/2018/05/23/san-francisco-citypass/" target="_blank" tabindex="0">Guest writing</a> for a wheelchair travel blog, 2018.
 - <a href="https://web.archive.org/web/20151029174749/http://static.stanford.edu/2014/09/29/lack-sessibility-at-stanford/" target="_blank" tabindex="0"><span class="pieceTitle">Lack-sessibility</span></a>, a comic strip featured in <a href="https://web.archive.org/web/20170311212720/http://www.stanforddaily.com/an-overlooked-minority-disabled-students-discuss-shortfall-in-support/" target="_blank" tabindex="0">Stanford Daily</a>, 2014.
